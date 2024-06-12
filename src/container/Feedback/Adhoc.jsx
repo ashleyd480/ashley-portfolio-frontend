@@ -1,4 +1,4 @@
-const Feedback = () => {
+const Adhoc = () => {
 
     return (
     <>
@@ -7,4 +7,4 @@ const Feedback = () => {
     );
   
 }
-  export default Feedback;
+  export default Adhoc;

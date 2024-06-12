@@ -10,8 +10,11 @@ import Teachbacks from "./container/Work/Teachbacks";
 import DevBlog from "./container/Work/DevBlog";
 import GAScores from "./container/KPIs/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores";
-import Feedback from "react-bootstrap/esm/Feedback";
 import SelfEval from "./container/KPIs/SelfEval";
+import Mentor from "./container/Feedback/Mentor";
+import Instructors from "./container/Feedback/Instructors";
+import Manager from "./container/Feedback/Manager";
+import Adhoc from "./container/Feedback/Adhoc";
 import CrowdsourceAI from "./container/Hobbies/CrowdsourceAI";
 import GoogleMaps from "./container/Hobbies/GoogleMaps";
 import './App.css'
@@ -51,8 +54,11 @@ const App = () => {
         <Route path="kpis/ga-scores" element={<GAScores />} /> 
           <Route path="kpis/project-scores" element={<ProjectScores />} /> 
 
-        <Route path="kpis/feedback" element={<Feedback />} /> 
-        <Route path="kpis/self-eval" element={<SelfEval />} /> 
+          <Route path="kpis/self-eval" element={<SelfEval />} /> 
+          <Route path="/feedback/mentor-feedback" element={<Mentor/>} />
+          <Route path="/feedback/instructor-feedback" element={<Instructors/>} />
+          <Route path="/feedback/manager-feedback" element={<Manager/>} />
+          <Route path="/feedback/adhoc-feedback" element={<Adhoc/>} />
         <Route path="hobbies/google-maps" element={<GoogleMaps />} /> 
         <Route path="hobbies/crowdsource-ai" element={<CrowdsourceAI />} /> 
       </>

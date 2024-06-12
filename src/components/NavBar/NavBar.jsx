@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"; // Assuming you're using Bootstrap for styling
 import "./NavBar.css";
 
+
 const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg" className="nav sticky-top">
@@ -52,12 +53,25 @@ const NavBar = () => {
             <NavDropdown.Item as={Link} to="kpis/project-scores">
               Project Scores
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="kpis/feedback">
-              Feedback
-            </NavDropdown.Item>
+           
             <NavDropdown.Item as={Link} to="kpis/self-eval">
               Self Eval
             </NavDropdown.Item>
+            </NavDropdown>
+          <NavDropdown title="Feedback" id="basic-nav-dropdown">
+            <NavDropdown.Item as={Link} to="feedback/mentor-feedback">
+              Mentor 
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="feedback/instructor-feedback">
+              Instructors 
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="feedback/manager-feedback">
+              Manager
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="feedback/adhoc-feedback">
+              Adhoc 
+            </NavDropdown.Item>
+        
           </NavDropdown>
           <NavDropdown title="Hobbies" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to="hobbies/google-maps">
