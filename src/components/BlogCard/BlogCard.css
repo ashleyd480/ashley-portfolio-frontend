@@ -1,0 +1,27 @@
+.blog-card-title-custom {
+    font-size: 25px !important; /* Ensures this style has higher priority */}
+
+.blog-card-text-custom {
+    font-size: 20px;
+}
+
+
+.blog-card-content {
+    min-width: 500px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 5px; /* rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will push the content to the top and bottom */
+    height: 100%; /* Ensure the card stretches to full height */
+
+}
+
+.blog-custom-card-img {
+    height: 300px; 
+    border: 1px solid black;
+    object-fit: cover; /* This will cover the area without distorting the image */
+}

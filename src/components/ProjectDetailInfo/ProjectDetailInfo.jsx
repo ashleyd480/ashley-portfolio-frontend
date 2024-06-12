@@ -2,6 +2,7 @@ import Stack from "react-bootstrap/Stack";
 
 const ProjectDetailInfo = ({ project }) => {
   console.log(project);
+  // stack ensures items are stacked vertically and gap of 3
   return (
     <>
       <Stack gap={3}>
@@ -15,11 +16,9 @@ const ProjectDetailInfo = ({ project }) => {
           </p>
           <p>
             {" "}
+        
             <strong>Skills: </strong>{" "}
-                      {project.skills && project.skills.map((skill, skillIndex) => (
-                          <span key={skillIndex}>
-                              {skill.skillName}
-                          </span>))}
+            {project.skills && project.skills.map(skill => skill.skillName).join(', ')}
           </p>
         </div>
               <div className="p-2">

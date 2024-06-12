@@ -6,20 +6,32 @@
 
 /*The body is 100vh to accomodate mobile screen so that all the sign in appears without scrolling */
 
-/* body {
+body {
   height: 100vh;
+  
+}
+
+
+/* For my project and blog cards*/
+
+.card-container {
+  margin-left: 20px;
+  margin-top: 50px;
   display: flex;
-  flex-direction: column;
-} */
-
-
-/* Note to self; can add more later */
+ 
+  align-items: center; /* This centers the children horizontally */
+  justify-content: center; /* This centers the children vertically if needed */
+  width: 100%;
+  padding-left: 20px; 
+}
 
 /* Small Screens (Smartphones) */
 @media only screen and (max-width: 600px) {
-  /* CSS rules for small screens */
-  /* .footer {
-    display: none; */
+  .content {
+    font: 18px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 }
 
 
@@ -30,9 +42,13 @@
 
 
   .content {
-  
+    font: 18px;
     margin-top: 20px;
     margin-left: 20px;
+
+    /* margin: 0 auto;  */
+    /* Centers the content and removes default margins */
+    max-width: 1200px; /* Adjust this value based on your design */
 }
 
  

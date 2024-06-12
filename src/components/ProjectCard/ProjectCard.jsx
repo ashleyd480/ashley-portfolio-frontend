@@ -1,36 +1,43 @@
-import { Card, ListGroup } from 'react-bootstrap';
+import { Card, ListGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./ProjectCard.css";
 
-
-
-const ProjectCard = ({ project}) => {
-    return (
-        <>
-     <Link to={`/work/projects/${project.projectId}`}>
-            <Card style={{ width: '18rem' }}>
-           
-          <Card.Img variant="top" src={project.projectHeaderImage} alt={project.projectName} />
-          <Card.Body>
-            <Card.Title>{project.projectName}</Card.Title>
-            <Card.Text>Date Completed: {project.dateCompleted}</Card.Text>
-            <Card.Text>Project Type: {project.projectType}</Card.Text>
-            <Card.Text>
-              Skills: {project.skills.map(skill => skill.skillName).join(', ')}
-            </Card.Text>
-          </Card.Body>
-          <ListGroup className="list-group-flush">
-            {/* Maybe let's remove the Click to Learn more? or  */}
-          </ListGroup>
-          <Card.Body>
-            <Card.Link href={project.projectLink}>Click to Learn More</Card.Link>
-                    </Card.Body>
-                  
-                </Card>
-                </Link>
-            </>
-      );
-    }
-    
-  
+const ProjectCard = ({ project }) => {
+  return (
+    <div className="project-card-content">
+      <Card>
+        <Card.Img
+          variant="top"
+          src={project.projectHeaderImage}
+          alt={project.projectName}
+          className="project-custom-card-img"
+        />
+        <Card.Body>
+          <Card.Title className="project-card-title-custom">
+            {project.projectName}
+          </Card.Title>
+          <Card.Text className="project-card-text-custom">
+            {" "}
+            <strong> Date Completed: </strong> {project.dateCompleted}
+          </Card.Text>
+          <Card.Text className="project-card-text-custom">
+            {" "}
+            <strong>Project Type: </strong> {project.projectType}
+          </Card.Text>
+          <Card.Text className="project-card-text-custom">
+            <strong> Skills: </strong>{" "}
+            {project.skills.map((skill) => skill.skillName).join(", ")}
+          </Card.Text>
+        </Card.Body>
+        <ListGroup className="list-group-flush"></ListGroup>
+        <Card.Body>
+          <Link to={`/work/projects/${project.projectId}`}>
+            <Button>See Details</Button>
+          </Link>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+};
 
 export default ProjectCard;

@@ -1,7 +1,8 @@
-import { fetchData } from "../../api/api";
+import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ProjectDetailInfo from "../../components/ProjectDetailInfo/ProjectDetailInfo";
+import ProjectDetailInfo from "../../../components/ProjectDetailInfo/ProjectDetailInfo";
+import "./ProjectDetail.css"
 
 const ProjectDetail = () => {
 
@@ -23,11 +24,11 @@ const ProjectDetail = () => {
                     console.log(responseData.data)
                 } else {
                     setError(
-                        responseData.error || "An error occurred while fetching project data."
+                        responseData.error || "An error occurred while fetching project details."
                     );
                 }
             } catch (error) {
-                setError("A connection error occurred while fetching project data.");
+                setError("A connection error occurred while fetching project details.");
             }
         };
         fetchProjectDetailData();
@@ -36,9 +37,9 @@ const ProjectDetail = () => {
     // we map the array of project data - responsedata.data (key value pair)
     // we map it to each to a ProjectCard
     return (
-        <div className="content">
-            <h1> {projectDetail.projectName}</h1>
-            <div>
+        <div>
+            <h2> {projectDetail.projectName}</h2>
+            <div className= "content">
                 {projectDetail ? (
                     
                         <ProjectDetailInfo project={projectDetail} />
