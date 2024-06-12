@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*The body is 100vh to accomodate mobile screen so that all the sign in appears without scrolling */
+
+/* body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+} */
+
+
+/* Note to self; can add more later */
+
+/* Small Screens (Smartphones) */
+@media only screen and (max-width: 600px) {
+  /* CSS rules for small screens */
+  /* .footer {
+    display: none; */
+}
+
+
+
+
+/* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */ 
+@media only screen and (min-width: 601px)  {
+
+
+  .content {
+  
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+ 
+
+  
+}
+
+
+
+/* Large Screens (Desktops and Laptops) */
+/* @media only screen and (min-width: 769px) and (max-width: 1024px) { */
+  /* CSS rules for large screens */
+  
+
