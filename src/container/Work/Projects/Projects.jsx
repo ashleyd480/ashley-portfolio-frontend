@@ -1,7 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
-import "./Projects.css"
+
 
 const Projects = () => {
   const [projectData, setProjectData] = useState([]);
@@ -30,9 +30,10 @@ const Projects = () => {
   // we map the array of project data - responsedata.data (key value pair)
   // we map it to each to a ProjectCard and the unique key is provided by project id
   return (
-      <div className="content">
-          <div className="project-header">
-          <h2>Projects: </h2>
+      <div >
+         
+          <h2 className= "blurb-title">Projects </h2>
+          <div className="blurb-header">
               <h4> Below is a list of mini-projects and projects completed during bootcamp. Click the link under each card to open up the project details page. </h4>
               </div>
       <div className = "d-flex flex-wrap card-container">

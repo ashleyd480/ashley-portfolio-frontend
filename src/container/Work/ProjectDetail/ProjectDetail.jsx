@@ -38,8 +38,8 @@ const ProjectDetail = () => {
     // we map it to each to a ProjectCard
     return (
         <div>
-            <h2> {projectDetail.projectName}</h2>
-            <div className= "content">
+            <h2  className= "blurb-title" > {projectDetail.projectName}</h2>
+            <div className="blurb-header">
                 {projectDetail ? (
                     
                         <ProjectDetailInfo project={projectDetail} />

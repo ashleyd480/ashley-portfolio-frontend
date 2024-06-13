@@ -8,7 +8,7 @@ import Projects from "./container/Work/Projects/Projects";
 import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
 import Teachbacks from "./container/Work/Teachbacks";
 import DevBlog from "./container/Work/DevBlog";
-import GAScores from "./container/KPIs/GAScores";
+import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores";
 import SelfEval from "./container/KPIs/SelfEval";
 import Mentor from "./container/Feedback/Mentor";

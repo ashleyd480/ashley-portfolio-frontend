@@ -11,8 +11,8 @@ const BlogCard = ({ blog }) => {
       <Card.Body>
         <Card.Title className="project-card-title-custom">{blog.title}</Card.Title>
         <Card.Text className="blog-card-text-custom">
-          Date Published: {blog.published_at} <br />
-          Time To Read (Minutes): {blog.reading_time_minutes}
+          <strong>Date Published: </strong> {blog.published_at} <br />
+          <strong> Time To Read (Minutes): </strong> {blog.reading_time_minutes}
         </Card.Text>
         <Button variant="primary" href={blog.url} target="_blank">
           Read More

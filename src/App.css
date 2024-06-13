@@ -25,14 +25,23 @@ body {
   padding-left: 20px; 
 }
 
+/* For blurb title and blurb header on pages */
+
+.blurb-title {
+  margin-top: 20px;
+  text-align: center;
+}
+.blurb-header {
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-bottom: 20px; /* Adjust spacing between the text and the content */
+  padding-left: 20px;
+}
 /* Small Screens (Smartphones) */
 @media only screen and (max-width: 600px) {
-  .content {
-    font: 18px;
-    margin-top: 20px;
-    margin-left: 20px;
+ 
 }
-}
+
 
 
 
@@ -41,20 +50,13 @@ body {
 @media only screen and (min-width: 601px)  {
 
 
-  .content {
-    font: 18px;
-    margin-top: 20px;
-    margin-left: 20px;
-
-    /* margin: 0 auto;  */
-    /* Centers the content and removes default margins */
-    max-width: 1200px; /* Adjust this value based on your design */
+   
 }
 
  
 
   
-}
+
 
 
 

@@ -11,12 +11,14 @@ const DevBlog = () => {
     getBlogs();
 }, []);
 
+  // Code credit for call to dev.to api goes to: https://dev.to/tiaeastwood/how-to-use-the-forem-api-to-display-your-devto-blog-posts-on-your-website-easy-3dl3
 const getBlogs = async () => {
     try {
-        const response = await fetch(
-            "https://dev.to/api/articles?username=ashleyd480&per_page=8",
+        const responseData = await fetch(
+            "https://dev.to/api/articles?username=ashleyd480",
         );
-        const json = await response.json();
+      // "asynchronously parses the response body as JSON"
+        const json = await responseData.json();
       setBlogs(json);
       console.log(json);
     } catch (error) {
@@ -27,7 +29,7 @@ const getBlogs = async () => {
     return (
    
         <div>
-      <h1>My Dev To Blogs</h1>
+      <h2 className="blurb-title">My Dev To Blogs</h2>
       <div className= "card-container">
       {blogs ? (
         <div>
