@@ -9,7 +9,7 @@ const GAScores = () => {
   useEffect(() => {
     const fetchGAScores = async () => {
       try {
-        const responseData = await fetchData("bootcampscore");
+        const responseData = await fetchData("scores/bootcamp");
         if (!responseData.hasError) {
           setGaScores(responseData.data);
           console.log(responseData.data);

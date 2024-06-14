@@ -25,12 +25,17 @@ body {
   padding-left: 20px; 
 }
 
+.card-title-custom {
+  font-size: 25px !important; /* Ensures this style has higher priority */}
+
+.card-text-custom {
+  font-size: 20px;
+}
+
+
 /* For blurb title and blurb header on pages */
 
-.blurb-title {
-  margin-top: 20px;
-  text-align: center;
-}
+
 .blurb-header {
   margin-left: 30px;
   margin-top: 30px;
@@ -38,8 +43,17 @@ body {
   padding-left: 20px;
 }
 /* Small Screens (Smartphones) */
-@media only screen and (max-width: 600px) {
- 
+@media only screen and (max-width: 990px) {
+  .blurb-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .fixed-top {
+    position: static !important;
+  }
+  .content-padding {
+    padding-top: 20px
+  }
 }
 
 
@@ -47,8 +61,15 @@ body {
 
 
 /* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */ 
-@media only screen and (min-width: 601px)  {
+@media only screen and (min-width: 991px)  {
+  .blurb-title {
+    margin-top: 150px;
+    text-align: center;
+  }
 
+   /* to ensure that navbar is only sticky on desktop */
+  .fixed-top {
+    position: fixed !important;  }
 
    
 }
@@ -60,8 +81,5 @@ body {
 
 
 
-/* Large Screens (Desktops and Laptops) */
-/* @media only screen and (min-width: 769px) and (max-width: 1024px) { */
-  /* CSS rules for large screens */
   
 

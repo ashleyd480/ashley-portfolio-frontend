@@ -5,7 +5,7 @@ import cartoonCat from "../../assets/cartoon-cat.png"
 
 const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg" className="nav sticky-top">
+    <Navbar bg="light" expand="lg" className="fixed-top">
       <Navbar.Brand as={Link} to="/">
       <img
           src= {cartoonCat}

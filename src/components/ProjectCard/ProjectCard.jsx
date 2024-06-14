@@ -13,10 +13,10 @@ const ProjectCard = ({ project }) => {
           className="project-custom-card-img"
         />
         <Card.Body>
-          <Card.Title className="project-card-title-custom">
+          <Card.Title className="card-title-custom">
             {project.projectName}
           </Card.Title>
-          <Card.Text className="project-card-text-custom">
+          <Card.Text className="card-text-custom">
             {" "}
             <strong> Date Completed: </strong> {project.dateCompleted}
           </Card.Text>

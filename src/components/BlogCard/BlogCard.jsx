@@ -9,8 +9,8 @@ const BlogCard = ({ blog }) => {
               alt="blog cover image"
               className="blog-custom-card-img"/>
       <Card.Body>
-        <Card.Title className="project-card-title-custom">{blog.title}</Card.Title>
-        <Card.Text className="blog-card-text-custom">
+        <Card.Title className="card-title-custom">{blog.title}</Card.Title>
+        <Card.Text className="card-text-custom">
           <strong>Date Published: </strong> {blog.published_at} <br />
           <strong> Time To Read (Minutes): </strong> {blog.reading_time_minutes}
         </Card.Text>

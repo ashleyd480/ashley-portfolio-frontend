@@ -9,7 +9,7 @@ import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
 import Teachbacks from "./container/Work/Teachbacks";
 import DevBlog from "./container/DevBlog/DevBlog";
 import GAScores from "./container/KPIs/GAScores/GAScores";
-import ProjectScores from "./container/KPIs/ProjectScores";
+import ProjectScores from "./container/KPIs/ProjectScores/ProjectScores";
 import SelfEval from "./container/KPIs/SelfEval";
 import Mentor from "./container/Feedback/Mentor";
 import Instructors from "./container/Feedback/Instructors";
@@ -23,6 +23,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <div className="content-padding">
 
       <Routes>
         <>
@@ -51,7 +52,8 @@ const App = () => {
           <Route path="hobbies/google-maps" element={<GoogleMaps />} />
           <Route path="hobbies/crowdsource-ai" element={<CrowdsourceAI />} />
         </>
-      </Routes>
+        </Routes>
+        </div>
     </>
   );
 };
