@@ -31,8 +31,12 @@ const GAScores = () => {
       <div className="blurb-header">
         <p>
           {" "}
-          Below are my General Assembly Scores for our 16 weeks of Bootcamp, as
-          well as my mentor (Chad) scores.{" "}
+          Below are my General Assembly Scores for our instructional 15 weeks of
+          Bootcamp, as well as my mentor (Chad) scores.{" "}
+        </p>
+        <p>
+          Note, the 16th week was capstone week, so scores are under Project
+          [link here]
         </p>
         <p>
           {" "}
@@ -41,18 +45,28 @@ const GAScores = () => {
           such as code approach and to celebrate wins.{" "}
         </p>
         <p>
-          We started out with a color tracking system.
-          Color system was initially as follows: 
-          <ul>
-                      <li>Blue - Excellent</li>
-                      <li> Green - On Track</li>
-                      <li> Yellow - Light Concerns</li>
-                      <li> Red- A Little Behind</li>
+          We started out with a color tracking system. Color system was
+          initially as follows:
+        </p>
+        <ul>
+          <li>Blue - Excellent</li>
+          <li> Green - On Track</li>
+          <li> Yellow - Light Concerns</li>
+          <li> Red- A Little Behind</li>
+        </ul>
 
-          </ul>
-              </p>
-              <p> The first week I was yellow due to confidence issues as instructor mentioned, and second week I was green. After that I was able to receive blue ratings. </p>
-              <p> In Week 8, we moved away from colors to allow for more concrete grading by attendance, homework completion, and engagement. I have tracked at 100% for subsequent weeks. </p>
+        <p>
+          {" "}
+          The first week I was yellow due to confidence issues as instructor
+          mentioned, and second week I was green. After that, I was able to
+          receive blue ratings.{" "}
+        </p>
+        <p>
+          {" "}
+          In Week 8, we moved away from colors to allow for more concrete
+          grading by attendance, homework completion, and engagement. I have
+          tracked at 100% for subsequent weeks.{" "}
+        </p>
       </div>
       <div className="ga-score-table">
         {gaScores ? <GAScoreTable gaScores={gaScores} /> : <h4>{error}</h4>}

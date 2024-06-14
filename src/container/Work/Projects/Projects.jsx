@@ -34,8 +34,13 @@ const Projects = () => {
          
           <h2 className= "blurb-title">Projects </h2>
           <div className="blurb-header">
-              <h4> Below is a list of mini-projects and projects completed during bootcamp. Click the link under each card to open up the project details page. </h4>
-              </div>
+        <p> Below is a list of mini-projects and projects completed during the bootcamp (additionally including our pre-work and the capstone). </p>
+        <p> Each card includes the title of the project, the data completed, project type, and skills used. (Note: Formal projects represent our 4 required week-long projects and our final two-week long capstone. Mini-projects are projects at a smaller scale that are worked on as homeworks. Formal and mini projects are done independently, whereas pair projects are done with a partner.) </p>
+        <p> Click the link under each card to open up the project details page. </p>
+        <br></br>
+        <hr />
+      </div>
+     
       <div className = "d-flex flex-wrap card-container">
         {projectData ? (
           projectData.map((project) => (

@@ -7,7 +7,7 @@ import Experience from "./container/About/Experience";
 import Projects from "./container/Work/Projects/Projects";
 import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
 import Teachbacks from "./container/Work/Teachbacks";
-import DevBlog from "./container/Work/DevBlog";
+import DevBlog from "./container/DevBlog/DevBlog";
 import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores";
 import SelfEval from "./container/KPIs/SelfEval";

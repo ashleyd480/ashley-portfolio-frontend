@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap"; // Assuming you're using Bootstrap for styling
 import "./NavBar.css";
-
+import cartoonCat from "../../assets/cartoon-cat.png"
 
 const NavBar = () => {
   return (
     <Navbar bg="light" expand="lg" className="nav sticky-top">
       <Navbar.Brand as={Link} to="/">
       <img
-          src={"src/assets/cartoon-cat.png"}
+          src= {cartoonCat}
           width="80"
           height="80"
           className="d-inline-block align-top"
