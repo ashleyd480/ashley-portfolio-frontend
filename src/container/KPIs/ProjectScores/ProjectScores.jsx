@@ -16,11 +16,11 @@ const ProjectScores = () => {
           console.log(responseData.data);
         } else {
           setError(
-            responseData.error || "An error occurred while fetching GA scores."
+            responseData.error || "An error occurred while fetching project scores."
           );
         }
       } catch (error) {
-        setError("A connection error occurred while fetching GA scores.");
+        setError("A connection error occurred while fetching project scores.");
       }
     };
     fetchProjectScoreOverview();
@@ -36,16 +36,19 @@ const ProjectScores = () => {
           the overall instructor comment and a link to see the full scores. {" "}
               </p>
              
-          </div>
-          <div className = "overview-container">
-      {projectScoreOverview ? (
-        projectScoreOverview.map(project => (
-          <ProjectScoreOverviewCard key={project.projectId} project={project}  />
-        ))
-      ) : (
-        <h4>{error}</h4>
-      )}
-    </div>
+      </div>
+      <hr/>
+          <div className="overview-container">
+  {error ? (
+    <h4 className= "error-header">{error}</h4>
+  ) : (
+    projectScoreOverview &&
+    projectScoreOverview.map((project) => (
+      <ProjectScoreOverviewCard key={project.projectId} project={project} />
+    ))
+  )}
+</div>
+
     </>
   );
 };

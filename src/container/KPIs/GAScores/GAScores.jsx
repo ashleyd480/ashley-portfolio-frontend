@@ -69,7 +69,11 @@ const GAScores = () => {
         </p>
       </div>
       <div className="ga-score-table">
-        {gaScores ? <GAScoreTable gaScores={gaScores} /> : <h4>{error}</h4>}
+        {error ? (
+          <h4 className= "error-header">{error}</h4>
+        ) : (
+          gaScores && <GAScoreTable gaScores={gaScores} />
+        )}
       </div>
     </>
   );

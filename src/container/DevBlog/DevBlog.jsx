@@ -17,13 +17,17 @@ const DevBlog = () => {
       const responseData = await fetch(
         "https://dev.to/api/articles?username=ashleyd480"
       );
-      // "asynchronously parses the response body as JSON"
       const json = await responseData.json();
-      setBlogs(json);
-      console.log(json);
+      
+      if (json.length === 0) {
+        setError("No blogs found."); // Set error message if blogs array is empty
+      } else {
+        setBlogs(json);
+        console.log(json);
+      }
     } catch (error) {
-      console.log("error", error);
-      setError("Error fetching blogs. Please try again later."); // Set error message
+      console.error("Error fetching blogs:", error);
+      setError("Error fetching blogs. Please try again later."); // Set error message for fetch error
     }
   };
   return (
@@ -40,8 +44,8 @@ const DevBlog = () => {
             rel="noopener noreferrer"
           >
             profile
-          </a>)
-          and you can see my blogs below.{" "}
+          </a>
+          ) and you can see my blogs below.{" "}
         </p>
         <p>
           {" "}
@@ -68,21 +72,22 @@ const DevBlog = () => {
           height="400"
           alt="dev.to trusted member nomination"
           className="email-image"
-              />
-                      
+        />
       </div>
       <hr />
       <div className="card-container">
-        {blogs ? (
-          <div>
-            {blogs.map((blog, index) => (
-              <BlogCard key={index} blog={blog} />
-            ))}
-          </div>
-        ) : (
-          <p>{error}</p>
-        )}
+  {error ?(
+    <h4 className="error-header">{error}</h4>
+  ) : (
+    blogs && (
+      <div>
+        {blogs.map((blog, index) => (
+          <BlogCard key={index} blog={blog} />
+        ))}
       </div>
+    )
+  )}
+</div>
     </div>
   );
 };

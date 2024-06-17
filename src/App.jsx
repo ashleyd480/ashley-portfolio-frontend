@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./container/Home/Home";
+import Error from "./container/Error/Error";
 import TheWho from "./container/About/TheWho";
 import TheWhy from "./container/About/TheWhy";
 import Experience from "./container/About/Experience";
@@ -50,7 +51,8 @@ const App = () => {
           <Route path="/feedback/manager-feedback" element={<Manager />} />
           <Route path="/feedback/adhoc-feedback" element={<Adhoc />} />
           <Route path="hobbies/google-maps" element={<GoogleMaps />} />
-          <Route path="hobbies/crowdsource-ai" element={<CrowdsourceAI />} />
+            <Route path="hobbies/crowdsource-ai" element={<CrowdsourceAI />} />
+            <Route path="*" element={<Error />} />
         </>
         </Routes>
         </div>

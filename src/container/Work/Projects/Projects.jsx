@@ -40,16 +40,16 @@ const Projects = () => {
         <br></br>
         <hr />
       </div>
-     
-      <div className = "d-flex flex-wrap card-container">
-        {projectData ? (
-          projectData.map((project) => (
-            <ProjectCard key={project.projectId} project={project} />
-          ))
-        ) : (
-          <h4>{error}</h4>
-        )}
-      </div>
+      <div className="d-flex flex-wrap card-container">
+      {error ? (
+        <h4>{error}</h4>
+      ) : (
+        projectData &&
+        projectData.map((project) => (
+          <ProjectCard key={project.projectId} project={project} />
+        ))
+      )}
+    </div>
     </div>
   );
 };
