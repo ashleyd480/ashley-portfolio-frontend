@@ -62,14 +62,44 @@ body {
   margin-bottom: 40px;
 }
 
-/* For my score tablest */
+/* For my score tables */
 
 .score-table {
   margin-left: 20px;
   margin-top: 20px;
   margin-right: 20px;
 }
-/* Small Screens (Smartphones) */
+
+/* For my images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px; 
+  padding: 10px;
+}
+
+.image-item {
+  flex: 1 1 calc(50% - 20px); /* Flex item to take up 50% of container width minus the gap */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start */
+  border: 2px solid gray;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures images cover the div and maintain aspect ratio */
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .image-container {
+      flex-direction: column; /* Stack images vertically on mobile */
+  }
+}
+
+/* Small and Medium Screens (Smartphones) */
 @media only screen and (max-width: 990px) {
   .blurb-title {
     margin-top: 20px;
@@ -83,7 +113,7 @@ body {
   }
 }
 
-/* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */
+/* Large Screens (Desktops and Laptops) */
 @media only screen and (min-width: 991px) {
   .blurb-title {
     margin-top: 150px;

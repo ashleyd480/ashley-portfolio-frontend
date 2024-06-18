@@ -34,7 +34,7 @@ const CapstoneScore = () => {
       <div className="blurb-header">
         <p>Below are the details of my capstone scores.</p>
         <p>
-          You may find the full capstone demo recording along with live feedback
+          You may find the full capstone demo recording along with live video feedback
           following the capstone detail score table.{" "}
         </p>
         <hr className="seperate-line" />
