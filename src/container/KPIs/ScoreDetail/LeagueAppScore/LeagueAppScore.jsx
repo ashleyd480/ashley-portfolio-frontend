@@ -34,20 +34,20 @@ const LeagueAppScore = () => {
       <h2 className="blurb-title">League App Score</h2>
       <div className="blurb-header">
         <p>Below are the details of my League App pair project score.</p>
-              <p> Here is the grading criteria</p>
-              <ul>
-  <li>0 - Incomplete</li>
-  <li>1 - Does not meet expectations</li>
-  <li>2 - Meets expectations</li>
-  <li>3 - Exceeds Expectations</li>
-</ul>
+        <p> Here is the grading criteria</p>
+        <ul>
+          <li>0 - Incomplete</li>
+          <li>1 - Does not meet expectations</li>
+          <li>2 - Meets expectations</li>
+          <li>3 - Exceeds Expectations</li>
+        </ul>
         <hr className="separate-line" />
         <div className="score-table">
           {error ? (
-               <>
-               <h4 className="error-header">{error}</h4>
-               <ExcelDownloadLink />
-             </>
+            <div className="error-container">
+              <h4 className="error-header">{error}</h4>
+              <ExcelDownloadLink />
+            </div>
           ) : (
             leagueAppScore && (
               <LeagueAppScoreDetail leagueAppScore={leagueAppScore} />

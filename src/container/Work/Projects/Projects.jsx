@@ -1,7 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectCard from "../../../components/ProjectCard/ProjectCard";
-
+import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
 
 const Projects = () => {
   const [projectData, setProjectData] = useState([]);
@@ -42,7 +42,10 @@ const Projects = () => {
       <hr className= "seperate-line"/>
       <div className="d-flex flex-wrap card-container">
       {error ? (
-        <h4>{error}</h4>
+        <div className= "error-container">
+            <h4 className="error-header">{error}</h4>
+        <ExcelDownloadLink />
+      </div>
       ) : (
         projectData &&
         projectData.map((project) => (

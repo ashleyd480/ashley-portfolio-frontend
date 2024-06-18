@@ -71,10 +71,10 @@ const GAScores = () => {
       <hr className="seperate-line" />
       <div className="score-table">
         {error ? (
-          <>
+          <div className="error-container">
             <h4 className="error-header">{error}</h4>
             <ExcelDownloadLink />
-          </>
+          </div>
         ) : (
           gaScores && <GAScoreTable gaScores={gaScores} />
         )}

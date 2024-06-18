@@ -41,7 +41,7 @@ const DevBlog = () => {
           <a
             href="https://dev.to/ashleyd480"
             target="_blank"
-            rel="noopener noreferrer"
+        
           >
             profile
           </a>
@@ -60,7 +60,6 @@ const DevBlog = () => {
           <a
             href="https://dev.to/trusted-member"
             target="_blank"
-            rel="noopener noreferrer"
           >
             here
           </a>

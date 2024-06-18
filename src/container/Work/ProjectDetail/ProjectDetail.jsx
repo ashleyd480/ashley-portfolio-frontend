@@ -40,7 +40,15 @@ const ProjectDetail = () => {
       <h2 className="blurb-title"> {projectDetail.projectName}</h2>
       <div className="blurb-header">
         {error ? (
-          <h4 className =  "error-header">{error}</h4>
+          <>
+            <h4 className="error-header">{error}</h4>
+            <p>
+              {" "}
+              Please visit this link
+              <a href={"https://github.com/ashleyd480"} target="_blank"></a>
+              to see details instead{" "}
+            </p>
+          </>
         ) : (
           projectDetail && <ProjectDetailInfo project={projectDetail} />
         )}

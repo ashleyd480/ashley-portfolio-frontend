@@ -10,8 +10,20 @@ body {
   height: 100vh;
 }
 
+/* For rendering error messages should API call fail*/
 .error-header {
   text-align: center;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error-container button {
+  width: 300px;
+  align-self: center;
 }
 
 /* For my project and blog cards*/

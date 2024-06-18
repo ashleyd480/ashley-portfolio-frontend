@@ -40,10 +40,10 @@ const CapstoneScore = () => {
         <hr className="seperate-line" />
         <div className="score-table">
           {error ? (
-            <>
+            <div className="error-container">
               <h4 className="error-header">{error}</h4>
               <ExcelDownloadLink />
-            </>
+            </div>
           ) : (
             capstoneScore && (
               <CapstoneScoreDetail capstoneScore={capstoneScore} />
@@ -59,7 +59,6 @@ const CapstoneScore = () => {
           <a
             href={"https://youtu.be/rflr2XKJkzg?feature=shared&t=2580"}
             target="_blank"
-            rel="noopener noreferrer"
           >
             43:00
           </a>

@@ -2,7 +2,7 @@ import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectScoreOverviewCard from "../../../components/KPITable/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
 import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
-import "./ProjectScores.css"
+import "./ProjectScores.css";
 
 const ProjectScores = () => {
   const [projectScoreOverview, setProjectScoreOverivew] = useState([]);
@@ -17,7 +17,8 @@ const ProjectScores = () => {
           console.log(responseData.data);
         } else {
           setError(
-            responseData.error || "An error occurred while fetching project scores."
+            responseData.error ||
+              "An error occurred while fetching project scores."
           );
         }
       } catch (error) {
@@ -34,25 +35,26 @@ const ProjectScores = () => {
         <p>
           {" "}
           Below are the projects we worked on in General Assembly, along with
-          the overall instructor comment and a link to see the full scores. {" "}
-              </p>
-             
+          the overall instructor comment and a link to see the full scores.{" "}
+        </p>
       </div>
-      <hr/>
-          <div className="overview-container">
-  {error ? (
-    <>
-    <h4 className="error-header">{error}</h4>
-    <ExcelDownloadLink />
-  </>
-  ) : (
-    projectScoreOverview &&
-    projectScoreOverview.map((project) => (
-      <ProjectScoreOverviewCard key={project.projectId} project={project} />
-    ))
-  )}
-</div>
-
+      <hr />
+      <div className="overview-container">
+        {error ? (
+          <div className="error-container">
+            <h4 className="error-header">{error}</h4>
+            <ExcelDownloadLink />
+          </div>
+        ) : (
+          projectScoreOverview &&
+          projectScoreOverview.map((project) => (
+            <ProjectScoreOverviewCard
+              key={project.projectId}
+              project={project}
+            />
+          ))
+        )}
+      </div>
     </>
   );
 };
