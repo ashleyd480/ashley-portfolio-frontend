@@ -19,6 +19,9 @@ import Adhoc from "./container/Feedback/Adhoc";
 import CrowdsourceAI from "./container/Hobbies/CrowdsourceAI";
 import GoogleMaps from "./container/Hobbies/GoogleMaps";
 import "./App.css";
+import CapstoneScore from "./container/KPIs/ScoreDetail/CapstoneScore/CapstoneScore";
+import LeagueAppScore from "./container/KPIs/ScoreDetail/LeagueAppScore/LeagueAppScore";
+import SpringBackendScore from "./container/KPIs/ScoreDetail/SpringBackendScore/SpringBackendScore";
 
 const App = () => {
   return (
@@ -40,7 +43,12 @@ const App = () => {
           <Route path="work/teachbacks" element={<Teachbacks />} />
           <Route path="work/blog" element={<DevBlog />} />
           <Route path="kpis/ga-scores" element={<GAScores />} />
-          <Route path="kpis/project-scores" element={<ProjectScores />} />
+            <Route path="kpis/project-scores" element={<ProjectScores />} />
+            <Route path="kpis/project-scores/capstone-score" element={<CapstoneScore />} />
+            <Route path="kpis/project-scores/league-app-score" element={<LeagueAppScore />}
+            />
+               <Route path="kpis/project-scores/spring-backend-score" element={<SpringBackendScore />}
+            />
 
           <Route path="kpis/self-eval" element={<SelfEval />} />
           <Route path="/feedback/mentor-feedback" element={<Mentor />} />

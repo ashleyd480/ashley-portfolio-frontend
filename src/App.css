@@ -43,8 +43,12 @@ body {
 .blurb-header {
   margin-left: 30px;
   margin-top: 30px;
-  margin-bottom: 20px; /* Adjust spacing between the text and the content */
+  margin-bottom: 40px; /* Adjust spacing between the text and the content */
   padding-left: 20px;
+}
+
+.seperate-line {
+  margin-bottom: 40px;
 }
 /* Small Screens (Smartphones) */
 @media only screen and (max-width: 990px) {
@@ -59,9 +63,6 @@ body {
     padding-top: 20px
   }
 }
-
-
-
 
 
 /* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */ 

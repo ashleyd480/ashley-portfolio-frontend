@@ -26,7 +26,9 @@ const Teachbacks = () => {
           <p> I was also able to share some of these teachbacks to my cohorts for complex topics such as the one on Microservices. </p>
           <p> This playlist also offers personal value as I can have a library of videos to go back to refernce. </p>
         </div>
+           <hr className= "seperate-line"/>
         <div>
+          
       <h1>My YouTube Playlist</h1>
       <div style={{ display: 'flex' }}>
         <div style={{ flex: 1 }}>

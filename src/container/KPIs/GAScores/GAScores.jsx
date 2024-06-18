@@ -67,7 +67,9 @@ const GAScores = () => {
           grading by attendance, homework completion, and engagement. I have
           tracked at 100% for subsequent weeks.{" "}
         </p>
+  
       </div>
+      <hr className= "seperate-line"/>
       <div className="ga-score-table">
         {error ? (
           <h4 className= "error-header">{error}</h4>

@@ -74,7 +74,7 @@ const DevBlog = () => {
           className="email-image"
         />
       </div>
-      <hr />
+      <hr className= "seperate-line"/>
       <div className="card-container">
   {error ?(
     <h4 className="error-header">{error}</h4>
