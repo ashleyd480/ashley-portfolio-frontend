@@ -47,8 +47,19 @@ body {
   padding-left: 20px;
 }
 
+/* For seperating header blurb of each page from data content */
+
 .seperate-line {
   margin-bottom: 40px;
+}
+
+/* For my score tablest */
+
+.score-table {
+  margin-left: 20px;
+  margin-top: 20px; 
+  margin-right: 20px;
+
 }
 /* Small Screens (Smartphones) */
 @media only screen and (max-width: 990px) {

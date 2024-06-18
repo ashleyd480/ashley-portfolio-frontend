@@ -1,12 +1,23 @@
 
-import { Link } from "react-router-dom";
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { useNavigate } from "react-router-dom";
 import {Card, Button, Collapse } from 'react-bootstrap';
 
 
 const ProjectScoreOverviewCard = ({ project }) => {
 
-    const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  
+  const showScoreDetails= () => {
+    if (project.projectName === "access-map-app-capstone") {
+        navigate("/kpis/project-scores/capstone-score");
+    } else if (project.projectName === "league-app-jpa-spring ") {
+        navigate("/kpis/project-scores/league-app-score");
+    } else if (project.projectName === "referral-site-api-backend") {
+        navigate("/kpis/project-scores/spring-backend-score");
+    } 
+};
 
     return (
         <>
@@ -39,9 +50,9 @@ const ProjectScoreOverviewCard = ({ project }) => {
             </Card.Text>
             {project.hasScore && (
               <Card.Footer className="card-footer-custom">
-                <Link to={`/kpis/project-scores/${project.projectId}`}>
-                  <Button variant="primary">See Score</Button>
-                </Link>
+              
+                  <Button variant="primary" onClick = {showScoreDetails}>See Score</Button>
+              
               </Card.Footer>
             )}
           </Card.Body>

@@ -1,7 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import GAScoreTable from "../../../components/KPITable/GAScoreTable/GAScoreTable";
-import "./GAScores.css";
+
 
 const GAScores = () => {
   const [gaScores, setGaScores] = useState([]);
@@ -70,7 +70,7 @@ const GAScores = () => {
   
       </div>
       <hr className= "seperate-line"/>
-      <div className="ga-score-table">
+      <div className="score-table">
         {error ? (
           <h4 className= "error-header">{error}</h4>
         ) : (
