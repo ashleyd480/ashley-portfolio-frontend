@@ -1,9 +1,23 @@
-const LeagueAppScoreDetail = () => {
+import { Table } from "react-bootstrap";
+const LeagueAppScoreDetail = ({ leagueAppScore }) => {
 
     return (
-    <>
-      {/* Your JSX code for  component */}
-    </>
+        <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Criteria</th>
+            <th>Feedback</th>
+          </tr>
+        </thead>
+        <tbody>
+          {leagueAppScore.map((score, index) => (
+            <tr key={index}>
+              <td>{score.leagueAppCriteria}</td>
+              <td>{score.leagueAppFeedback}</td>
+            </tr>
+          ))}
+        </tbody>
+      </Table>
     );
   
 }

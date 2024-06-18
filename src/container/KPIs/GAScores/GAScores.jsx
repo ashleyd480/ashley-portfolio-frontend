@@ -1,7 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import GAScoreTable from "../../../components/KPITable/GAScoreTable/GAScoreTable";
-
+import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
 
 const GAScores = () => {
   const [gaScores, setGaScores] = useState([]);
@@ -67,12 +67,14 @@ const GAScores = () => {
           grading by attendance, homework completion, and engagement. I have
           tracked at 100% for subsequent weeks.{" "}
         </p>
-  
       </div>
-      <hr className= "seperate-line"/>
+      <hr className="seperate-line" />
       <div className="score-table">
         {error ? (
-          <h4 className= "error-header">{error}</h4>
+          <>
+            <h4 className="error-header">{error}</h4>
+            <ExcelDownloadLink />
+          </>
         ) : (
           gaScores && <GAScoreTable gaScores={gaScores} />
         )}

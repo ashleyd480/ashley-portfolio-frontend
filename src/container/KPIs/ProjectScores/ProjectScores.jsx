@@ -1,6 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectScoreOverviewCard from "../../../components/KPITable/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
+import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
 import "./ProjectScores.css"
 
 const ProjectScores = () => {
@@ -40,7 +41,10 @@ const ProjectScores = () => {
       <hr/>
           <div className="overview-container">
   {error ? (
-    <h4 className= "error-header">{error}</h4>
+    <>
+    <h4 className="error-header">{error}</h4>
+    <ExcelDownloadLink />
+  </>
   ) : (
     projectScoreOverview &&
     projectScoreOverview.map((project) => (
