@@ -1,9 +1,10 @@
 import { Table } from "react-bootstrap";
+import "./CapstoneScoreDetail.css"
 const CapstoneScoreDetail = ({ capstoneScore }) => {
 
     return (
     
-      <Table striped bordered hover>
+      <Table striped bordered hover responsive="md" className="capstone-score-table">
     <thead>
       <tr>
         <th>Category</th>

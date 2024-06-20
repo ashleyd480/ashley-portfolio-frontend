@@ -4,7 +4,7 @@ import "./GAScoreTable.css"
 const GAScoreTable = ({ gaScores }) => {
 
     return (
-        <Table striped bordered hover className= "ga-score-table">
+        <Table striped bordered hover responsive="md" className="ga-score-table" >
           <thead>
             <tr>
               <th>Week</th>

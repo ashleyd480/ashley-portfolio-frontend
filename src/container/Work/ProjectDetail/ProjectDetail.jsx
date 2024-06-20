@@ -2,7 +2,6 @@ import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ProjectDetailInfo from "../../../components/ProjectDetailInfo/ProjectDetailInfo";
-import "./ProjectDetail.css";
 
 const ProjectDetail = () => {
   const [projectDetail, setProjectDetail] = useState([]);

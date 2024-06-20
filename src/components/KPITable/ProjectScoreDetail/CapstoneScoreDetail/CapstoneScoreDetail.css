@@ -1,0 +1,67 @@
+/* Credit for this CSS goes to: https://css-tricks.com/responsive-data-tables/ */
+/* Responsive design for tables on smaller screens */
+@media only screen and (max-width: 760px),
+       (min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    /* Ensure table elements behave as blocks */
+    .capstone-score-table,
+    .capstone-score-table tbody,
+    .capstone-score-table th,
+    .capstone-score-table thead,
+    .capstone-score-table td,
+    .capstone-score-table tr {
+        display: block;
+    }
+
+    /* Position table header off-screen */
+    .capstone-score-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /* Style table header cells */
+    .capstone-score-table th {
+        margin-right: 50px; 
+    }
+
+    /* Add border to each table row */
+    .capstone-score-table tr {
+        border: 1px solid #ccc;
+        margin-bottom: 10px; /* Margin between table rows */
+    }
+
+    /* Style table data cells */
+    .capstone-score-table td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        padding-right: 100px; 
+   
+    }
+
+    /* Pseudo-element for labeling cells */
+    .capstone-score-table td:before {
+        top: 6px;
+        left: 100px; /* Adjust left position to move it closer to the cell content */
+        width: 90px; /* Adjust width as needed */
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    /* Label each column */
+    .capstone-score-table td:nth-of-type(1):before {
+        content: "Capstone Score Category";
+    }
+    .capstone-score-table td:nth-of-type(2):before {
+        content: "Capstone Criteria";
+    }
+    .capstone-score-table td:nth-of-type(3):before {
+        content: "Possible Points";
+    }
+    .capstone-score-table td:nth-of-type(4):before {
+        content: "Actual Points";
+    }
+    .capstone-score-table td:nth-of-type(5):before {
+        content: "Criteria Comments";
+    }
+}

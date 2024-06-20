@@ -5,3 +5,13 @@
     margin-right: 20px;
     margin-top: 20px;
 }
+
+
+@media only screen and (max-width: 768px) {
+    .dev-blog-email-image {
+      margin-left: 10px; /* Reduced margin for smaller screens */
+      margin-right: 10px; /* Reduced margin for smaller screens */
+      width: 80%; /* Full width on mobile */
+      height: 200px;
+    }
+  }

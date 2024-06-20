@@ -18,6 +18,15 @@
 
 }
 
+@media only screen and (max-width: 768px) {
+    .project-card-content {
+      min-width: 100%; /* Full width on mobile */
+      max-width: 100%; /* Full width on mobile */
+      margin-right: 5px; /* Adjust margin for mobile */
+      margin-bottom: 20px; /* Adjust margin for mobile */
+    }
+  }
+
 .project-custom-card-img {
     height: 200px; 
     border: 1px solid black;

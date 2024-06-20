@@ -36,6 +36,12 @@ body {
   padding-left: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .card-container {
+    margin-left: 0px;
+  }
+}
+
 .card-title-custom {
   font-size: 25px !important; /* Ensures this style has higher priority */
 }
@@ -44,14 +50,6 @@ body {
   font-size: 20px;
 }
 
-/* For blurb title and blurb header on pages */
-
-.blurb-header {
-  margin-left: 30px;
-  margin-top: 30px;
-  margin-bottom: 40px; 
-  padding-left: 20px;
-}
 
 
 /* For seperating header blurb of each page from data content */
@@ -88,7 +86,6 @@ body {
 }
 
 
-
 @media screen and (max-width: 768px) {
   .image-container {
       flex-direction: column; /* Stack images vertically on mobile */
@@ -105,7 +102,8 @@ body {
 /* Medium screens (tablets) */
 @media only screen and (max-width: 768px) {
   .youtube-video {
-    height: 200px;  /* Smaller height for smaller screens */
+    width: 70%;
+    height: 300px;  /* Smaller height for smaller screens */
   }
 }
 
@@ -115,14 +113,22 @@ body {
     height: 150px;  /* Even smaller height for phone screens */
   }
 }
-/* Other Media Queries */
+/* Other Media Queries
+* blurb title and header for each page
+* nav-bar formatting  
+* content top padding for mobile so the nav bar doesn't block content */
 /* Small and Medium Screens (Smartphones) */
 @media only screen and (max-width: 990px) {
   .blurb-title {
     margin-top: 20px;
     text-align: center;
   }
- 
+  .blurb-header {
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+    padding-left: 20px;
+  }
   .fixed-top {
     position: static !important;
   }
@@ -141,6 +147,13 @@ body {
     margin-top: 50px;
     text-align: center;
   }
+  .blurb-header {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 40px; 
+    padding-left: 20px;
+  }
+  
   /* to ensure that navbar is only sticky on desktop */
   .fixed-top {
     position: fixed !important;
