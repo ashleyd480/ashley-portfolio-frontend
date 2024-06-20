@@ -62,8 +62,8 @@ const NavBar = () => {
             <NavDropdown.Item as={Link} to="feedback/mentor-feedback">
               Mentor 
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="feedback/instructor-feedback">
-              Instructors 
+            <NavDropdown.Item as={Link} to="feedback/program-feedback">
+              Program
             </NavDropdown.Item>
             <NavDropdown.Item as={Link} to="feedback/manager-feedback">
               Manager

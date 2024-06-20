@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import devtoTrusted from "../../assets/dev.to-trusted.png";
+import devtoTrustedDesc from "../../assets/dev.to-trusted-desc2.png";
 import "./DevBlog.css";
 
 const DevBlog = () => {
@@ -18,7 +19,7 @@ const DevBlog = () => {
         "https://dev.to/api/articles?username=ashleyd480"
       );
       const json = await responseData.json();
-      
+
       if (json.length === 0) {
         setError("No blogs found."); // Set error message if blogs array is empty
       } else {
@@ -41,10 +42,10 @@ const DevBlog = () => {
           <a
             href="https://dev.to/ashleyd480"
             target="_blank"
-        
+            rel="noopener noreferrer"
           >
             profile
-          </a>
+          </a>{" "}
           ) and you can see my blogs below.{" "}
         </p>
         <p>
@@ -54,39 +55,52 @@ const DevBlog = () => {
           learn from bugs and setbacks.{" "}
         </p>
         <p>
-          {" "}
           In May 2024, I was selected to be a Trusted Member on Dev.To. (You can
-          read more about this program here{" "}
+          read more about this program{" "}
           <a
             href="https://dev.to/trusted-member"
             target="_blank"
+            rel="noopener noreferrer"
           >
             here
           </a>
           ){" "}
         </p>
+      </div>
+      <div className="image-container">
         <img
           src={devtoTrusted}
+        
           width="500"
           height="400"
           alt="dev.to trusted member nomination"
-          className="email-image"
+       
+          className="dev-blog-email-image"
+        />
+        <img
+          src={devtoTrustedDesc}
+          width="500"
+          height="350"
+          alt="dev.to trusted member description"
+     
+          className="dev-blog-email-image"
         />
       </div>
-      <hr className= "seperate-line"/>
+
+      <hr className="seperate-line" />
       <div className="card-container">
-  {error ?(
-    <h4 className="error-header">{error}</h4>
-  ) : (
-    blogs && (
-      <div>
-        {blogs.map((blog, index) => (
-          <BlogCard key={index} blog={blog} />
-        ))}
+        {error ? (
+          <h4 className="error-header">{error}</h4>
+        ) : (
+          blogs && (
+            <div>
+              {blogs.map((blog, index) => (
+                <BlogCard key={index} blog={blog} />
+              ))}
+            </div>
+          )
+        )}
       </div>
-    )
-  )}
-</div>
     </div>
   );
 };

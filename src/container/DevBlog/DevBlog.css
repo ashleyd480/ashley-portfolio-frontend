@@ -1,5 +1,7 @@
-.email-image {
-    border: 2px solid rgb(202, 200, 200);
+.dev-blog-email-image {
+    border: 1px solid gray;
+    margin-left: 20px;
     margin-bottom: 25px;
+    margin-right: 20px;
     margin-top: 20px;
 }

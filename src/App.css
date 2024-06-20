@@ -49,9 +49,10 @@ body {
 .blurb-header {
   margin-left: 30px;
   margin-top: 30px;
-  margin-bottom: 40px; /* Adjust spacing between the text and the content */
+  margin-bottom: 40px; 
   padding-left: 20px;
 }
+
 
 /* For seperating header blurb of each page from data content */
 
@@ -80,7 +81,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* Align items to the start */
-  border: 2px solid gray;
+  border: 1px solid gray;
   width: 100%;
   height: auto;
   object-fit: cover; /* Ensures images cover the div and maintain aspect ratio */
@@ -121,6 +122,7 @@ body {
     margin-top: 20px;
     text-align: center;
   }
+ 
   .fixed-top {
     position: static !important;
   }
@@ -135,7 +137,10 @@ body {
     margin-top: 150px;
     text-align: center;
   }
-
+  .feedback-blurb-title {
+    margin-top: 50px;
+    text-align: center;
+  }
   /* to ensure that navbar is only sticky on desktop */
   .fixed-top {
     position: fixed !important;

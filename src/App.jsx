@@ -13,7 +13,7 @@ import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores/ProjectScores";
 import SelfEval from "./container/KPIs/SelfEval";
 import Mentor from "./container/Feedback/Mentor";
-import Instructors from "./container/Feedback/Instructors";
+import Program from "./container/Feedback/Program";
 import Manager from "./container/Feedback/Manager";
 import Adhoc from "./container/Feedback/Adhoc";
 import CrowdsourceAI from "./container/Hobbies/CrowdsourceAI";
@@ -53,8 +53,8 @@ const App = () => {
           <Route path="kpis/self-eval" element={<SelfEval />} />
           <Route path="/feedback/mentor-feedback" element={<Mentor />} />
           <Route
-            path="/feedback/instructor-feedback"
-            element={<Instructors />}
+            path="/feedback/program-feedback"
+            element={<Program />}
           />
           <Route path="/feedback/manager-feedback" element={<Manager />} />
           <Route path="/feedback/adhoc-feedback" element={<Adhoc />} />
