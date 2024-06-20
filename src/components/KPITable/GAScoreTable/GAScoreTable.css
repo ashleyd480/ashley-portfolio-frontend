@@ -1,0 +1,50 @@
+/* Credit fot th9s css goes to: https://css-tricks.com/responsive-data-tables/ */
+/* This allows the larger table to be mobile responsive */
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+    
+    /* Set all parts of the table (table, thead, tbody, th, td, tr) to block display */
+    .ga-score-table, .ga-score-table thead, .ga-score-table tbody, .ga-score-table th, .ga-score-table td, .ga-score-table tr { 
+        display: block; 
+    }
+    
+    /* Hide the table header row */
+    .ga-score-table thead tr {
+        position: absolute; /* Position it absolutely */
+        top: -9999px; /* Move it off the screen */
+        left: -9999px; /* Move it off the screen */
+    }
+    
+    /* Add a border around each table row */
+    .ga-score-table tr { 
+        border: 1px solid #ccc; 
+    }
+    
+    /* Style the table cells */
+    .ga-score-table td { 
+        border: none; /* Remove default borders */
+        border-bottom: 1px solid #eee; /* Add a bottom border */
+        position: relative; /* Position it relative for the :before pseudo-element */
+        padding-left: 50%; /* Add left padding to make space for the pseudo-element */
+    }
+    
+    /* Style the pseudo-element for each table cell */
+    .ga-score-table td:before { 
+        position: absolute; /* Position it absolutely within the cell */
+        top: 6px; /* Position it from the top */
+        left: 6px; /* Position it from the left */
+        width: 45%; /* Set its width */
+        padding-right: 10px; /* Add right padding */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+    
+    /* Define the content of the pseudo-elements for each column */
+    .ga-score-table td:nth-of-type(1):before { content: "Week"; }
+    .ga-score-table td:nth-of-type(2):before { content: "Week Of"; }
+    .ga-score-table td:nth-of-type(3):before { content: "Topic"; }
+    .ga-score-table td:nth-of-type(4):before { content: "GA Score"; }
+    .ga-score-table td:nth-of-type(5):before { content: "GA Comments"; }
+    .ga-score-table td:nth-of-type(6):before { content: "Mentor Score"; }
+    .ga-score-table td:nth-of-type(7):before { content: "Mentor Comments"; }
+
+}

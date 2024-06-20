@@ -1,0 +1,14 @@
+.welcome-image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: 100%; /* Take full width of the container */
+  }
+
+  .welcome-image-container img {
+    max-width: 100%; /* Make image width responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; 
+    margin-bottom: 20px;
+
+  }

@@ -45,7 +45,9 @@ const Projects = () => {
       {error ? (
         <div className= "error-container">
             <h4 className="error-header">{error}</h4>
-        <ExcelDownloadLink />
+            <h4>
+      Please visit my github  <a href="https://github.com/ashleyd480" target="_blank">profile</a> here instead for details.
+    </h4>
       </div>
       ) : (
         projectData &&

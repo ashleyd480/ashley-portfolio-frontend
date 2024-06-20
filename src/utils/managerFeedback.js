@@ -3,6 +3,7 @@ import manager2 from "../assets/feedback-images/manager-feedback/manager-2.png";
 import manager3 from "../assets/feedback-images/manager-feedback/manager-3.png";
 import manager4 from "../assets/feedback-images/manager-feedback/manager-4.png";
 import manager5 from "../assets/feedback-images/manager-feedback/manager-5.png";
+import manager6 from "../assets/feedback-images/manager-feedback/manager-6.png";
 
 export const managerFeedback = [
   {
@@ -32,7 +33,7 @@ export const managerFeedback = [
   },
   {
     imageCategory: 'manager-feedback',
-    src: manager5,
+    src: manager6,
     alt: 'manager positive feedback 6'
   }
 ];

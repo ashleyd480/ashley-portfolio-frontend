@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import BlogCard from "../../components/BlogCard/BlogCard";
 import devtoTrusted from "../../assets/dev.to-trusted.png";
-import devtoTrustedDesc from "../../assets/dev.to-trusted-desc2.png";
+import devtoTrustedDesc from "../../assets/dev.to-trusted-desc.png";
 import "./DevBlog.css";
 
 const DevBlog = () => {
@@ -31,6 +31,8 @@ const DevBlog = () => {
       setError("Error fetching blogs. Please try again later."); // Set error message for fetch error
     }
   };
+
+  // added error handling for if no blogs returned or if error for API call
   return (
     <div>
       <h2 className="blurb-title">My Dev To Blogs</h2>
@@ -42,7 +44,6 @@ const DevBlog = () => {
           <a
             href="https://dev.to/ashleyd480"
             target="_blank"
-            rel="noopener noreferrer"
           >
             profile
           </a>{" "}
@@ -57,11 +58,7 @@ const DevBlog = () => {
         <p>
           In May 2024, I was selected to be a Trusted Member on Dev.To. (You can
           read more about this program{" "}
-          <a
-            href="https://dev.to/trusted-member"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://dev.to/trusted-member" target="_blank">
             here
           </a>
           ){" "}
@@ -70,19 +67,16 @@ const DevBlog = () => {
       <div className="image-container">
         <img
           src={devtoTrusted}
-        
           width="500"
           height="400"
           alt="dev.to trusted member nomination"
-       
           className="dev-blog-email-image"
         />
         <img
           src={devtoTrustedDesc}
           width="500"
-          height="350"
+          height="340"
           alt="dev.to trusted member description"
-     
           className="dev-blog-email-image"
         />
       </div>
