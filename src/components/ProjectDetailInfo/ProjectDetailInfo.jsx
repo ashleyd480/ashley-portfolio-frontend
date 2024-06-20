@@ -1,4 +1,5 @@
 import Stack from "react-bootstrap/Stack";
+import "./ProjectDetailInfo.css";
 
 const ProjectDetailInfo = ({ project }) => {
   console.log(project);
@@ -7,32 +8,38 @@ const ProjectDetailInfo = ({ project }) => {
     <>
       <Stack gap={3}>
         <div className="p-2">
-          <img src={project.projectHeaderImage} alt={project.projectName}></img>
-          <br></br>
-          <br></br>
+          <div className="project-image-container">
+            <img
+              src={project.projectHeaderImage}
+              alt={project.projectName}
+              className="project-image"
+            />
+          </div>
+          <hr className="seperate-line" />
           <p>
             {" "}
             <strong> Date Completed: </strong> {project.dateCompleted}{" "}
           </p>
           <p>
             {" "}
-        
             <strong>Skills: </strong>{" "}
-            {project.skills && project.skills.map(skill => skill.skillName).join(', ')}
+            {project.skills &&
+              project.skills.map((skill) => skill.skillName).join(", ")}
           </p>
         </div>
-              <div className="p-2">
-              <strong> Overview: </strong>{" "}
-                  <p>{project.projectBlurb}</p>{" "}
-                  <strong> User Experience: </strong>{" "}
-                  <p>{project.projectUX}</p>{" "}
+        <hr className="seperate-line" />
+        <div className="p-2">
+          <strong> Overview: </strong> <p>{project.projectBlurb}</p>{" "}
+          <strong> User Experience: </strong> <p>{project.projectUX}</p>{" "}
         </div>
         <div className="p-2">
-        <p> <strong> Demo: </strong>{" "} </p>
-       
+          <p>
+            {" "}
+            <strong> Demo: </strong>{" "}
+          </p>
+
           <iframe
-            width="560"
-            height="315"
+            className="youtube-video"
             src={project.projectVideo}
             title={project.projectName}
             frameBorder="0"

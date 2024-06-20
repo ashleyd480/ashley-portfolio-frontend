@@ -1,5 +1,4 @@
 
-// src/utils/adhocFeedback.js
 
 import peer1 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer1.png";
 import peer2 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer2.png";
@@ -83,73 +82,3 @@ export const adhocFeedback = [
   }
 ];
 
-
-// export const adhocFeedback = [
-//     {
-//       imageCategory: 'peer-feedback',
-      
-//       src: peer1,
-//       alt: 'peer-feedback positive feedback 1'
-//     },
-//     {
-//       imageCategory: 'peer-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/peer-feedback/peer-2.png',
-//       alt: 'peer-feedback positive feedback 2'
-//     },
-//     {
-//       imageCategory: 'peer-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/peer-feedback/peer-3.png',
-//       alt: 'peer-feedback positive feedback 3'
-//     },
-//     {
-//       imageCategory: 'peer-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/peer-feedback/peer-4.png',
-//       alt: 'peer-feedback positive feedback 4'
-//     },
-//     {
-//       imageCategory: 'peer-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/peer-feedback/peer-5.png',
-//       alt: 'peer-feedback positive feedback 5'
-//     },
-//     {
-//       imageCategory: 'peer-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/peer-feedback/peer-6.png',
-//       alt: 'peer-feedback positive feedback 6'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-1.png',
-//       alt: 'team-feedback positive feedback 1'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-2.png',
-//       alt: 'team-feedback positive feedback 2'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-3.png',
-//       alt: 'team-feedback positive feedback 3'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-4.png',
-//       alt: 'team-feedback positive feedback 4'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-5.png',
-//       alt: 'team-feedback positive feedback 5'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-6.png',
-//       alt: 'team-feedback positive feedback 6'
-//     },
-//     {
-//       imageCategory: 'team-feedback',
-//       src: 'src/assets/feedback-images/adhoc-feedback/team-feedback/team-7.png',
-//       alt: 'team-feedback positive feedback 7'
-//     }
-// ];
-  

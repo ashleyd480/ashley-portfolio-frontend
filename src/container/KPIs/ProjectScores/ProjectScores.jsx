@@ -38,7 +38,7 @@ const ProjectScores = () => {
           the overall instructor comment and a link to see the full scores.{" "}
         </p>
       </div>
-      <hr />
+      <hr className="seperate-line" />
       <div className="overview-container">
         {error ? (
           <div className="error-container">

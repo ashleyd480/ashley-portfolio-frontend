@@ -34,8 +34,8 @@ const CapstoneScore = () => {
       <div className="blurb-header">
         <p>Below are the details of my capstone scores.</p>
         <p>
-          You may find the full capstone demo recording along with live video feedback
-          following the capstone detail score table.{" "}
+          You may find the full capstone demo recording along with live video
+          feedback following the capstone detail score table.{" "}
         </p>
         <hr className="seperate-line" />
         <div className="score-table">
@@ -51,7 +51,8 @@ const CapstoneScore = () => {
           )}
         </div>
       </div>
-      <hr />
+      <hr className="seperate-line" />
+
       <h2 className="capstone-video-title">Capstone Live Presentation</h2>
       <div className="blurb-header">
         <p>
@@ -65,8 +66,7 @@ const CapstoneScore = () => {
           .
         </p>
         <iframe
-          width="560"
-          height="315"
+          className="youtube-video"
           src="https://www.youtube.com/embed/rflr2XKJkzg?si=h_KhPVMirq-_q-hz"
           title="YouTube video player"
           frameBorder="0"

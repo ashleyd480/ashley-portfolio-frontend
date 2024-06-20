@@ -14,6 +14,13 @@ const Adhoc = () => {
          
       <h2 className="blurb-title">Adhoc Feedback Images</h2>
 
+      <p>
+          {" "}
+          Here is a gallery of some feedback that I have recieved from teammates as well as peers outside of the Boost team.{" "}
+        </p>
+
+      <hr className= "seperate-line"/>
+
       {/* Peer Feedback Images */}
      
       <h2 className="blurb-title">Peer Feedback</h2>
@@ -30,6 +37,8 @@ const Adhoc = () => {
           </div>
         ))}
       </div>
+
+      <hr className= "seperate-line"/>
 
       {/* Team Feedback Images */}
 
