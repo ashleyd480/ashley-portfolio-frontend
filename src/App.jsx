@@ -7,11 +7,11 @@ import TheWhy from "./container/About/TheWhy";
 import Experience from "./container/About/Experience";
 import Projects from "./container/Work/Projects/Projects";
 import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
-import Teachbacks from "./container/Work/Teachbacks";
+import Teachbacks from "./container/Work/Teachbacks/Teachback";
 import DevBlog from "./container/DevBlog/DevBlog";
 import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores/ProjectScores";
-import SelfEval from "./container/KPIs/SelfEval";
+import SelfEval from "./container/KPIs/SelfEval/SelfEval";
 import Mentor from "./container/Feedback/Mentor";
 import Program from "./container/Feedback/Program";
 import Manager from "./container/Feedback/Manager";
@@ -19,9 +19,9 @@ import Adhoc from "./container/Feedback/Adhoc";
 import CrowdsourceAI from "./container/Hobbies/CrowdsourceAI";
 import GoogleMaps from "./container/Hobbies/GoogleMaps";
 import "./App.css";
-import CapstoneScore from "./container/KPIs/ScoreDetail/CapstoneScore/CapstoneScore";
-import LeagueAppScore from "./container/KPIs/ScoreDetail/LeagueAppScore/LeagueAppScore";
-import SpringBackendScore from "./container/KPIs/ScoreDetail/SpringBackendScore/SpringBackendScore";
+import CapstoneScore from "./container/KPIs/ProjectScoreDetail/CapstoneScore/CapstoneScore";
+import LeagueAppScore from "./container/KPIs/ProjectScoreDetail/LeagueAppScore/LeagueAppScore";
+import SpringBackendScore from "./container/KPIs/ProjectScoreDetail/SpringBackendScore/SpringBackendScore";
 
 const App = () => {
   return (

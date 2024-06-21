@@ -1,8 +1,8 @@
 import { Table } from "react-bootstrap";
-import "./CapstoneScoreDetail.css"
+import "./CapstoneScoreTable.css"
 import "../../KPITable.css"
 
-const CapstoneScoreDetail = ({ capstoneScore }) => {
+const CapstoneScoreTable = ({ capstoneScore }) => {
 
     return (
     
@@ -32,4 +32,4 @@ const CapstoneScoreDetail = ({ capstoneScore }) => {
     );
   
 }
-  export default CapstoneScoreDetail;
+  export default CapstoneScoreTable;

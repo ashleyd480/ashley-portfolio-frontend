@@ -1,6 +1,6 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
-import CapstoneScoreDetail from "../../../../components/KPITable/ProjectScoreDetail/CapstoneScoreDetail/CapstoneScoreDetail";
+import CapstoneScoreTable from "../../../../components/KPITable/ProjectScoreTable/CapstoneScoreTable/CapstoneScoreTable";
 import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
 import "./CapstoneScore.css";
 
@@ -46,7 +46,7 @@ const CapstoneScore = () => {
             </div>
           ) : (
             capstoneScore && (
-              <CapstoneScoreDetail capstoneScore={capstoneScore} />
+              <CapstoneScoreTable capstoneScore={capstoneScore} />
             )
           )}
         </div>

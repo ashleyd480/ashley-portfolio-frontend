@@ -1,21 +1,22 @@
+
 import { Table } from "react-bootstrap";
 import "../../KPITable.css"
 
-const LeagueAppScoreDetail = ({ leagueAppScore }) => {
+const SpringBackendScoreTable = ({springBackendScore}) => {
 
     return (
         <Table striped bordered hover>
         <thead>
           <tr>
             <th>Criteria</th>
-            <th>Feedback</th>
+            <th>Score</th>
           </tr>
         </thead>
         <tbody>
-          {leagueAppScore.map((score, index) => (
+          {springBackendScore.map((score, index) => (
             <tr key={index}>
-              <td>{score.leagueAppCriteria}</td>
-              <td>{score.leagueAppFeedback}</td>
+              <td>{score.springBackendCriteria}</td>
+              <td>{score.springBackendScore}</td>
             </tr>
           ))}
         </tbody>
@@ -23,4 +24,4 @@ const LeagueAppScoreDetail = ({ leagueAppScore }) => {
     );
   
 }
-  export default LeagueAppScoreDetail;
+export default SpringBackendScoreTable;

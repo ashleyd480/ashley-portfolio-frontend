@@ -1,7 +1,8 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
-import SpringBackendScoreDetail from "../../../../components/KPITable/ProjectScoreDetail/SpringBackendScoreDetail/SpringBackendScoreDetail";
+import SpringBackendScoreTable from "../../../../components/KPITable/ProjectScoreTable/SpringBackendScoreTable/SpringBackendScoreTable";
 import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
+
 const SpringBackendScore = () => {
   const [springBackendScore, setSpringBackendScore] = useState([]);
   const [error, setError] = useState("");
@@ -43,7 +44,7 @@ const SpringBackendScore = () => {
             </div>
           ) : (
             springBackendScore && (
-              <SpringBackendScoreDetail
+              <SpringBackendScoreTable
                 springBackendScore={springBackendScore}
               />
             )

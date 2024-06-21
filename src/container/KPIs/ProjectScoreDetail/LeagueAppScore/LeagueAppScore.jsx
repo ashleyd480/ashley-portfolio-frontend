@@ -1,6 +1,6 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
-import LeagueAppScoreDetail from "../../../../components/KPITable/ProjectScoreDetail/LeagueAppScoreDetail/LeagueAppScoreDetail";
+import LeagueAppScoreTable from "../../../../components/KPITable/ProjectScoreTable/LeagueAppScoreTable/LeagueAppScoreTable";
 import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
 
 const LeagueAppScore = () => {
@@ -50,7 +50,7 @@ const LeagueAppScore = () => {
             </div>
           ) : (
             leagueAppScore && (
-              <LeagueAppScoreDetail leagueAppScore={leagueAppScore} />
+              <LeagueAppScoreTable leagueAppScore={leagueAppScore} />
             )
           )}
         </div>
