@@ -28,7 +28,7 @@ const GAScores = () => {
   return (
     <>
       <h2 className="blurb-title">GA Scores </h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
           {" "}
           Below are my General Assembly Scores for our instructional 15 weeks of

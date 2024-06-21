@@ -1,6 +1,5 @@
 import { Card, ListGroup, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./ProjectCard.css";
 
 const ProjectCard = ({ project }) => {
   return (

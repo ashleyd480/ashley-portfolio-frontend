@@ -1,6 +1,7 @@
 import { programFeedback } from '../../utils/programFeedback';
+import ImageMap from '../../components/FeedbackImageMap/FeedbackImageMap'; // Import the ImageMap component
 
-const Program= () => {
+const Program = () => {
   // Filter images by category
   const teacherFeedbackImages = programFeedback.filter(image => image.imageCategory === 'teacher-feedback');
   const capstoneFeedbackImages = programFeedback.filter(image => image.imageCategory === 'capstone-feedback');
@@ -9,69 +10,40 @@ const Program= () => {
   return (
     <div>
       <h2 className="blurb-title">Program Feedback Images</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
           Here is a gallery of some feedback that I have received during the first phase of the BOOST program, when we did the 4 month long bootcamp.
-              </p>
-              Attached are screenshots of:
-              <ul>
-                  <li> Teacher Feedback </li>
-                  <li> Capstone Feedback </li>
-                  <li> Other Project Feedback </li>
-              </ul>
+        </p>
+        Attached are screenshots of:
+        <ul>
+          <li> teacher feedback </li>
+          <li> capstone feedback </li>
+          <li> other project feedback </li>
+        </ul>
         <p>
-        Though the bootcamp was tough, the supportive teachers and peers meant so much. Cheering each other on, we made it togeher through the first leg of our journey. 
+          Though the bootcamp was tough, the supportive teachers and peers meant so much. Cheering each other on, we made it together through the first leg of our journey. 🧡
         </p>
       </div>
 
-      <hr className="seperate-line" />
+      <hr className="separate-line" />
 
       {/* Teacher Feedback Images */}
       <h2 className="feedback-blurb-title">Teacher Feedback</h2>
-      <div className="image-container blurb-header">
-        {teacherFeedbackImages.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="image-item"
-            />
-          </div>
-        ))}
-      </div>
+      <ImageMap images={teacherFeedbackImages} />
 
-      <hr className="seperate-line"/>
+      <hr className="separate-line"/>
 
       {/* Capstone Feedback Images */}
       <h2 className="feedback-blurb-title">Capstone Feedback</h2>
-      <div className="image-container blurb-header">
-        {capstoneFeedbackImages.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="image-item"
-            />
-          </div>
-        ))}
-      </div>
+      <ImageMap images={capstoneFeedbackImages} />
 
-      <hr className="seperate-line"/>
+      <hr className="separate-line"/>
 
       {/* Project Feedback Images */}
       <h2 className="feedback-blurb-title">Other Project Feedback</h2>
-      <div className="image-container blurb-header">
-        {projectFeedbackImages.map((image, index) => (
-          <div key={index}>
-            <img
-              src={image.src}
-              alt={image.alt}
-              className="image-item"
-            />
-          </div>
-        ))}
-      </div>
+      <ImageMap images={projectFeedbackImages} />
     </div>
   );
 }
-  export default Program;
+
+export default Program;

@@ -37,7 +37,7 @@ const ProjectDetail = () => {
   return (
     <div>
       <h2 className="blurb-title"> {projectDetail.projectName}</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         {error ? (
           <>
             <h4 className="error-header">{error}</h4>

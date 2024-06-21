@@ -1,5 +1,6 @@
 import { Table } from 'react-bootstrap';
 import "./GAScoreTable.css"
+import "../KPITable.css"
 
 const GAScoreTable = ({ gaScores }) => {
 

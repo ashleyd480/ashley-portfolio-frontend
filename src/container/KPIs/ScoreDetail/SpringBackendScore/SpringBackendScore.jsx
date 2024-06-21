@@ -31,7 +31,7 @@ const SpringBackendScore = () => {
   return (
     <>
       <h2 className="blurb-title">Spring Backend Score</h2>
-      <div className="blurb-header">
+      <div className= "blurb-section">
         <p>Below are the details of my Spring backend scores.</p>
 
         <hr className="separate-line" />

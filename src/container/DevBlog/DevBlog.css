@@ -6,12 +6,43 @@
     margin-top: 20px;
 }
 
+/* For my images */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; 
+    justify-content: center; 
+    padding: 10px;
+  }
+  
+  .image-item {
+    flex: 1 1 calc(50% - 20px); /* Flex item to take up 50% of container width minus the gap */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    border: 1px solid gray;
+    width: 100%;
+    height: auto;
+    /* object-fit: cover;  */
+    /* Ensures images cover the div and maintain aspect ratio */
+  }
+
+
+
 
 @media only screen and (max-width: 768px) {
     .dev-blog-email-image {
-      margin-left: 10px; /* Reduced margin for smaller screens */
-      margin-right: 10px; /* Reduced margin for smaller screens */
-      width: 80%; /* Full width on mobile */
-      height: 200px;
+      margin-left: 2px;
+       /* Reduced margin for smaller screens */
+      margin-right: 10px; 
+      /* Reduced margin for smaller screens */
+      width: 100%; /* Full width on mobile */
+      height: auto;
     }
+    .image-container {
+        flex-direction: column; /*images stacked in mobile*/ 
+    }
+
   }
+
+

@@ -31,7 +31,7 @@ const CapstoneScore = () => {
   return (
     <>
       <h2 className="blurb-title">Capstone Score</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>Below are the details of my capstone scores.</p>
         <p>
           You may find the full capstone demo recording along with live video
@@ -54,7 +54,7 @@ const CapstoneScore = () => {
       <hr className="seperate-line" />
 
       <h2 className="capstone-video-title">Capstone Live Presentation</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
           You may hear teacher feedback and Q&A starting at{" "}
           <a

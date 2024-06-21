@@ -1,5 +1,7 @@
 
 import { Table } from "react-bootstrap";
+import "../../KPITable.css"
+
 const SpringBackendScoreDetail = ({springBackendScore}) => {
 
     return (

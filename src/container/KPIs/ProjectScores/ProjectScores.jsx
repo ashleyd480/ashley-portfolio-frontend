@@ -1,6 +1,6 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
-import ProjectScoreOverviewCard from "../../../components/KPITable/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
+import ProjectScoreOverviewCard from "../../../components/Card/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
 import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
 import "./ProjectScores.css";
 
@@ -31,7 +31,7 @@ const ProjectScores = () => {
   return (
     <>
       <h2 className="blurb-title">Project Scores </h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
           {" "}
           Below are the projects we worked on in General Assembly, along with

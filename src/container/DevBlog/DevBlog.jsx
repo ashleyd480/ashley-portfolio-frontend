@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import BlogCard from "../../components/BlogCard/BlogCard";
+import BlogCard from "../../components/Card/BlogCard/BlogCard";
 import devtoTrusted from "../../assets/dev.to-trusted.png";
 import devtoTrustedDesc from "../../assets/dev.to-trusted-desc.png";
 import "./DevBlog.css";
@@ -75,7 +75,7 @@ const DevBlog = () => {
         <img
           src={devtoTrustedDesc}
           width="500"
-          height="340"
+          height="300"
           alt="dev.to trusted member description"
           className="dev-blog-email-image"
         />

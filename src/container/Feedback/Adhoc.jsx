@@ -1,4 +1,5 @@
 import { adhocFeedback } from "../../utils/adhocFeedback";
+import ImageMap from "../../components/FeedbackImageMap/FeedbackImageMap";
 
 const Adhoc = () => {
   const peerFeedbackImages = adhocFeedback.filter(
@@ -11,9 +12,9 @@ const Adhoc = () => {
   return (
     <div>
       <h2 className="blurb-title">Adhoc Feedback Images</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
-          Here is a gallery that shows a preview of feedback that I have recieved from teammates
+          Here is a gallery that shows a preview of adhoc feedback that I have received from teammates
           as well as peers outside of the Boost team. Since my time at Indeed, I
           have kept a running Google Doc of positive feedback received. I
           treasure these kind words as they have brought me innumerable smiles,
@@ -21,42 +22,23 @@ const Adhoc = () => {
           see mistakes in myself.
         </p>
         <p>
-          That is why I enjoy writing Indeed feedback for others too,
-          celebrating wins small and big. Sometimes even the simplest of words
+          Sometimes even the simplest of words
           can bring the greatest joy to others. Thank you Indeedians for
-          bringing such a supportive and warm environment.
+          bringing such a supportive and warm environment. These kind words below are dated to the start of the BOOST program and onwards. 🧡
         </p>
       </div>
 
-      <hr className="seperate-line" />
-
+      <hr className="separate-line" />
 
       {/* Peer Feedback Images */}
-
       <h2 className="feedback-blurb-title">Peer Feedback</h2>
+      <ImageMap images={peerFeedbackImages} />
 
-      <div className="image-container blurb-header">
-        {peerFeedbackImages.map((image, index) => (
-          <div key={index}>
-            <img src={image.src} alt={image.alt} className="image-item" />
-            {console.log(image.src)}
-          </div>
-        ))}
-      </div>
-
-      <hr className="seperate-line" />
+      <hr className="separate-line" />
 
       {/* Team Feedback Images */}
-
       <h2 className="feedback-blurb-title">Team Feedback</h2>
-
-      <div className="image-container blurb-header">
-        {teamFeedbackImages.map((image, index) => (
-          <div key={index}>
-            <img src={image.src} alt={image.alt} className="image-item" />
-          </div>
-        ))}
-      </div>
+      <ImageMap images={teamFeedbackImages} />
     </div>
   );
 };

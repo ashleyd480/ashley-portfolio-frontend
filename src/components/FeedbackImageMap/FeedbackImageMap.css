@@ -1,0 +1,65 @@
+/* ----- FEEDBACK IMAGE FORMATTING */
+
+
+/* For the image container */
+.feedback-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Gap between images */
+    padding: 10px;
+    justify-content: center; 
+    /* Centers the images within the container */
+    align-items: stretch; /* Ensures the bottom of each row aligns */
+  }
+  
+  /* For the image wrapper */
+  .feedback-image-container > div {
+    flex: 1 1 calc(50% - 20px); /* Flex item to take up 50% of container width minus the gap */
+    display: flex;
+   align-items: center; 
+   height: 100%; /* Ensures each image wrapper stretches to align items at the bottom */
+
+   /* justify-content: center; */
+  }
+  
+  /* For the image itself */
+  .feedback-image-item {
+    width: 400px; /* Ensures the image takes up the full width of its container */
+    height: auto; /* Allows the height to adjust based on the width to maintain aspect ratio */
+    border: 1px solid gray; 
+  }
+  
+
+
+  /* ----- MEDIA QUERY FOR 
+  * FITTING MORE IMAGES ON LARGER SCREENS
+  * FEEDBACK BLURB TITLE MARGIN
+  /* Medium and Large Devices: (768px and up) */
+
+@media (min-width: 768px) {
+    .feedback-image-container > div {
+      flex: 1 1 calc(33.33% - 20px); /* 3 images per row */
+    }
+    .feedback-blurb-title {
+        margin-top: 50px;
+        text-align: center;
+      }
+  }
+
+  /* Mobile devices: Stack images vertically on mobile/ */
+
+@media screen and (max-width: 768px) {
+    .feedback-image-container {
+        flex-direction: column; 
+    }
+   
+      .feedback-image-item {
+        width: 100%; /* Ensures the image takes up the full width of its container */
+        margin-left: -5px;    
+      }
+    .feedback-blurb-title {
+        margin-top: 20px;
+        text-align: center;
+      }
+    
+  }

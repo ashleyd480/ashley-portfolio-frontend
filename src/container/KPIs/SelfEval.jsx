@@ -2,7 +2,7 @@ const SelfEval = () => {
   return (
     <div>
       <h2 className="blurb-title">Self Eval</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
           Here are links to my self evals.
         </p>
@@ -17,7 +17,7 @@ const SelfEval = () => {
 
       <h2 className="blurb-title">Formal Indeed Feedback</h2>
     
-      <div className="blurb-header">
+      <div className="blurb-section">
       <p>
           Here are links to my formal Indeed Feedback received.
       </p>

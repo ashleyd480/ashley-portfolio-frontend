@@ -1,10 +1,10 @@
-
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:active {
   text-decoration: underline; /* Apply underline on hover and click */
 }
 
 
+/* ----- FONT SIZE AND FORMAT */
 /* Small Screens (Smartphones) */
 @media only screen and (max-width: 600px) {
   .navbar-nav .nav-link,
@@ -13,23 +13,32 @@
   }
 }
 
+/* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */
+@media only screen and (min-width: 601px) {
+  .navbar-nav {
+    width: 85%;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .navbar-nav .dropdown-menu .dropdown-item,
+  .navbar-nav .nav-link,
+  .navbar-nav .nav-item {
+    font-size: 20px;
+  }
+}
 
-    /* Medium Screens (Tablets) and Large Screens (Desktops and Laptops) */ 
-@media only screen and (min-width: 601px)  {
-  
-      .navbar-nav {
-        width: 85%;
-        justify-content: space-between;
-        font-size: 20px;
-      }
-      .navbar-nav .dropdown-menu .dropdown-item,
-        .navbar-nav .nav-link,
-        .navbar-nav .nav-item {
-          font-size: 20px;
+/* ----- NAV BAR STICKINESS */
 
-      }
-    }
+@media only screen and (max-width: 990px) {
+  .fixed-top {
+    position: static !important;
+  }
+}
 
-
-
-  
+/* Large Screens (Desktops and Laptops) */
+@media only screen and (min-width: 991px) {
+  /* to ensure that navbar is only sticky on desktop */
+  .fixed-top {
+    position: fixed !important;
+  }
+}

@@ -32,7 +32,7 @@ const LeagueAppScore = () => {
   return (
     <>
       <h2 className="blurb-title">League App Score</h2>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>Below are the details of my League App pair project score.</p>
         <p> Here is the grading criteria</p>
         <ul>

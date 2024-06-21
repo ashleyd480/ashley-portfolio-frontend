@@ -1,3 +1,4 @@
+/* ----- GENERAL FORMATTING */
 *,
 *::before,
 *::after {
@@ -8,6 +9,14 @@ body {
   height: 100vh;
 }
 
+
+/* For seperating header blurb of each page from data content */
+
+.seperate-line {
+  margin-bottom: 40px;
+}
+
+/* ----- ERROR MESSAGE FORMATTING */
 /* For rendering error messages should API call fail*/
 .error-header {
   text-align: center;
@@ -24,7 +33,9 @@ body {
   align-self: center;
 }
 
-/* For my project and blog cards*/
+/* ----- CARD CONTAINER FORMATTING */
+/* For my project and blog cards
+* shared formatting for the container */
 
 .card-container {
   margin-left: 20px;
@@ -50,47 +61,7 @@ body {
   font-size: 20px;
 }
 
-
-
-/* For seperating header blurb of each page from data content */
-
-.seperate-line {
-  margin-bottom: 40px;
-}
-
-/* For my score tables */
-
-.score-table {
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-right: 20px;
-}
-
-/* For my images */
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 50px; 
-  padding: 10px;
-}
-
-.image-item {
-  flex: 1 1 calc(50% - 20px); /* Flex item to take up 50% of container width minus the gap */
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the start */
-  border: 1px solid gray;
-  width: 100%;
-  height: auto;
-  object-fit: cover; /* Ensures images cover the div and maintain aspect ratio */
-}
-
-
-@media screen and (max-width: 768px) {
-  .image-container {
-      flex-direction: column; /* Stack images vertically on mobile */
-  }
-}
+/* ----- VIDEO FORMATTING */
 
 /* For my Youtube Videos */
 
@@ -113,29 +84,38 @@ body {
     height: 150px;  /* Even smaller height for phone screens */
   }
 }
-/* Other Media Queries
-* blurb title and header for each page + feedback blurb titles
-* nav-bar formatting  
+
+/* ----- OTHER MEDIA QUERIES 
+* blurb title and section for each page 
 * content top padding for mobile so the nav bar doesn't block content */
-/* Small and Medium Screens (Smartphones) */
-@media only screen and (max-width: 990px) {
+
+
+.blurb-section {
+  margin-top: 30px;
+  margin-bottom: 40px; 
+  margin-left: 30px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px)
+{
+  /* reudce margin for blurb header on mobile only */
+.blurb-section {
+  margin-top: 30px;
+  margin-bottom: 40px; 
+  margin-left: 10px; 
+  margin-right: 10px;
+}
+}
+
+/* Small and Medium Screens (Smartphones and Tablets) */
+@media screen and (max-width: 990px) {
   .blurb-title {
     margin-top: 20px;
     text-align: center;
   }
-  .feedback-blurb-title {
-    margin-top: 20px;
-    text-align: center;
-  }
-  .blurb-header {
-    margin-left: 10px;
-    margin-top: 30px;
-    margin-bottom: 40px; 
-    padding-left: 20px;
-  }
-  .fixed-top {
-    position: static !important;
-  }
+
+
   .content-padding {
     padding-top: 20px;
   }
@@ -147,19 +127,6 @@ body {
     margin-top: 150px;
     text-align: center;
   }
-  .feedback-blurb-title {
-    margin-top: 50px;
-    text-align: center;
-  }
-  .blurb-header {
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 40px; 
-    padding-left: 20px;
-  }
+
   
-  /* to ensure that navbar is only sticky on desktop */
-  .fixed-top {
-    position: fixed !important;
-  }
 }

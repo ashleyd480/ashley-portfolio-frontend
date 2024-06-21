@@ -1,4 +1,6 @@
 import { Table } from "react-bootstrap";
+import "../../KPITable.css"
+
 const LeagueAppScoreDetail = ({ leagueAppScore }) => {
 
     return (

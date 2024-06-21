@@ -1,5 +1,7 @@
 import { Table } from "react-bootstrap";
 import "./CapstoneScoreDetail.css"
+import "../../KPITable.css"
+
 const CapstoneScoreDetail = ({ capstoneScore }) => {
 
     return (

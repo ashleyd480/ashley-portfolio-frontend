@@ -1,7 +1,6 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
-import ProjectCard from "../../../components/ProjectCard/ProjectCard";
-import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ProjectCard from "../../../components/Card/ProjectCard/ProjectCard";
 
 
 const Projects = () => {
@@ -34,7 +33,7 @@ const Projects = () => {
       <div >
          
           <h2 className= "blurb-title">Projects </h2>
-          <div className="blurb-header">
+          <div className="blurb-section">
         <p> Below is a list of mini-projects and projects completed during the bootcamp (additionally including our pre-work and the capstone). </p>
         <p> Each card includes the title of the project, the data completed, project type, and skills used. (Note: Formal projects represent our three required week-long projects and our final two-week long capstone. Mini-projects are projects at a smaller scale that are worked on as homeworks. Formal and mini projects are done independently, whereas pair projects are done with a partner.) </p>
         <p> Click the link under each card to open up the project details page. </p>
@@ -46,7 +45,7 @@ const Projects = () => {
         <div className= "error-container">
             <h4 className="error-header">{error}</h4>
             <h4>
-      Please visit my github  <a href="https://github.com/ashleyd480" target="_blank">profile</a> here instead for details.
+      Please visit my github  <a href="https://github.com/ashleyd480" target="_blank">profile</a> instead for details.
     </h4>
       </div>
       ) : (

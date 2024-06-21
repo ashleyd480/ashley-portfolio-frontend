@@ -13,7 +13,7 @@ const Home = () => {
           alt="dev.to trusted member nomination"
           />
           </div>
-      <div className="blurb-header">
+      <div className="blurb-section">
         <p>
          Placeholder text: Here is a description of the site:
           </p>
