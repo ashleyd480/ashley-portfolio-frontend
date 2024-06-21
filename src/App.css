@@ -114,12 +114,16 @@ body {
   }
 }
 /* Other Media Queries
-* blurb title and header for each page
+* blurb title and header for each page + feedback blurb titles
 * nav-bar formatting  
 * content top padding for mobile so the nav bar doesn't block content */
 /* Small and Medium Screens (Smartphones) */
 @media only screen and (max-width: 990px) {
   .blurb-title {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .feedback-blurb-title {
     margin-top: 20px;
     text-align: center;
   }

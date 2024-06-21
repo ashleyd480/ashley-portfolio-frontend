@@ -2,7 +2,7 @@ const TheWho = () => {
 
     return (
     <>
-      {/* Your JSX code for  component */}
+      <h2 className="blurb-title">Section Under Construction 😊</h2>
     </>
     );
   
