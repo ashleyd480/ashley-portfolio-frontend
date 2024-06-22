@@ -4,7 +4,7 @@ import ImageMap from '../../components/FeedbackImageMap/FeedbackImageMap';
 const Manager = () => {
   return (
     <div>
-      <h2 className="blurb-title">Manager Feedback</h2>
+      <h2 className="blurb-title">Manager Feedback 🐾</h2>
       <div className="blurb-section">
         <p>
           The Boost team works diligently behind the scenes. Even prior to the
@@ -17,8 +17,8 @@ const Manager = () => {
         </p>
         Attached are screenshots manager feedback from: 
         <ul>
-          <li> Slack comments </li>
-          <li> Async meeting comments </li>
+          <li>Slack comments </li>
+          <li>Async meeting comments </li>
         </ul>
       </div>
 

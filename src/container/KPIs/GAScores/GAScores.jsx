@@ -27,7 +27,7 @@ const GAScores = () => {
 
   return (
     <>
-      <h2 className="blurb-title">GA Scores </h2>
+      <h2 className="blurb-title">GA Scores 🐾</h2>
       <div className="blurb-section">
         <p>
           {" "}
@@ -49,7 +49,7 @@ const GAScores = () => {
           initially as follows:
         </p>
         <ul>
-          <li>Blue - Excellent</li>
+          <li> Blue - Excellent</li>
           <li> Green - On Track</li>
           <li> Yellow - Light Concerns</li>
           <li> Red- A Little Behind</li>

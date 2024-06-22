@@ -35,18 +35,18 @@ const DevBlog = () => {
   // added error handling for if no blogs returned or if error for API call
   return (
     <div>
-      <h2 className="blurb-title">My Dev To Blogs</h2>
-      <div className="blurb-header">
+      <h2 className="blurb-title">My Dev To Blogs 🐾</h2>
+      <div className="blurb-section">
         <p>
           {" "}
           I blog about my learnings from debugging, project retros, as well as
-          write about concepts learned. (Here is a link to my{" "}
+          write about concepts learned. ✍ (Here is a link to my{" "}
           <a
             href="https://dev.to/ashleyd480"
             target="_blank"
           >
             profile
-          </a>{" "}
+          </a>
           ) and you can see my blogs below.{" "}
         </p>
         <p>

@@ -9,16 +9,16 @@ const Program = () => {
 
   return (
     <div>
-      <h2 className="blurb-title">Program Feedback Images</h2>
+      <h2 className="blurb-title">Program Feedback 🐾</h2>
       <div className="blurb-section">
         <p>
           Here is a gallery of some feedback that I have received during the first phase of the BOOST program, when we did the 4 month long bootcamp.
         </p>
         Attached are screenshots of:
         <ul>
-          <li> teacher feedback </li>
-          <li> capstone feedback </li>
-          <li> other project feedback </li>
+          <li>Teacher feedback </li>
+          <li>Capstone feedback </li>
+          <li>Other project feedback </li>
         </ul>
         <p>
           Though the bootcamp was tough, the supportive teachers and peers meant so much. Cheering each other on, we made it together through the first leg of our journey. 🧡

@@ -4,19 +4,15 @@ import ImageMap from '../../components/FeedbackImageMap/FeedbackImageMap';
 const Mentor = () => {
   return (
     <div>
-      <h2 className="blurb-title">Mentor Feedback Images</h2>
+      <h2 className="blurb-title">Mentor Feedback Images 🐾</h2>
       <div className="blurb-section">
         <p>
-          I 
+          My mentor Chad  has been my candle in the water, my light in the storm. We unofficially met on Slack when I was asking question on #tech-help Slack channel for General Assembly prework, and he stood out as one of the kindest individuals. My gut was right.
+      
         </p>
-        Attached are screenshots of:
-        <ul>
-            <li> Teacher Feedback </li>
-            <li> Capstone Feedback </li>
-            <li> Other Project Feedback </li>
-        </ul>
+ 
         <p>
-        Though the bootcamp was tough, the supportive teachers and peers meant so much. Cheering each other on, we made it together through the first leg of our journey. 🧡
+        Thanks to my dear mentor for enlightening not only my mind but my heart too. Thank you for your empathy and for cheeering me on too. Below are some screenshots of positive feedback received from him: 🧡
         </p>
       </div>
 

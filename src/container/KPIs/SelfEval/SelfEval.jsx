@@ -1,7 +1,7 @@
 const SelfEval = () => {
     return (
       <div>
-        <h2 className="blurb-title">Self Eval</h2>
+        <h2 className="blurb-title">Self Eval 🐾</h2>
         <div className="blurb-section">
           <p>
             Here are links to my self evals.

@@ -30,7 +30,7 @@ const ProjectScores = () => {
 
   return (
     <>
-      <h2 className="blurb-title">Project Scores </h2>
+      <h2 className="blurb-title">Project Scores 🐾</h2>
       <div className="blurb-section">
         <p>
           {" "}

@@ -32,7 +32,7 @@ const Projects = () => {
   return (
       <div >
          
-          <h2 className= "blurb-title">Projects </h2>
+          <h2 className= "blurb-title">Projects 🐾</h2>
           <div className="blurb-section">
         <p> Below is a list of mini-projects and projects completed during the bootcamp (additionally including our pre-work and the capstone). </p>
         <p> Each card includes the title of the project, the data completed, project type, and skills used. (Note: Formal projects represent our three required week-long projects and our final two-week long capstone. Mini-projects are projects at a smaller scale that are worked on as homeworks. Formal and mini projects are done independently, whereas pair projects are done with a partner.) </p>

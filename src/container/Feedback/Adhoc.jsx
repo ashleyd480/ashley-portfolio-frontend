@@ -11,7 +11,7 @@ const Adhoc = () => {
 
   return (
     <div>
-      <h2 className="blurb-title">Adhoc Feedback Images</h2>
+      <h2 className="blurb-title">Adhoc Feedback Images 🐾</h2>
       <div className="blurb-section">
         <p>
           Here is a gallery that shows a preview of adhoc feedback that I have received from teammates
