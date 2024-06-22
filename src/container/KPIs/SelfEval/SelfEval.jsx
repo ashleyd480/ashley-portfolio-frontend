@@ -4,6 +4,10 @@ const SelfEval = () => {
 
   const Q124EvalpdfPath = '/docs/self-eval/q1-2024-self-eval.pdf';
   const Q124pdfFileName = 'q1-2024-self-eval.pdf'; 
+
+  // for self eval stuff
+  const googleDocUrl = 'https://docs.google.com/document/d/1IP82ziPF7-nVHBJmHO6dYTlXYNhS1CF97toDqSp6GYY/edit';
+
     return (
       <div>
         <h2 className="blurb-title">Self Eval 🐾</h2>
@@ -31,11 +35,13 @@ const SelfEval = () => {
       
         <div className="blurb-section">
         <p>
-            Here are links to my formal Indeed Feedback received.
+            With self evals, we also receive formal peer and leadership feedback through our Indeed Feedback system. The feedback doc is linked below:
         </p>
-        <p>
-            Placeholder text
-          </p>
+         
+        <li> <a href={googleDocUrl} target="_blank">2024-Indeed-Feedback</a> </li>
+   
+   
+          
         </div>
       </div>
     );
