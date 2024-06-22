@@ -1,7 +1,8 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import GAScoreTable from "../../../components/KPITable/GAScoreTable/GAScoreTable";
-import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ExcelDownloadLink from "../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
+
 
 const GAScores = () => {
   const [gaScores, setGaScores] = useState([]);
@@ -52,7 +53,7 @@ const GAScores = () => {
           <li> Blue - Excellent</li>
           <li> Green - On Track</li>
           <li> Yellow - Light Concerns</li>
-          <li> Red- A Little Behind</li>
+          <li> Red - A Little Behind</li>
         </ul>
 
         <p>

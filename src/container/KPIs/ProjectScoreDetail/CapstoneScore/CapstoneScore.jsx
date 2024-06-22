@@ -1,7 +1,7 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
 import CapstoneScoreTable from "../../../../components/KPITable/ProjectScoreTable/CapstoneScoreTable/CapstoneScoreTable";
-import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 import "./CapstoneScore.css";
 
 const CapstoneScore = () => {

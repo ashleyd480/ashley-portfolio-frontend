@@ -1,7 +1,7 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
 import SpringBackendScoreTable from "../../../../components/KPITable/ProjectScoreTable/SpringBackendScoreTable/SpringBackendScoreTable";
-import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 
 const SpringBackendScore = () => {
   const [springBackendScore, setSpringBackendScore] = useState([]);

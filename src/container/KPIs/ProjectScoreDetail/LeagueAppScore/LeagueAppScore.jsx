@@ -1,7 +1,7 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
 import LeagueAppScoreTable from "../../../../components/KPITable/ProjectScoreTable/LeagueAppScoreTable/LeagueAppScoreTable";
-import ExcelDownloadLink from "../../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 
 const LeagueAppScore = () => {
   const [leagueAppScore, setLeagueAppScore] = useState([]);

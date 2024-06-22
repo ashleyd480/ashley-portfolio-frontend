@@ -1,7 +1,7 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectScoreOverviewCard from "../../../components/Card/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
-import ExcelDownloadLink from "../../../components/ExcelDownloadLink/ExcelDownloadLink";
+import ExcelDownloadLink from "../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 import "./ProjectScores.css";
 
 const ProjectScores = () => {
