@@ -12,7 +12,7 @@ const Experience = () => {
             href="https://www.linkedin.com/in/ashley-d-arizona/"
             target="_blank"
           >
-            profile
+            profile 
           </a>
           . 🧐
         </p>
@@ -27,6 +27,18 @@ const Experience = () => {
           <li>Additional volunteer work</li>
           <li>And more</li>
               </ul>
+
+              <p>
+          ... and here is a link to my {" "}
+          <a
+            href="https://github.com/ashleyd480"
+            target="_blank"
+          >
+            Github
+          </a>
+          . You may also view my projects by navigating to the Projects subpage under Work in the navbar. 💻
+        </p>
+              
               
               <h2 className="secondary-blurb-title"> Indeed Highlights</h2>
 
