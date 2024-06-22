@@ -13,6 +13,7 @@ const SelfEval = () => {
           </p>
           <p>
             You may click the links to download the respective quarterly evals as pdf. As they will require a password to access, feel free to Slack me for that info. 🤗
+            ... Or you can open the console and say "Open Sesame!" 😉
           </p>
           <ul>
           <li>
@@ -26,7 +27,7 @@ const SelfEval = () => {
   
         {/* Peer Feedback Images */}
   
-        <h2 className="blurb-title">Formal Indeed Feedback</h2>
+        <h2 className="secondary-blurb-title">Formal Indeed Feedback</h2>
       
         <div className="blurb-section">
         <p>

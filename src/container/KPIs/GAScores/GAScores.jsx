@@ -1,8 +1,8 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import GAScoreTable from "../../../components/KPITable/GAScoreTable/GAScoreTable";
 import ExcelDownloadLink from "../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
-
 
 const GAScores = () => {
   const [gaScores, setGaScores] = useState([]);
@@ -36,8 +36,12 @@ const GAScores = () => {
           Bootcamp, as well as my mentor (Chad) scores.{" "}
         </p>
         <p>
-          Note, the 16th week was capstone week, so scores are under Project
-          [link here]
+          Note, the 16th week was capstone week, so scores are shown in the Capstone Project
+          Score sub-section  {" "}
+          <a href="/kpis/project-scores/capstone-score" target="_blank">
+          here
+          </a>
+          , under KPIs Project Score section in the navbar.
         </p>
         <p>
           {" "}
@@ -66,7 +70,7 @@ const GAScores = () => {
           {" "}
           In Week 8, we moved away from colors to allow for more concrete
           grading by attendance, homework completion, and engagement. I have
-          tracked at 100% for subsequent weeks.{" "}
+          tracked at 100% for subsequent weeks. 📚
         </p>
       </div>
       <hr className="seperate-line" />

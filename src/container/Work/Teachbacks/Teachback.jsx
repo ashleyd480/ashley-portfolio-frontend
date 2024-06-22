@@ -29,7 +29,7 @@ const Teachbacks = () => {
           {" "}
           Talking through it while having the code in front of me helps me to
           simulataneously visualize the code flow and think through the
-          understanding.{" "}
+          understanding.{" "} 
         </p>
         <p>
           {" "}
@@ -37,7 +37,7 @@ const Teachbacks = () => {
           homework or if I wanted to slow down and marinate on a more complex
           lecture. Sometimes I would even record one right after class to ensure
           I remembered exactly what the teacher explained and parrot it back to
-          myself.{" "}
+          myself.{" "} 🎬
         </p>
         <p>
           {" "}
@@ -46,7 +46,7 @@ const Teachbacks = () => {
           <a href="https://www.youtube.com/watch?v=xMZj8bgDpvU" target="_blank">
             one
           </a>
-          . on how to connect frontend and backend
+          on how to connect frontend and backend
         </p>
         <p>
           {" "}

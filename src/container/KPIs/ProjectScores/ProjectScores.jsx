@@ -35,7 +35,7 @@ const ProjectScores = () => {
         <p>
           {" "}
           Below are the projects we worked on in General Assembly, along with
-          the overall instructor comment and a link to see the full scores.{" "}
+          the overall instructor comment and a link to see the full scores. 🎒{" "}
         </p>
       </div>
       <hr className="seperate-line" />

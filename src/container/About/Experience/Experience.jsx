@@ -1,9 +1,8 @@
 const Experience = () => {
   return (
     <>
-          <h2 className="blurb-title"> Experience 🐾</h2>
-          <h2 className="secondary-blurb-title"> My Resume</h2>
-
+      <h2 className="blurb-title"> Experience 🐾</h2>
+      <h2 className="secondary-blurb-title"> My Resume</h2>
 
       <div className="blurb-section">
         <p>
@@ -12,7 +11,7 @@ const Experience = () => {
             href="https://www.linkedin.com/in/ashley-d-arizona/"
             target="_blank"
           >
-            profile 
+            profile
           </a>
           . 🧐
         </p>
@@ -26,26 +25,35 @@ const Experience = () => {
           <li>Work highlights under Featured</li>
           <li>Additional volunteer work</li>
           <li>And more</li>
-              </ul>
+        </ul>
 
-              <p>
-          ... and here is a link to my {" "}
-          <a
-            href="https://github.com/ashleyd480"
-            target="_blank"
-          >
+        <p>
+          ... and here is a link to my{" "}
+          <a href="https://github.com/ashleyd480" target="_blank">
             Github
           </a>
-          . You may also view my projects by navigating to the Projects subpage under Work in the navbar. 💻
+          . You may also view my projects by navigating to the Projects{" "}
+          <a href="/work/projects" target="_blank">
+            section
+          </a>{" "}
+          under Work in the navbar. 💻
         </p>
-              
-              
-              <h2 className="secondary-blurb-title"> Indeed Highlights</h2>
-
       </div>
-          <div className="blurb-section">
-              <p>Below are some highlights of my work at Indeed since I started in end of June 2018, along with the respective skillset.</p>
-              <p>I worked in client success roles, being the first line of support contact for initially SMB clients and then Mid Market clients.</p>
+
+      <hr className="separate-line" />
+
+      <h2 className="secondary-blurb-title"> Indeed Highlights</h2>
+
+      <div className="blurb-section">
+        <p>
+          {" "}
+          💙 Below are some highlights of my work at Indeed since I started in
+          end of June 2018, along with the respective skillset.
+        </p>
+        <p>
+          I worked in client success roles, being the first line of support
+          contact for initially SMB clients and then Mid Market clients.
+        </p>
 
         <h4>Customer Focus</h4>
         <ul>
