@@ -40,10 +40,7 @@
     .feedback-image-container > div {
       flex: 1 1 calc(33.33% - 20px); /* 3 images per row */
     }
-    .feedback-blurb-title {
-        margin-top: 50px;
-        text-align: center;
-      }
+   
   }
 
   /* Mobile devices: Stack images vertically on mobile/ */
@@ -57,9 +54,6 @@
         width: 100%; /* Ensures the image takes up the full width of its container */
         margin-left: -5px;    
       }
-    .feedback-blurb-title {
-        margin-top: 20px;
-        text-align: center;
-      }
+   
     
   }

@@ -17,9 +17,11 @@ const Teachbacks = () => {
   // }, []);
 
     return (
-    <>
+      <>
+         <h2 className="blurb-title">Section Under Construction 😊</h2>
        {/* <h2 className= "blurb-title">Teachbacks 🐾</h2>
           <div className="blurb-section">
+          Note to self: ensure we add error handling here, i.e if API call fail- we can render a message to have user see my actual channel
           <p> Throughout my learning, I have found being able to explain the concept back to myself to be invaluable. </p>
           <p> Talking through it while having the code in front of me helps me to simulataneously visualize the code flow and think through the understanding. </p>
           <p> Sometimes, I would record one of these right after the class to ensure I remembered exactly what the teacher explained and parrot it back to myself. </p>

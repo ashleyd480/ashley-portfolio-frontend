@@ -1,10 +1,10 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, json } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Home from "./container/Home/Home";
 import Error from "./container/Error/Error";
-import TheWho from "./container/About/TheWho";
-import TheWhy from "./container/About/TheWhy";
-import Experience from "./container/About/Experience";
+import MyStory from "./container/About/MyStory/MyStory";
+import Experience from "./container/About/Experience/Experience";
+import Hobbies from "./container/About/Hobbies/Hobbies";
 import Projects from "./container/Work/Projects/Projects";
 import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
 import Teachbacks from "./container/Work/Teachbacks/Teachback";
@@ -16,12 +16,10 @@ import Mentor from "./container/Feedback/Mentor";
 import Program from "./container/Feedback/Program";
 import Manager from "./container/Feedback/Manager";
 import Adhoc from "./container/Feedback/Adhoc";
-import CrowdsourceAI from "./container/Hobbies/CrowdsourceAI";
-import GoogleMaps from "./container/Hobbies/GoogleMaps";
-import "./App.css";
 import CapstoneScore from "./container/KPIs/ProjectScoreDetail/CapstoneScore/CapstoneScore";
 import LeagueAppScore from "./container/KPIs/ProjectScoreDetail/LeagueAppScore/LeagueAppScore";
 import SpringBackendScore from "./container/KPIs/ProjectScoreDetail/SpringBackendScore/SpringBackendScore";
+import "./App.css";
 
 const App = () => {
   return (
@@ -33,9 +31,9 @@ const App = () => {
         <>
           <Route exact path="/" element={<Home />} />
 
-          <Route path="about/the-who" element={<TheWho />} />
-          <Route path="about/the-why" element={<TheWhy />} />
+          <Route path="about/my-story" element={<MyStory />} />
           <Route path="about/experience" element={<Experience />} />
+          <Route path="about/hobbies" element={<Hobbies />} />
 
           <Route path="work/projects" element={<Projects />} />
           <Route path="work/projects/:projectId" element={<ProjectDetail />} />
@@ -58,8 +56,7 @@ const App = () => {
           />
           <Route path="/feedback/manager-feedback" element={<Manager />} />
           <Route path="/feedback/adhoc-feedback" element={<Adhoc />} />
-          <Route path="hobbies/google-maps" element={<GoogleMaps />} />
-            <Route path="hobbies/crowdsource-ai" element={<CrowdsourceAI />} />
+      
             <Route path="*" element={<Error />} />
         </>
         </Routes>

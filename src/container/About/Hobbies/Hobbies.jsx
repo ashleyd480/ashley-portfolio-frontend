@@ -1,4 +1,4 @@
-const TheWho = () => {
+const Hobbies = () => {
 
     return (
     <>
@@ -7,4 +7,4 @@ const TheWho = () => {
     );
   
 }
-  export default TheWho;
+export default Hobbies;

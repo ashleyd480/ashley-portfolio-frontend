@@ -25,14 +25,15 @@ const NavBar = () => {
             <strong>Welcome 🐾</strong>
           </Nav.Link>{" "}
           <NavDropdown title="About" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="about/the-who">
-              The Who
+            <NavDropdown.Item as={Link} to="about/my-story">
+              My Story
             </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="about/the-why">
-              The Why
-            </NavDropdown.Item>
+      
             <NavDropdown.Item as={Link} to="about/experience">
               Experience
+            </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="about/hobbies">
+              Hobbies
             </NavDropdown.Item>
           </NavDropdown>
           <NavDropdown title="Work" id="basic-nav-dropdown">
@@ -73,14 +74,7 @@ const NavBar = () => {
             </NavDropdown.Item>
         
           </NavDropdown>
-          <NavDropdown title="Hobbies" id="basic-nav-dropdown">
-            <NavDropdown.Item as={Link} to="hobbies/google-maps">
-              Google Maps
-            </NavDropdown.Item>
-            <NavDropdown.Item as={Link} to="hobbies/crowdsource-ai">
-              Crowdsource AI
-            </NavDropdown.Item>
-          </NavDropdown>
+         
         </Nav>
       </Navbar.Collapse>
     </Navbar>

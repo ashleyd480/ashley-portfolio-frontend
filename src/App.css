@@ -86,7 +86,7 @@ body {
 }
 
 /* ----- OTHER MEDIA QUERIES 
-* blurb title and section for each page 
+* blurb title (main) and secondary blurb title,  and section for each page 
 * content top padding for mobile so the nav bar doesn't block content */
 
 
@@ -97,14 +97,23 @@ body {
   margin-right: 20px;
 }
 
+.secondary-blurb-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px)
 {
-  /* reudce margin for blurb header on mobile only */
+  /* reducee margin for blurb section on mobile only */
 .blurb-section {
   margin-top: 30px;
   margin-bottom: 40px; 
   margin-left: 10px; 
   margin-right: 10px;
+}
+.secondary-blurb-title {
+  margin-top: 20px;
+  text-align: center;
 }
 }
 
@@ -122,6 +131,7 @@ body {
 }
 
 /* Large Screens (Desktops and Laptops) */
+/* I chose 991 to avoid making too high of a margin for medium devices*/
 @media only screen and (min-width: 991px) {
   .blurb-title {
     margin-top: 150px;

@@ -28,19 +28,19 @@ const Program = () => {
       <hr className="separate-line" />
 
       {/* Teacher Feedback Images */}
-      <h2 className="feedback-blurb-title">Teacher Feedback</h2>
+      <h2 className="secondary-blurb-title">Teacher Feedback</h2>
       <ImageMap images={teacherFeedbackImages} />
 
       <hr className="separate-line"/>
 
       {/* Capstone Feedback Images */}
-      <h2 className="feedback-blurb-title">Capstone Feedback</h2>
+      <h2 className="secondary-blurb-title">Capstone Feedback</h2>
       <ImageMap images={capstoneFeedbackImages} />
 
       <hr className="separate-line"/>
 
       {/* Project Feedback Images */}
-      <h2 className="feedback-blurb-title">Other Project Feedback</h2>
+      <h2 className="secondary-blurb-title">Other Project Feedback</h2>
       <ImageMap images={projectFeedbackImages} />
     </div>
   );

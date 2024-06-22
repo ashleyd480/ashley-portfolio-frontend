@@ -31,13 +31,13 @@ const Adhoc = () => {
       <hr className="separate-line" />
 
       {/* Peer Feedback Images */}
-      <h2 className="feedback-blurb-title">Peer Feedback</h2>
+      <h2 className="secondary-blurb-title">Peer Feedback</h2>
       <ImageMap images={peerFeedbackImages} />
 
       <hr className="separate-line" />
 
       {/* Team Feedback Images */}
-      <h2 className="feedback-blurb-title">Team Feedback</h2>
+      <h2 className="secondary-blurb-title">Team Feedback</h2>
       <ImageMap images={teamFeedbackImages} />
     </div>
   );
