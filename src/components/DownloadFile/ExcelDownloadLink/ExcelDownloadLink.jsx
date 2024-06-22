@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 // "When you need to provide downloadable files in your React application, it's a common practice to place these files in the public directory."
 
 const ExcelDownloadLink = () => {
-    const filePath = '/docs/self-eval/ga-score-sheet.xlsx';
+    const filePath = '/docs/ga-score-sheet.xlsx';
     const fileName = 'ga-score-sheet.xlsx';
   
   // anchor used to allow files to download when user clicks a button
