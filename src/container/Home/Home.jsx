@@ -14,7 +14,51 @@ const Home = () => {
         />
       </div>
       <div className="blurb-section">
-        <p>Placeholder text: Here is a description of the site:</p>
+        <p>Thank you for stopping by! Here's a quick tour of my page:</p>
+        <h5> About </h5>
+        <ul>
+          <li>
+            My Story: a peek into my journey, who I am, and the why behind my
+            interest in software
+          </li>
+          <li>
+            Experience: my professional work experience and highlights of
+            projects doen at Indeed
+          </li>
+          <li>
+            Hobbies: my volunteer work as a Google Maps Local Guide and Connect
+            writer, and Google AI crowdsoucer
+          </li>
+        </ul>
+        <h5> Work </h5>
+        <ul>
+          <li>
+            Projects: a list of mini-projects and projects completed during
+            bootcamp
+          </li>
+          <li>
+            Teachbacks: videos I've created to teach software content back to
+            myself and share knowledge with others
+          </li>
+          <li>
+            Dev Blog: blogs on my learning from debugging and project retros, and concepts learned
+          </li>
+        </ul>
+        <h5> KPIs </h5>
+
+        <ul>
+          <li>
+            Placeholder: to add 
+          </li>
+          
+        </ul>
+        <h5> Feedback </h5>
+        <ul>
+          <li>
+            Placeholder: to add 
+          </li>
+          
+        </ul>
       </div>
     </div>
   );

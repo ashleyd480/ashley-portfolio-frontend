@@ -46,7 +46,7 @@ const Teachbacks = () => {
           <a href="https://www.youtube.com/watch?v=xMZj8bgDpvU" target="_blank">
             one
           </a>
-          on how to connect frontend and backend
+          {" "}  on how to connect frontend and backend
         </p>
         <p>
           {" "}
