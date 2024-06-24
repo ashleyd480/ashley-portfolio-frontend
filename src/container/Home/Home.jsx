@@ -8,8 +8,8 @@ const Home = () => {
       <div className="centered-image-container">
         <img
           src={welcomeCat}
-          width="500"
-          height="400"
+          width="300"
+          height="300"
           alt="dev.to trusted member nomination"
         />
       </div>
