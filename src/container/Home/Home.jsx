@@ -48,16 +48,30 @@ const Home = () => {
 
         <ul>
           <li>
-            Placeholder: to add 
+            GA Scores: a table of my weekly bootcamp scores along with instructor and mentor comments
+          </li>
+          <li>
+            Project Scores: a list of graded bootcamp projects, with overall instructor comments and a button to see numeric scores where available 
+          </li>
+          <li>
+            Self Eval: links to my self evals since 2024 and a link to year-to-date formal Indeed Feedback received
           </li>
           
         </ul>
         <h5> Feedback </h5>
         <ul>
           <li>
-            Placeholder: to add 
+            Mentor: feedback received from my mentor on Slack
           </li>
-          
+          <li>
+            Program: GA instructors' feedback, as well as team/peer feedback for capstone and projects received on Slack
+          </li>
+          <li>
+            Manager: feedback received from my manager on Slack as well as in async 1:1s Google Doc comments
+          </li>
+          <li>
+            Adhoc: feedback received from my direct team and other peers on Slack
+          </li>
         </ul>
       </div>
     </div>
