@@ -14,7 +14,6 @@ const ProjectScores = () => {
         const responseData = await fetchData("scores/project-score-overview");
         if (!responseData.hasError) {
           setProjectScoreOverivew(responseData.data);
-          console.log(responseData.data);
         } else {
           setError(
             responseData.error ||
