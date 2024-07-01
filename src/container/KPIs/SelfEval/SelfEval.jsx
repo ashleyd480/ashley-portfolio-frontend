@@ -4,6 +4,8 @@ const SelfEval = () => {
 
   const Q124EvalpdfPath = '/docs/self-eval/q1-2024-self-eval.pdf';
   const Q124pdfFileName = 'q1-2024-self-eval.pdf'; 
+  const Q224EvalpdfPath = '/docs/self-eval/q2-2024-self-eval.pdf';
+  const Q224pdfFileName = 'q2-2024-self-eval.pdf'; 
 
   // for self eval stuff
   const googleDocUrl = 'https://docs.google.com/document/d/1IP82ziPF7-nVHBJmHO6dYTlXYNhS1CF97toDqSp6GYY/edit';
@@ -22,6 +24,9 @@ const SelfEval = () => {
           <ul>
           <li>
             <PDFDownloadLink pdfPath={Q124EvalpdfPath} pdfFileName={Q124pdfFileName} />
+            </li>
+            <li>
+            <PDFDownloadLink pdfPath={Q224EvalpdfPath} pdfFileName={Q224pdfFileName} />
           </li>
           {/* Add more PDFDownloadLink components for additional self-evaluation files */}
         </ul>
