@@ -39,7 +39,7 @@ const ProjectScores = () => {
       </div>
       <hr className="seperate-line" />
       <div className="overview-container">
-        {(error || projectScoreOverview.length === 0)? (
+        {(error)? (
           <div className="error-container">
             <h4 className="error-header">{error}</h4>
             <ExcelDownloadLink />

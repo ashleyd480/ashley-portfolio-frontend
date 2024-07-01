@@ -32,7 +32,7 @@ const ProjectDetailInfo = ({ project }) => {
           <strong> Overview: </strong> <p>{project.projectBlurb}</p>{" "}
           <strong> User Experience: </strong> <p>{project.projectUX}</p>{" "}
         </div>
-        {project.projectVideo && (
+        {project.projectVideo !== null && (
           <div className="p-2">
             <p>
               {" "}
