@@ -33,6 +33,8 @@ npm install react-bootstrap bootstrap
 
 # Design
 
+![Frontend UI Screenshot](src/assets/readme-images/frontend-ui.png)
+
 ---
 
 # Functionality
