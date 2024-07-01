@@ -14,7 +14,8 @@ const Home = () => {
         />
       </div>
       <div className="blurb-section">
-        <p>Thank you for stopping by! Here's a quick tour of my page:</p>
+        <p>Thank you for stopping by! Here's a quick tour of my page. </p>
+        <p>My portfolio is created as fullstack app with data hosted on Postgres and backend API endpoints on Springboot. The frontend renders the data and info about me:</p>
         <h5> About </h5>
         <ul>
           <li>
