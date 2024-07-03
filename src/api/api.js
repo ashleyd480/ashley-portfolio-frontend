@@ -5,6 +5,8 @@
 const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
 console.log(apiUrl);
 
+// this variable undefined on netlify because system did the git ignore of the env.local
+
 
 export const fetchData = async (endpoint) => {
   // get request
