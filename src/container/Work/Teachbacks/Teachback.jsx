@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from "react";
 
 const Teachbacks = () => {
-  // const [videos, setVideos] = useState([]);
-  // const playlistId = 'PL97VrtuAfZm_Cs85D8DYnlK7saz852a6y';
-  // const apiKey = 'INSERT HERE';
+  const [videos, setVideos] = useState([]);
+  const playlistId = 'PL97VrtuAfZm_Cs85D8DYnlK7saz852a6y';
+  const apiKey = import.meta.env.VITE_YOUTUBE_KEY;
 
-
-  // useEffect(() => {
-  //   fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
-  //     .then(response => response.json())
-  //     .then(data => {
-  //       console.log('Fetched data:', data); // Log the fetched data
-  //       setVideos(data.items); // Set the videos state
-  //     })
-  //     .catch(error => console.error('Error fetching playlist:', error));
-  // }, []);
+  useEffect(() => {
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
+      .then(response => response.json())
+      .then(data => {
+        console.log('Fetched data:', data); // Log the fetched data
+        setVideos(data.items); // Set the videos state
+      })
+      .catch(error => console.error('Error fetching playlist:', error));
+  }, []);
 
   return (
     <>
@@ -65,7 +64,7 @@ const Teachbacks = () => {
       <div className="blurb-section">
         <p> awaiting API call set up </p>
         </div>
-      {/* <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex' }}>
         <div style={{ flex: 1 }}>
           {videos.map(video => (
             <div key={video.id}>
@@ -81,7 +80,7 @@ const Teachbacks = () => {
         </div>
         // Note to self: ensure we add error handling here, i.e if API call fail- we can render a message to have user see my actual channel
       </div>
-        </div> */}
+  
     </>
   );
 };
