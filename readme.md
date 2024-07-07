@@ -29,8 +29,31 @@ Part of learning as one of our mentors Leo put is finding reference code as well
 
 # Table of Contents
 
-1. [Setup](#setup)
-
+1. [Code Structure](#code-structure)
+   - [Rendering Data](#rendering-data)
+   - [Utilities](#utilities)
+     - [Api.js](#apijs)
+     - [Image Arrays](#image-arrays)
+   - [Image Mapping](#image-mapping)
+   - [Design](#design)
+   - [Padding](#padding)
+   - [NavBar](#navbar)
+   - [Card Images](#card-images)
+   - [Responsive Table](#responsive-table)
+     - [Pseudo-elements](#pseudo-elements)
+   - [File Set-Up](#file-set-up)
+     - [Image Hosting](#image-hosting)
+     - [Bash Bulk Rename](#bash-bulk-rename)
+     - [Bash File Path](#bash-file-path)
+   - [Downloadable Files](#downloadable-files)
+2. [Functionality](#functionality)
+   - [useParams](#useparams)
+   - [VS. Variable Reroute](#vs-variable-reroute)
+   - [Conditional Navigation](#conditional-navigation)
+3. [Error Handling](#error-handling)
+4. [Environment Variables](#environment-variables)
+   - [Database Integrity](#database-integrity)
+   - [API Security](#api-security)
 ---
 # Code Structure
 ## Rendering Data 
