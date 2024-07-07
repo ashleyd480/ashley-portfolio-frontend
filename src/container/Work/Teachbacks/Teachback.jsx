@@ -6,7 +6,7 @@ const Teachbacks = () => {
   const apiKey = import.meta.env.VITE_YOUTUBE_KEY;
 
   useEffect(() => {
-    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&maxResults=20&key=${apiKey}`)
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=50`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data); // Log the fetched data
@@ -28,7 +28,7 @@ const Teachbacks = () => {
           {" "}
           Talking through it while having the code in front of me helps me to
           simulataneously visualize the code flow and think through the
-          understanding.{" "} 
+          understanding.{" "}
         </p>
         <p>
           {" "}
@@ -53,36 +53,29 @@ const Teachbacks = () => {
             playlist
           </a> also offers personal value as I can have a library of
           videos to go back to reference.{" "}
-
-          
         </p>
       </div>
       <hr className="seperate-line" />
-
+  
       <h2 className="secondary-blurb-title">My YouTube Playlist</h2>
       <h2 className="secondary-blurb-title">Section Under Construction 😊</h2>
-      <div className="blurb-section">
-        <p> awaiting API call set up </p>
-        </div>
-      <div style={{ display: 'flex' }}>
-        <div style={{ flex: 1 }}>
-          {videos.map(video => (
-            <div key={video.id}>
-              <h3>{video.snippet.title}</h3>
-              <img
-                src={video.snippet.thumbnails.default.url}
-                alt={video.snippet.title}
-                style={{ cursor: 'pointer' }}
-                onClick={() => window.open(`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}&list=${playlistId}`, '_blank')}
-              />
-            </div>
-          ))}
-        </div>
-        // Note to self: ensure we add error handling here, i.e if API call fail- we can render a message to have user see my actual channel
+      <div className="blurb-section" style={{ display: 'flex', flexDirection: 'column' }}>
+
+        {videos.map(video => (
+          <div key={video.id}>
+            <h4>{video.snippet.title}</h4>
+            <img
+              className="youtube-video"
+              src={video.snippet.thumbnails.high.url}
+              alt={video.snippet.title}
+              style={{ cursor: 'pointer' }}
+              onClick={() => window.open(`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}&list=${playlistId}`, '_blank')}
+            />
+          </div>
+        ))}
       </div>
-  
     </>
   );
-};
+}
 
 export default Teachbacks;
