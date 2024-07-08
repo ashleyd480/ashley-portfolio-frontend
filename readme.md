@@ -112,7 +112,8 @@ Note: i chose to enclose each image in a div to allow for more flexible formatti
    /* justify-content: center; */
   }
 ```
-## Design
+---
+# Design
 My portfolio is designed with a clean CSS to avoid sensory overload to users. Also, to further separate the pages, my NavBar uses NavDropdowns- with the title being the main category (i.e. KPIs) and the NavDropdown.Item being the pages under that category such as “GA scores” and “Project Scores.” This lets the reader explore about me in a less-overwhelming way by having the separation of concern between information about me.
 
 ![Nav Dropdown Screenshot](src/assets/readme-images/nav-dropdown.png)
