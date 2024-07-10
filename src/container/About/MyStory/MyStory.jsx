@@ -238,15 +238,15 @@ const MyStory = () => {
                 the file reader in Java, and I was so curious about the nextLine
                 syntax, and instead of just taking it for granted - I took some
                 time after homework was done the next evening to research and
-                understand it and created a video{" "}
+                understand it and created a {" "}
                 <a href="https://youtu.be/ZkShZR57bA8?si=MHHKIfbs5aXjVpfG">
-                  like when my mentor and I deep dived
-                </a>{" "}
+                video 
+                </a>{" "} like when my mentor and I deep dived
                 to share my research with my mentor. Even with bugs, I have
                 found a lot of my biggest learnings come from bugs, and I even
-                write in my blog about some debugging experiences and learnings{" "}
+                write in my blog about some debugging experiences and {" "}
                 <a href="https://dev.to/ashleyd480/capstone-debugging-learnings-3495">
-                  https://dev.to/ashleyd480/capstone-debugging-learnings-3495
+                learnings
                 </a>{" "}
                 I walked away from (with the added hope that this also
                 encourages others to find the silver lining from bugs).
@@ -262,9 +262,9 @@ const MyStory = () => {
                 action. When we were assigned to do a to-do app for our React
                 homework, instead of thinking of it as another ho-hum
                 assignment, my love for my creativity made me want to humanize
-                the app{" "}
+                the {" "}
                 <a href="https://github.com/ashleyd480/emojified-react-todo-app">
-                  https://github.com/ashleyd480/emojified-react-todo-app
+                app
                 </a>{" "}
                 and have a way for React to “change mood” based on the number of
                 to-do’s, and I had to research useEffect hook to get that to
@@ -280,14 +280,14 @@ const MyStory = () => {
                 hurrying to finish the homework to get it over with and move on
                 to the next, it really mattered to me to understand the
                 mechanics behind the code, plus that stuff fascinates me. Often,
-                I would take time to marinate the concepts and create teachbacks{" "}
+                I would take time to marinate the concepts and create {" "}
                 <a href="https://youtu.be/yA2RyRNSu7E?si=Ca-gjP7_AtiZLYYR">
-                  some of which I would share to the class
-                </a>{" "}
+                teachbacks
+                </a>{" "}some of which I would share to the class
                 to help out as well to better break down trending concepts that
-                were tougher such as upcasting/downcasting{" "}
+                were tougher such as {" "}
                 <a href="https://youtu.be/b0j0T8_MHoo?si=785nZI4x0UUFuJIb">
-                  https://youtu.be/b0j0T8_MHoo?si=785nZI4x0UUFuJIb
+                upcasting/downcasting
                 </a>
                 .
               </p>
@@ -301,9 +301,9 @@ const MyStory = () => {
               </p>
 
               <p>
-                During project presentations{" "}
+                During project {" "}
                 <a href="https://www.youtube.com/watch?v=rflr2XKJkzg">
-                  https://www.youtube.com/watch?v=rflr2XKJkzg
+                presentations
                 </a>
                 , I enjoy being able to talk through my code and share how it
                 ties together to power my app. There’s just something so
@@ -314,9 +314,9 @@ const MyStory = () => {
                 something I’m working on and I humbly know I’m not the most
                 wizardly on them, I like when I get to collaboratively talk
                 through my thought process on them. For example, in this
-                practice office hour{" "}
+                practice office {" "}
                 <a href="https://youtu.be/evPV9s3cXEw">
-                  https://youtu.be/evPV9s3cXEw
+                hour
                 </a>
                 - I was able to discuss my approach and also talk through my
                 thoughts behind debugging and the whys behind code failing
@@ -355,9 +355,9 @@ const MyStory = () => {
                 After some projects, I proactively did retros with him to learn
                 better approaches. In our dictionary Java project, I used my
                 mentor's feedback from our retro afterward and the teacher's
-                feedback to make improvements{" "}
+                feedback to make {" "}
                 <a href="https://dev.to/ashleyd480/wk7-java-cli-app-retro-5ecj">
-                  https://dev.to/ashleyd480/wk7-java-cli-app-retro-5ecj
+                improvements
                 </a>
                 .
               </p>
