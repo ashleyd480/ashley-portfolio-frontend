@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./Teachbacks.css"
 const Teachbacks = () => {
   const [videos, setVideos] = useState([]);
   const playlistId = 'PL97VrtuAfZm_Cs85D8DYnlK7saz852a6y';
@@ -58,20 +58,23 @@ const Teachbacks = () => {
       <hr className="seperate-line" />
   
       <h2 className="secondary-blurb-title">My YouTube Playlist</h2>
-      <h2 className="secondary-blurb-title">Section Under Construction 😊</h2>
-      <div className="blurb-section" style={{ display: 'flex', flexDirection: 'column' }}>
+  
+      <div className="blurb-section">
 
         {videos.map(video => (
-          <div key={video.id}>
+       
+          <div key={video.id} className="playlist-item">
+          <img
+            className="teachback-video"
+            src={video.snippet.thumbnails.high.url}
+            alt={video.snippet.title}
+            onClick={() => window.open(`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}&list=${playlistId}`, '_blank')}
+          />
+          <div className="video-details">
             <h4>{video.snippet.title}</h4>
-            <img
-              className="youtube-video"
-              src={video.snippet.thumbnails.high.url}
-              alt={video.snippet.title}
-              style={{ cursor: 'pointer' }}
-              onClick={() => window.open(`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}&list=${playlistId}`, '_blank')}
-            />
+            <p>{new Date(video.snippet.publishedAt).toLocaleDateString()}</p>
           </div>
+        </div>
         ))}
       </div>
     </>
@@ -79,3 +82,6 @@ const Teachbacks = () => {
 }
 
 export default Teachbacks;
+
+// Date- create new Data object
+// toLocaleDateString converts the Date object to a string representing the date portion of the date in the current locale's format.

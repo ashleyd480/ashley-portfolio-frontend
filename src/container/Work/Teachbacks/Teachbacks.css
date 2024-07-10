@@ -1,0 +1,19 @@
+.playlist-item {
+    display: flex;
+    flex-direction: row; /* Align items in a row */
+    margin-bottom: 20px;
+   
+    align-items: center; /* Center vertically */
+  }
+  
+  .teachback-video {
+    cursor: pointer;
+    margin-right: 20px;
+    align-self: flex-start; /* Align the video to the start of the flexbox */
+  }
+  
+  .video-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
