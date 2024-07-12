@@ -3,7 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 const MyStory = () => {
   return (
     <>
-      <h2 className="blurb-title">Section Under Construction 😊</h2>
+   
       <div className="blurb-section">
         <p>
           Below, you can unfurl the accordion sections to read more about me, to
@@ -67,7 +67,7 @@ const MyStory = () => {
                 Indeedians) made me even more interested. Seeing how they
                 creatively tackled challenges and made a real impact on job
                 seeker and employer experiences at Indeed was really inspiring.
-                For example, I also got to be a mentee to a research engineer,
+                For example, I also got to be a mentee to a research engineer (Sayori),
                 learning about her work at a high-level while sharing my
                 front-end knowledge on the search quality tools she coded.
                 Further, my love for languages (I studied Spanish and dabbled in

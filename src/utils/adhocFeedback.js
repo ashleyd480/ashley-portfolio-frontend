@@ -9,6 +9,7 @@ import peer8 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer8.
 import peer9 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer9.png";
 import peer10 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer10.png";
 import peer11 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer11.png";
+import peer12 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer12.png";
 import laurie1 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-1.png"
 import laurie2 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-2.png"
 
@@ -75,6 +76,11 @@ export const adhocFeedback = [
     imageCategory: 'peer-feedback',
     src: peer11,
     alt: 'peer positive feedback 11'
+  },
+  {
+    imageCategory: 'peer-feedback',
+    src: peer12,
+    alt: 'peer positive feedback 12'
   },
   {
     imageCategory: 'team-feedback',

@@ -10,7 +10,8 @@ const Teachbacks = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data); // Log the fetched data
-        setVideos(data.items); // Set the videos state
+        const sortedVideos = data.items.sort((a, b) => new Date(b.snippet.publishedAt) - new Date(a.snippet.publishedAt));
+        setVideos(sortedVideos); // Set the videos state with sorted videos
       })
       .catch(error => console.error('Error fetching playlist:', error));
   }, []);
@@ -67,7 +68,8 @@ const Teachbacks = () => {
           <img
             className="teachback-video"
             src={video.snippet.thumbnails.high.url}
-            alt={video.snippet.title}
+              alt={video.snippet.title}
+            
             onClick={() => window.open(`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}&list=${playlistId}`, '_blank')}
           />
           <div className="video-details">
