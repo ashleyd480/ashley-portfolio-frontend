@@ -84,7 +84,7 @@ const MyStory = () => {
                 ways I could improve my technical and product skills, i.e.
                 building troubleshooting how-to material and even taking a
                 4-hour intro to SQL course and Indeed Skill Academy 4-hour long
-                HTML intro class (and applying that knowledge troubleshooting
+                HTML/Programming intro class with Russell (and applying that knowledge troubleshooting
                 basic ATS issues), and also helping others to do basic
                 troubleshooting on Slack channels. Even though the journey to
                 get a chance took so long, those technical tasks brought me joy
