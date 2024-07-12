@@ -211,10 +211,11 @@ Finally, the `:nth-of-type` selector is used to target a specific column in the 
 ```
 ![Responsive Table Screenshot](src/assets/readme-images/resp-table.png)
 
-File Set-Up 
+--- 
+# File Set-Up 
 
 ## Image Hosting 
-For the feedback images, I stored them in my assets folder and hardcoded their paths as arrays of image variables which you can read more about here [here](#image-arrays).   
+For the feedback images, I stored them in my assets folder and hardcoded their paths as arrays of image variables which you can read more about [here](#image-arrays).   
 
 While initially, I was going to create a repo on Github to just hold images and then save the image URLs to a database to make a `get mapping` call from the backend, I understand that GitHub has storage and bandwidth limitations, making it unsuitable for hosting a large number of images or handling frequent access from backend calls. Additionally, my mentor also shared the idea of CDNs - which have servers distributed across various geographic locations so there’s faster serving time of the images. However, as we expect my portfolio to be relative low traffic (unless ahem Hollywood casts me into some real big screen movie), then sticking with just an assets folder and images array will do for now. :) 
 
