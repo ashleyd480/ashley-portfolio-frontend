@@ -8,6 +8,7 @@ import mentor7 from "../assets/feedback-images/mentor-feedback/mentor-7.png";
 import mentor8 from "../assets/feedback-images/mentor-feedback/mentor-8.png";
 import mentor9 from "../assets/feedback-images/mentor-feedback/mentor-9.png";
 import mentor10 from "../assets/feedback-images/mentor-feedback/mentor-10.png";
+import mentor11 from "../assets/feedback-images/mentor-feedback/mentor-11.png";
 
 export const mentorFeedback = [
   {
@@ -59,5 +60,10 @@ export const mentorFeedback = [
     imageCategory: "mentor-feedback",
     src: mentor10,
     alt: "mentor positive feedback 10",
+  },
+  {
+    imageCategory: "mentor-feedback",
+    src: mentor11,
+    alt: "mentor positive feedback 11",
   }
 ];

@@ -16,6 +16,7 @@ import peer15 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer1
 import peer16 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer16.png";
 import peer17 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer17.png";
 import peer18 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer18.png";
+import peer19 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer19.png";
 
 import laurie1 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-1.png"
 import laurie2 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-2.png"
@@ -28,6 +29,14 @@ import team5 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-5
 import team6 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-6.png";
 import team7 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-7.png";
 import team8 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-8.png";
+import team7 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-7.png";
+import team8 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-8.png";
+import team9 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-9.png";
+import team10 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-10.png";
+import team11 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-11.png";
+import team12 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-12.png";
+import team13 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-13.png";
+import team14 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-13.png";
 
 export const adhocFeedback = [
   {
@@ -121,6 +130,11 @@ export const adhocFeedback = [
     alt: 'peer positive feedback 18'
   },
   {
+    imageCategory: 'peer-feedback',
+    src: peer19,
+    alt: 'peer positive feedback 19'
+  },
+  {
     imageCategory: 'team-feedback',
     src: team1,
     alt: 'team positive feedback 1'
@@ -169,6 +183,36 @@ export const adhocFeedback = [
     imageCategory: 'team-feedback',
     src: team8,
     alt: 'team positive feedback 8'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team9,
+    alt: 'team positive feedback 9'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team10,
+    alt: 'team positive feedback 10'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team11,
+    alt: 'team positive feedback 11'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team12,
+    alt: 'team positive feedback 12'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team13,
+    alt: 'team positive feedback 13'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team14,
+    alt: 'team positive feedback 14'
   }
 ];
 
