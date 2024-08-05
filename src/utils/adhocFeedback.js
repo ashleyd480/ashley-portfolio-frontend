@@ -36,7 +36,7 @@ import team10 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-
 import team11 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-11.png";
 import team12 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-12.png";
 import team13 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-13.png";
-import team14 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-13.png";
+import team14 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-14.png";
 
 export const adhocFeedback = [
   {
