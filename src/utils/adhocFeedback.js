@@ -29,8 +29,6 @@ import team5 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-5
 import team6 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-6.png";
 import team7 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-7.png";
 import team8 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-8.png";
-import team7 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-7.png";
-import team8 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-8.png";
 import team9 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-9.png";
 import team10 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-10.png";
 import team11 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-11.png";
