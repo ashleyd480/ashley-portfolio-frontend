@@ -17,6 +17,9 @@ import peer16 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer1
 import peer17 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer17.png";
 import peer18 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer18.png";
 import peer19 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer19.png";
+import peer20 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer20.png";
+import peer21 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer21.png";
+import peer22 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer22.png";
 
 import laurie1 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-1.png"
 import laurie2 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-2.png"
@@ -35,6 +38,7 @@ import team11 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-
 import team12 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-12.png";
 import team13 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-13.png";
 import team14 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-14.png";
+import team15 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-15.png";
 
 export const adhocFeedback = [
   {
@@ -133,6 +137,21 @@ export const adhocFeedback = [
     alt: 'peer positive feedback 19'
   },
   {
+    imageCategory: 'peer-feedback',
+    src: peer20,
+    alt: 'peer positive feedback 20'
+  },
+  {
+    imageCategory: 'peer-feedback',
+    src: peer21,
+    alt: 'peer positive feedback 21'
+  },
+  {
+    imageCategory: 'peer-feedback',
+    src: peer22,
+    alt: 'peer positive feedback 22'
+  },
+  {
     imageCategory: 'team-feedback',
     src: team1,
     alt: 'team positive feedback 1'
@@ -211,6 +230,11 @@ export const adhocFeedback = [
     imageCategory: 'team-feedback',
     src: team14,
     alt: 'team positive feedback 14'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team15,
+    alt: 'team positive feedback 15'
   }
 ];
 
