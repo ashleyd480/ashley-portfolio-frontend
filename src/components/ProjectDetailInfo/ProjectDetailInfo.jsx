@@ -31,6 +31,7 @@ const ProjectDetailInfo = ({ project }) => {
         <div className="p-2">
           <strong> Overview: </strong> <p>{project.projectBlurb}</p>{" "}
           <strong> User Experience: </strong> <p>{project.projectUX}</p>{" "}
+          <strong> Github Repo: </strong> <p>{project.projectURL}</p>{" "}
         </div>
         {project.projectVideo !== null && (
           <div className="p-2">
