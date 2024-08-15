@@ -31,8 +31,8 @@ const ProjectDetailInfo = ({ project }) => {
         <div className="p-2">
           <strong> Overview: </strong> <p>{project.projectBlurb}</p>{" "}
           <strong> User Experience: </strong> <p>{project.projectUX}</p>{" "}
-          <strong> Github Repo: </strong> <p>{project.projectURL}</p>{" "}
-        </div>
+          <strong> Github Repo: </strong> <a href={project.projectURL} target="_blank">{project.projectURL}</a>{" "}
+          </div>
         {project.projectVideo !== null && (
           <div className="p-2">
             <p>
