@@ -10,6 +10,7 @@ import mentor9 from "../assets/feedback-images/mentor-feedback/mentor-9.png";
 import mentor10 from "../assets/feedback-images/mentor-feedback/mentor-10.png";
 import mentor11 from "../assets/feedback-images/mentor-feedback/mentor-11.png";
 import mentor12 from "../assets/feedback-images/mentor-feedback/mentor-12.png";
+import mentor13 from "../assets/feedback-images/mentor-feedback/mentor-13.png";
 
 export const mentorFeedback = [
   {
