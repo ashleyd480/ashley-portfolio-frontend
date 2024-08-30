@@ -71,5 +71,10 @@ export const mentorFeedback = [
     imageCategory: "mentor-feedback",
     src: mentor12,
     alt: "mentor positive feedback 12",
+  },
+  {
+    imageCategory: "mentor-feedback",
+    src: mentor13,
+    alt: "mentor positive feedback 13",
   }
 ];
