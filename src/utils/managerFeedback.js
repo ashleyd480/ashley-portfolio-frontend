@@ -5,8 +5,8 @@ import manager4 from "../assets/feedback-images/manager-feedback/manager-4.png";
 import manager5 from "../assets/feedback-images/manager-feedback/manager-5.png";
 import manager6 from "../assets/feedback-images/manager-feedback/manager-6.png";
 import manager7 from "../assets/feedback-images/manager-feedback/manager-7.png";
-import manager8 from "../assets/feedback-images/manager-feedback/manager-7.png";
-import manager9 from "../assets/feedback-images/manager-feedback/manager-7.png";
+import manager8 from "../assets/feedback-images/manager-feedback/manager-8.png";
+import manager9 from "../assets/feedback-images/manager-feedback/manager-9.png";
 
 
 export const managerFeedback = [
