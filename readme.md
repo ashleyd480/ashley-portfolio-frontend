@@ -31,6 +31,7 @@ Part of learning as one of our mentors Leo put is finding reference code as well
 
 1. [Code Structure](#code-structure)
    - [Rendering Data](#rendering-data)
+    - [Sorting](#sorting)
    - [Utilities](#utilities)
      - [Api.js](#apijs)
      - [Image Arrays](#image-arrays)
@@ -55,14 +56,55 @@ Part of learning as one of our mentors Leo put is finding reference code as well
    - [Database Integrity](#database-integrity)
    - [API Security](#api-security)
 ---
+
 # Code Structure
+
 ## Rendering Data 
 To maintain separation of concern, I use containers to make the API calls to my backend endpoints defined [here](https://github.com/ashleyd480/ashley-portfolio-backend). The containers’ response data are mapped over components; respectively containers help to handle the logic and data, while components help to render the presentation. 
 
 For example, my container `DevBlog.jsx` makes the call to Forem API- which is used to fetch and display my  blog posts from the dev.to platform. Then, these posts are mapped over a Card component called `BlogCard.jsx`. You can see how the response data referred to `blog` is passed as a prop to this component, and then, the data fields are mapped to their respective headers. For example, `blog.title` is rendered as the Card title. 
+
 ![Blog Card Screenshot](src/assets/readme-images/blog-card.png)
+
 Likewise, my containers where I make the calls to `get` the bootcamp and assorted project scores call on their respective components that render that response data to tables. In the screenshot below of a GA Score component, you can see how after I define the `th` (table headers) with the column names- then the response data of bootcamp scores are mapped over `tr` (table rows) and for each row, each record in the bootcamp score is respectively rendered in its respective cell `td`. 
+
 ![Table Map Screenshot](src/assets/readme-images/table-map.png)
+
+### Sorting
+
+I chose to do the sorting on the frontend. For example, to sort my projects I used the following code block:
+This means that if we were able to fetch the `responseData`, then we can sort in order by the `projectid`. The `data` is an array in this case of project objects that have their atributes such as projectid- which we can use to sort by.
+
+```
+if (!responseData.hasError) {
+   const sortedData = responseData.data.sort((a, b) => a.projectid - b.projectid);
+    setProjectData(sortedData);
+```
+
+This similar logic is used to sort my Youtube playlist videos in time order. 
+```
+  const sortedVideos = data.items.sort((a, b) => new Date(b.snippet.publishedAt) - new Date(a.snippet.publishedAt));
+  setVideos(sortedVideos); // Set the videos state with sorted videos
+```
+
+The Youtube API contains an items array with objects, wich each object repreesenting a video in that playlist. Each object has a snippet attribute with the publishedAt date, which we can use for sorting:
+
+```
+{
+  "kind": "youtube#playlistItemListResponse",
+  "etag": "etag",
+  "items": [
+    {
+      "kind": "youtube#playlistItem",
+      "etag": "etag",
+      "id": "videoId",
+      "snippet": {
+        "publishedAt": "2024-01-16T12:00:00Z",
+        "title": "Video Title",
+        "description": "Description",
+        // other snippet details
+      }
+```
 
 ## Utilities 
 
@@ -70,6 +112,8 @@ Likewise, my containers where I make the calls to `get` the bootcamp and assorte
 To keep my code DRY, `api.js` is a Javascript file in my utilities folder with the `get mapping` call. The `fetchData` in that file contains the repetitive logic of making `get requests` and parsing Json requests through `await response.json()`.
 
 ![Api.js Screenshot](src/assets/readme-images/api-js.png)
+
+
 ### Image Arrays 
 Also within my utilities package are the screenshots of feedback I received, by category. The images are saved as a variable of type array, and within each element of the array- is an object with key-value pairs of the image category, src, and alt for accessibility. These images are imported with a relative path to the assets folder as variables. 
 Note: We had to use variables to represent the images, as using the relative path in the src presented issues when rendering these images on another component. Think of it like navigating to a friend’s home- if you just say “go 10 steps east” - that direction may change depending on where you stand. However, if you use a variable to represent the image, that is the equivalent of giving directions as a “latitude and longitude”- so that no matter where you are- you can find it (it being the image in this case)
