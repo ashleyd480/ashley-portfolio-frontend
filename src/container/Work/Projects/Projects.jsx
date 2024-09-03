@@ -12,8 +12,8 @@ const Projects = () => {
       try {
         const responseData = await fetchData("projects");
         if (!responseData.hasError) {
-          setProjectData(responseData.data);
-          console.log(responseData.data);
+          const sortedData = responseData.data.sort((a, b) => a.project_id - b.project_id);
+          setProjectData(sortedData);
         } else {
           setError(
             responseData.error ||
@@ -35,7 +35,9 @@ const Projects = () => {
           <h2 className= "blurb-title">Projects 🐾</h2>
           <div className="blurb-section">
         <p> Below is a list of mini-projects and projects completed during the bootcamp (additionally including our pre-work and the capstone). 💕 </p>
-        <p> Each card includes the title of the project, the data completed, project type, and skills used. (Note: Formal projects represent our three required week-long projects and our final two-week long capstone. Mini-projects are projects at a smaller scale that are worked on as homeworks. Formal and mini projects are done independently, whereas pair projects are done with a partner.) </p>
+        <p> After the bootcamp, I continued to work on some projects that were of personal interest to me. These were not assigned, but done rather when I saw opportunities to automate or build a tool to help others make their tasks easier.  </p>
+        <p> Each card includes the title of the project, the data completed, project type, and skills used. (Note: Formal projects represent our three required week-long projects and our final two-week long capstone. Mini-projects are projects at a smaller scale that are worked on as homeworks. Formal and mini projects are done independently, whereas pair projects are done with a partner. Personal projects represent projects completed after bootcamp.) </p>
+      
         <p> Click the link under each card to open up the project details page. </p>
       
       </div>
