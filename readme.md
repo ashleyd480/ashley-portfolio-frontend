@@ -31,7 +31,7 @@ Part of learning as one of our mentors Leo put is finding reference code as well
 
 1. [Code Structure](#code-structure)
    - [Rendering Data](#rendering-data)
-    - [Sorting](#sorting)
+     - [Sorting](#sorting)
    - [Utilities](#utilities)
      - [Api.js](#apijs)
      - [Image Arrays](#image-arrays)

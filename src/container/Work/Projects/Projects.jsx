@@ -12,7 +12,7 @@ const Projects = () => {
       try {
         const responseData = await fetchData("projects");
         if (!responseData.hasError) {
-          const sortedData = responseData.data.sort((a, b) => a.projectid - b.projectid);
+          const sortedData = responseData.data.sort((a, b) => a.projectId - b.projectId);
           setProjectData(sortedData);
         } else {
           setError(
