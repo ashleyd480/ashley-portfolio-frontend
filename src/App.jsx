@@ -8,6 +8,7 @@ import Hobbies from "./container/About/Hobbies/Hobbies";
 import Projects from "./container/Work/Projects/Projects";
 import ProjectDetail from "./container/Work/ProjectDetail/ProjectDetail";
 import Teachbacks from "./container/Work/Teachbacks/Teachback";
+import Whiteboards from "./container/Work/Whiteboards/Whiteboards";
 import DevBlog from "./container/DevBlog/DevBlog";
 import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores/ProjectScores";
@@ -39,7 +40,8 @@ const App = () => {
           <Route path="work/projects" element={<Projects />} />
           <Route path="work/projects/:projectId" element={<ProjectDetail />} />
 
-          <Route path="work/teachbacks" element={<Teachbacks />} />
+            <Route path="work/teachbacks" element={<Teachbacks />} />
+            <Route path="work/whiteboards" element={<Whiteboards />} />
           <Route path="work/blog" element={<DevBlog />} />
           <Route path="kpis/ga-scores" element={<GAScores />} />
             <Route path="kpis/project-scores" element={<ProjectScores />} />

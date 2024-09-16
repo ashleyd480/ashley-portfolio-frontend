@@ -43,6 +43,9 @@ const NavBar = () => {
             <NavDropdown.Item as={Link} to="work/teachbacks">
               Teachbacks
             </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="work/whiteboards">
+              Whiteboards
+            </NavDropdown.Item>
             <NavDropdown.Item as={Link} to="work/blog">
               Dev Blog
             </NavDropdown.Item>

@@ -20,7 +20,9 @@ import peer19 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer1
 import peer20 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer20.png";
 import peer21 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer21.png";
 import peer22 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer22.png";
-
+import peer23 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer23.png";
+import peer24 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer24.png";
+import peer25 from "../assets/feedback-images/adhoc-feedback/peer-feedback/peer25.png";
 
 import laurie1 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-1.png"
 import laurie2 from "../assets/feedback-images/adhoc-feedback/peer-feedback/laurie-2.png"
@@ -41,6 +43,9 @@ import team13 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-
 import team14 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-14.png";
 import team15 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-15.png";
 import team16 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-16.png";
+import team17 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-17.png";
+import team18 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-18.png";
+import team19 from "../assets/feedback-images/adhoc-feedback/team-feedback/team-19.png";
 
 export const adhocFeedback = [
   {
@@ -154,6 +159,21 @@ export const adhocFeedback = [
     alt: 'peer positive feedback 22'
   },
   {
+    imageCategory: 'peer-feedback',
+    src: peer23,
+    alt: 'peer positive feedback 23'
+  },
+  {
+    imageCategory: 'peer-feedback',
+    src: peer24,
+    alt: 'peer positive feedback 24'
+  },
+  {
+    imageCategory: 'peer-feedback',
+    src: peer25,
+    alt: 'peer positive feedback 25'
+  },
+  {
     imageCategory: 'team-feedback',
     src: team1,
     alt: 'team positive feedback 1'
@@ -242,6 +262,21 @@ export const adhocFeedback = [
     imageCategory: 'team-feedback',
     src: team16,
     alt: 'team positive feedback 16'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team17,
+    alt: 'team positive feedback 17'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team18,
+    alt: 'team positive feedback 18'
+  },
+  {
+    imageCategory: 'team-feedback',
+    src: team19,
+    alt: 'team positive feedback 19'
   }
 ];
 
