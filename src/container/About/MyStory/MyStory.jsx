@@ -1,9 +1,13 @@
 import Accordion from "react-bootstrap/Accordion";
+import PDFDownloadLink from "../../../components/DownloadFile/PDFDownloadLink/PDFDownloadLink";
 
 const MyStory = () => {
+
+  const googleDocUrl = 'https://docs.google.com/document/d/1IP82ziPF7-nVHBJmHO6dYTlXYNhS1CF97toDqSp6GYY/edit';
+
   return (
     <>
-   
+       <h2 className= "blurb-title">My Story🐾</h2>
       <div className="blurb-section">
         <p>
           Below, you can unfurl the accordion sections to read more about me, to
@@ -11,6 +15,11 @@ const MyStory = () => {
           and why I chose this BOOST program, what interests me, what I’ve
           worked on, if I’m still in love with software development 😉, and
           acknowledgements.
+    
+        </p>
+        <p>
+        You can also download a PDF version here:
+        <PDFDownloadLink pdfPath='/docs/my-career-summary.pdf' pdfFileName='career-summary.pdf' />
         </p>
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
@@ -67,9 +76,9 @@ const MyStory = () => {
                 Indeedians) made me even more interested. Seeing how they
                 creatively tackled challenges and made a real impact on job
                 seeker and employer experiences at Indeed was really inspiring.
-                For example, I also got to be a mentee to a research engineer (Sayori),
-                learning about her work at a high-level while sharing my
-                front-end knowledge on the search quality tools she coded.
+                For example, I also got to be a mentee to a research engineer
+                (Sayori), learning about her work at a high-level while sharing
+                my front-end knowledge on the search quality tools she coded.
                 Further, my love for languages (I studied Spanish and dabbled in
                 Portuguese) makes learning coding languages feel like a natural
                 fit for me.
@@ -84,12 +93,12 @@ const MyStory = () => {
                 ways I could improve my technical and product skills, i.e.
                 building troubleshooting how-to material and even taking a
                 4-hour intro to SQL course and Indeed Skill Academy 4-hour long
-                HTML/Programming intro class with Russell (and applying that knowledge troubleshooting
-                basic ATS issues), and also helping others to do basic
-                troubleshooting on Slack channels. Even though the journey to
-                get a chance took so long, those technical tasks brought me joy
-                and gave me the strength to keep going. I knew that if something
-                was meant for me, a door would open.
+                HTML/Programming intro class with Russell (and applying that
+                knowledge troubleshooting basic ATS issues), and also helping
+                others to do basic troubleshooting on Slack channels. Even
+                though the journey to get a chance took so long, those technical
+                tasks brought me joy and gave me the strength to keep going. I
+                knew that if something was meant for me, a door would open.
               </p>
 
               <p>
@@ -164,8 +173,8 @@ const MyStory = () => {
                 big paycheck, but because I truly find this stuff interesting
                 from my heart. I know that even if it's only a one-year program,
                 it will be the intellectually toughest but also the happiest
-                year of my life. I am so happy and humbly grateful to learn each day. I mean these words
-                from my heart.
+                year of my life. I am so happy and humbly grateful to learn each
+                day. I mean these words from my heart.
               </p>
             </Accordion.Body>
           </Accordion.Item>
@@ -174,11 +183,12 @@ const MyStory = () => {
             <Accordion.Header>Frontend or Backend</Accordion.Header>
             <Accordion.Body>
               <p>
-                I find both frontend and backend development equally
-                captivating. Unlike favoring one over the other, I see them as
-                partners in a beautiful dance. The backend manages data and
-                creates endpoints that the frontend utilizes, akin to
-                choreographing steps in a tango.
+                I find both the frontend and backend development captivating-
+                especially enjoying building the endpoints to process and send
+                data, and thinking through the logic of how to render that data
+                on the frontend. The backend manages data and creates endpoints
+                that the frontend utilizes, akin to choreographing steps in a
+                tango.
               </p>
 
               <p>
@@ -238,15 +248,16 @@ const MyStory = () => {
                 the file reader in Java, and I was so curious about the nextLine
                 syntax, and instead of just taking it for granted - I took some
                 time after homework was done the next evening to research and
-                understand it and created a {" "}
+                understand it and created a{" "}
                 <a href="https://youtu.be/ZkShZR57bA8?si=MHHKIfbs5aXjVpfG">
-                video 
-                </a>{" "} like when my mentor and I deep dived
-                to share my research with my mentor. Even with bugs, I have
-                found a lot of my biggest learnings come from bugs, and I even
-                write in my blog about some debugging experiences and {" "}
+                  video
+                </a>{" "}
+                like when my mentor and I deep dived to share my research with
+                my mentor. Even with bugs, I have found a lot of my biggest
+                learnings come from bugs, and I even write in my blog about some
+                debugging experiences and{" "}
                 <a href="https://dev.to/ashleyd480/capstone-debugging-learnings-3495">
-                learnings
+                  learnings
                 </a>{" "}
                 I walked away from (with the added hope that this also
                 encourages others to find the silver lining from bugs).
@@ -262,9 +273,9 @@ const MyStory = () => {
                 action. When we were assigned to do a to-do app for our React
                 homework, instead of thinking of it as another ho-hum
                 assignment, my love for my creativity made me want to humanize
-                the {" "}
+                the{" "}
                 <a href="https://github.com/ashleyd480/emojified-react-todo-app">
-                app
+                  app
                 </a>{" "}
                 and have a way for React to “change mood” based on the number of
                 to-do’s, and I had to research useEffect hook to get that to
@@ -280,14 +291,14 @@ const MyStory = () => {
                 hurrying to finish the homework to get it over with and move on
                 to the next, it really mattered to me to understand the
                 mechanics behind the code, plus that stuff fascinates me. Often,
-                I would take time to marinate the concepts and create {" "}
+                I would take time to marinate the concepts and create{" "}
                 <a href="https://youtu.be/yA2RyRNSu7E?si=Ca-gjP7_AtiZLYYR">
-                teachbacks
-                </a>{" "}some of which I would share to the class
-                to help out as well to better break down trending concepts that
-                were tougher such as {" "}
+                  teachbacks
+                </a>{" "}
+                some of which I would share to the class to help out as well to
+                better break down trending concepts that were tougher such as{" "}
                 <a href="https://youtu.be/b0j0T8_MHoo?si=785nZI4x0UUFuJIb">
-                upcasting/downcasting
+                  upcasting/downcasting
                 </a>
                 .
               </p>
@@ -301,9 +312,9 @@ const MyStory = () => {
               </p>
 
               <p>
-                During project {" "}
+                During project{" "}
                 <a href="https://www.youtube.com/watch?v=rflr2XKJkzg">
-                presentations
+                  presentations
                 </a>
                 , I enjoy being able to talk through my code and share how it
                 ties together to power my app. There’s just something so
@@ -314,11 +325,8 @@ const MyStory = () => {
                 something I’m working on and I humbly know I’m not the most
                 wizardly on them, I like when I get to collaboratively talk
                 through my thought process on them. For example, in this
-                practice office {" "}
-                <a href="https://youtu.be/evPV9s3cXEw">
-                hour
-                </a>
-                - I was able to discuss my approach and also talk through my
+                practice office <a href="https://youtu.be/evPV9s3cXEw">hour</a>-
+                I was able to discuss my approach and also talk through my
                 thoughts behind debugging and the whys behind code failing
                 tests- with this discussion fruitfully leading me closer and
                 closer to a solved solution.
@@ -355,9 +363,9 @@ const MyStory = () => {
                 After some projects, I proactively did retros with him to learn
                 better approaches. In our dictionary Java project, I used my
                 mentor's feedback from our retro afterward and the teacher's
-                feedback to make {" "}
+                feedback to make{" "}
                 <a href="https://dev.to/ashleyd480/wk7-java-cli-app-retro-5ecj">
-                improvements
+                  improvements
                 </a>
                 .
               </p>
