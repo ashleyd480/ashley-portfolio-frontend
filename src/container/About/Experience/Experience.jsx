@@ -45,26 +45,62 @@ const Experience = () => {
       <h2 className="secondary-blurb-title"> Indeed Highlights</h2>
 
       <div className="blurb-section">
+        <h3> BOOST </h3>
+        <p>
+          {" "}
+          💙 Below are some highlights of my work at Indeed since the start of
+          my BOOST technical internalship.
+        </p>
+
+        <ul>
+          <li>
+            Apply coding knowledge in bootcamp projects, including a job
+            referral platform and a crowdsourced accessibility tool for{" "}
+            <a href="https://www.google.com/maps">Google Maps</a>.
+          </li>
+          <li>
+            Managed data flows through{" "}
+            <a href="https://api.slack.com/">Slack API</a>, creating a mini-tool
+            to render Slack channel lists on CSV.
+          </li>
+          <li>
+            Author cheat sheets & debugging/retro insights on{" "}
+            <a href="https://dev.to/">dev.to</a>, sharing knowledge with the
+            beginner dev community (i.e., Spring Boot, data structures).
+          </li>
+          <li>
+            Create captioned teachbacks on bootcamp concepts, sharing tips with
+            visual learners.
+          </li>
+          <li>
+            Troubleshoot fullstack mentor match project, assisting with fixes on
+            IBRG filters, porting backend to frontend via config, and backend
+            parameter methods.
+          </li>
+          <li>
+            Collaborate with classmates to build a BOOST resource hub, creating
+            guides for navigating pre-, during, and post-bootcamp.
+          </li>
+        </ul>
+
+        <hr className="separate-line" />
+        <h3> Pre-BOOST </h3>
         <p>
           {" "}
           💙 Below are some highlights of my work at Indeed since I started in
-          end of June 2018, along with the respective skillset.
+          end of June 2018 and prior to my BOOST technical internalship, along
+          with the respective skillset.
         </p>
         <p>
           I worked in client success roles, being the first line of support
           contact for initially SMB clients and then Mid Market clients.
         </p>
 
-        <h4>Customer Focus</h4>
+        <h5>Customer Focus</h5>
         <ul>
           <li>
-            Provide technical support and churn outreach for two books of
-            business (300+ accounts), maintaining $1.7 M average quarterly spend
-          </li>
-          <li>
-            Onboard and navigate clients on new products and ATS, addressing
-            post-sale questions and issues, and assisting with integration and
-            campaign setup
+            Provide technical support, ATS integration assistance, and churn
+            outreach for 300+ accounts, maintaining $1.7M quarterly spend
           </li>
           <li>
             Present client feedback in Product Advocacy, proposing fixes for
@@ -76,7 +112,7 @@ const Experience = () => {
           </li>
         </ul>
 
-        <h4>Problem Solver</h4>
+        <h5>Problem Solver</h5>
         <ul>
           <li>
             Resolve escalated cases from sales directors and manage complex
@@ -110,7 +146,7 @@ const Experience = () => {
           </li>
         </ul>
 
-        <h4>Improvement-driven</h4>
+        <h5>Improvement-driven</h5>
         <ul>
           <li>
             Track call-handle time detractors in 7 top interaction categories,
@@ -134,7 +170,7 @@ const Experience = () => {
           </li>
         </ul>
 
-        <h4>Innovative</h4>
+        <h5>Innovative</h5>
         <ul>
           <li>
             Partner with SQUALL to revamp Ticketing How-To Wiki page, refining
@@ -142,18 +178,8 @@ const Experience = () => {
             accurate tickets
           </li>
           <li>
-            Generate Salesforce reports on inbound mainline callers and PTO
-            follow-ups from our books, boosting client call opportunities and
-            helping reps meet coverage goals
-          </li>
-          <li>
-            Build Google Sheet to calculate account coverage, facilitating
-            strategic outreach
-          </li>
-          <li>
-            Create a one-stop certs tracking doc, allowing for easier
-            organization and accountability for reps to stay on top of mandatory
-            product trainings
+            Design inbound/PTO Salesforce reports and Google Sheets tracker,
+            facilitating strategic outreach and account coverage
           </li>
           <li>
             Liaise with leadership in Voice of Rep to deliver org project ideas,
@@ -167,15 +193,12 @@ const Experience = () => {
           </li>
         </ul>
 
-        <h4>Diversity Awareness</h4>
+        <h5>Diversity Awareness</h5>
         <ul>
           <li>
-            Volunteer to take Spanish mainline calls and pull cases from the MX
-            client queue, ensuring Spanish speaking clients have equitable SLA
-          </li>
-          <li>
-            Translate client account healthcheck templates to Spanish, expanding
-            email bank
+            Volunteer to take Spanish mainline calls and pull cases, ensuring
+            Spanish speaking clients have equitable SLA, whilst building Spanish
+            email templates
           </li>
           <li>
             Contribute to women in tech as a Women and Gender Expansive Coders
@@ -183,34 +206,28 @@ const Experience = () => {
           </li>
         </ul>
 
-        <h4>Inclusion and Empathy</h4>
+        <h5>Inclusion and Empathy</h5>
         <ul>
           <li>
             Coach a team of 10+ reps in Shared on product and process and
             de-escalation tactics, leading to over 50% fewer escalated calls
           </li>
           <li>
-            Mentor Miami and Scottsdale team of 10+ reps and 3 managers,
-            coaching on product and soft skills, and providing continual
-            training based on knowledge gaps
+            Mentor Miami and Scottsdale teams on product and troubleshooting
+            skills
           </li>
           <li>
             Train 10+ new hire classes, educating on Salesforce, Einstein,
             shortkeys, hosted jobs
           </li>
           <li>
-            Develop first sales training for SDL office, empowering sales reps'
-            tech skills through basic troubleshooting training
+            Develop first sales tech training, empowering fundamental
+            troubleshooting skills
           </li>
           <li>
-            Coordinate and host guest speakers, letting reps learn about other
-            departments and career pathing, while strengthening
-            interdepartmental relationships
-          </li>
-          <li>
-            Attend VP off-site case study and coach Marketing VPs on Indeed best
-            practices, receiving positive feedback and resulting in multiple
-            interviews for role
+            Demonstrate technical product integrations and best practices to
+            Marketing VPs in offsite, receiving positive feedback and resulting
+            in multiple interviews for role
           </li>
         </ul>
       </div>
