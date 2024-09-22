@@ -22,7 +22,7 @@ const Whiteboards = () => {
 
   return (
     <>
-      <h2 className="blurb-title">Teachbacks 🐾</h2>
+      <h2 className="blurb-title">Whiteboarding 🐾</h2>
       <div className="blurb-section">
         <p>
           {" "}
