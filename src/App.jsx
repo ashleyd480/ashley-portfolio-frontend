@@ -12,7 +12,6 @@ import Whiteboards from "./container/Work/Whiteboards/Whiteboards";
 import DevBlog from "./container/DevBlog/DevBlog";
 import GAScores from "./container/KPIs/GAScores/GAScores";
 import ProjectScores from "./container/KPIs/ProjectScores/ProjectScores";
-import SelfEval from "./container/KPIs/SelfEval/SelfEval";
 import Mentor from "./container/Feedback/Mentor";
 import Program from "./container/Feedback/Program";
 import Manager from "./container/Feedback/Manager";
