@@ -75,6 +75,9 @@ const NavBar = () => {
             <NavDropdown.Item as={Link} to="feedback/adhoc-feedback">
               Adhoc 
             </NavDropdown.Item>
+            <NavDropdown.Item as={Link} to="feedback/intern-feedback">
+              Intern
+            </NavDropdown.Item>
         
           </NavDropdown>
          

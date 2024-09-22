@@ -17,6 +17,7 @@ import Mentor from "./container/Feedback/Mentor";
 import Program from "./container/Feedback/Program";
 import Manager from "./container/Feedback/Manager";
 import Adhoc from "./container/Feedback/Adhoc";
+import Intern from "./container/Feedback/Intern";
 import CapstoneScore from "./container/KPIs/ProjectScoreDetail/CapstoneScore/CapstoneScore";
 import LeagueAppScore from "./container/KPIs/ProjectScoreDetail/LeagueAppScore/LeagueAppScore";
 import SpringBackendScore from "./container/KPIs/ProjectScoreDetail/SpringBackendScore/SpringBackendScore";
@@ -58,7 +59,8 @@ const App = () => {
             element={<Program />}
           />
           <Route path="/feedback/manager-feedback" element={<Manager />} />
-          <Route path="/feedback/adhoc-feedback" element={<Adhoc />} />
+            <Route path="/feedback/adhoc-feedback" element={<Adhoc />} />
+            <Route path="/feedback/intern-feedback" element={<Intern />} />
       
             <Route path="*" element={<Error />} />
         </>
