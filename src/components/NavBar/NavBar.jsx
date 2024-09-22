@@ -58,9 +58,6 @@ const NavBar = () => {
               Project Scores
             </NavDropdown.Item>
            
-            <NavDropdown.Item as={Link} to="kpis/self-eval">
-              Self Eval
-            </NavDropdown.Item>
             </NavDropdown>
           <NavDropdown title="Feedback" id="basic-nav-dropdown">
             <NavDropdown.Item as={Link} to="feedback/mentor-feedback">

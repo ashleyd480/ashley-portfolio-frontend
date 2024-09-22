@@ -290,22 +290,15 @@ tree /path/to/your/main/folder
 The above command provides a tree-like structure of all files and directories within the specified path, making it easier to visualize the directory structure.
 
 ![Bash Tree Screenshot](src/assets/readme-images/bash-tree.png)
+
 ## Downloadable Files
-In my project, I wanted to provide downloadable files (password-protected PDFs of my self evals) and  an Excel of my bootcamp and project scores (as a failsafe in case my API calls don’t work and I still want some way to display my data to users). 
+In my project, I wanted to provide downloadable files and  an Excel of my bootcamp and project scores (as a failsafe in case my API calls don’t work and I still want some way to display my data to users). 
 
 To make this work, I had to place these files in the public directory.   
 Note: When referencing this path,  we do not need to include "public" in the URL path because the server configuration automatically treats the public directory as the root for static files. Instead we can start the path with a slash (/) to create an absolute URL
 
-An example is as follows: “/docs/self-eval/q1-2024-self-eval.pdf'. In my case, the files the under a folder called “docs” in Public. 
+An example is as follows: “/docs/my-career-summary.pdf'. In my case, the files the under a folder called “docs” in Public. 
 
-### Via Link
-
-My self evals are rendered as links that can be clicked to trigger a download. 
-The approach for this was firstly to save the paths and fileName as variables: 
-```
-const Q124EvalpdfPath = '/docs/self-eval/q1-2024-self-eval.pdf';
-const Q124pdfFileName = 'q1-2024-self-eval.pdf';
-```
 Next, we have the `PDFDownloadLink` component to render the download link.
 
 ```
@@ -320,12 +313,10 @@ const PDFDownloadLink = ({ pdfPath, pdfFileName }) => {
 };
 ```
 
-Finally, we call this component to render the download link, for example as follows on SelfEval.jsx.
+Finally, we call this component to render the download link, for example as follows on MyStory.jsx
 
 ```
-<li>
-  <PDFDownloadLink pdfPath={Q124EvalpdfPath} pdfFileName={Q124pdfFileName} />
-</li>
+ <PDFDownloadLink pdfPath='/docs/my-career-summary.pdf' pdfFileName='career-summary.pdf' />
 ```
 
 ### Via Button Click

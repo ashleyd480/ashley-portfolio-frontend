@@ -55,9 +55,7 @@ const Home = () => {
           <li>
             Project Scores: a list of graded bootcamp projects, with overall instructor comments and a button to see numeric scores where available 
           </li>
-          <li>
-            Self Eval: links to my self evals since 2024 and a link to year-to-date formal Indeed Feedback received
-          </li>
+          
           
         </ul>
         <h5> Feedback </h5>
@@ -73,6 +71,9 @@ const Home = () => {
           </li>
           <li>
             Adhoc: feedback received from my direct team and other peers on Slack
+          </li>
+          <li>
+            Intern: feedback received from internship during our 3rd phase of apprenticship program 
           </li>
         </ul>
       </div>

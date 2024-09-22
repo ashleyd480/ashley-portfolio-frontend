@@ -52,7 +52,7 @@ const App = () => {
                <Route path="kpis/project-scores/spring-backend-score" element={<SpringBackendScore />}
             />
 
-          <Route path="kpis/self-eval" element={<SelfEval />} />
+        
           <Route path="/feedback/mentor-feedback" element={<Mentor />} />
           <Route
             path="/feedback/program-feedback"
