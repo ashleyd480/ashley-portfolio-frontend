@@ -13,7 +13,7 @@ const Manager = () => {
           truly care.{" "}
         </p>
         <p>
-         Since then, they haven't stopped being caring. Our BOOST manager Dom has been one of our greatest cheerleaders. On Day 2, Dom even personally came up to me to cheer me on and she has continually helped uplift me and encouraged me to be kind to myself and to believe in myself. 🧡
+         Since then, they haven't stopped being caring. Our BOOST managers Dom and Cole have been our greatest cheerleaders. On Day 2, Dom even personally came up to me to cheer me on and she has continually helped uplift me and encouraged me to be kind to myself and to believe in myself. And Cole too- who joined us in the latter half, he has built me up technically as well as in communication skills- and he has been a beacon of support to all of us. 🧡
         </p>
         Attached are screenshots manager feedback from: 
         <ul>

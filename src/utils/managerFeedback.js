@@ -10,7 +10,8 @@ import manager9 from "../assets/feedback-images/manager-feedback/manager-9.png";
 import manager10 from "../assets/feedback-images/manager-feedback/manager-10.png";
 import manager11 from "../assets/feedback-images/manager-feedback/manager-11.png";
 import manager12 from "../assets/feedback-images/manager-feedback/manager-12.png";
-
+import manager13 from "../assets/feedback-images/manager-feedback/manager-13.png";
+import manager14 from "../assets/feedback-images/manager-feedback/manager-14.png";
 
 export const managerFeedback = [
   {
@@ -72,5 +73,15 @@ export const managerFeedback = [
     imageCategory: 'manager-feedback',
     src: manager12,
     alt: 'manager positive feedback 12'
+  },
+  {
+    imageCategory: 'manager-feedback',
+    src: manager13,
+    alt: 'manager positive feedback 13'
+  },
+  {
+    imageCategory: 'manager-feedback',
+    src: manager14,
+    alt: 'manager positive feedback 14'
   }
 ];

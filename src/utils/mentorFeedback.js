@@ -13,6 +13,7 @@ import mentor12 from "../assets/feedback-images/mentor-feedback/mentor-12.png";
 import mentor13 from "../assets/feedback-images/mentor-feedback/mentor-13.png";
 import mentor14 from "../assets/feedback-images/mentor-feedback/mentor-14.png";
 import mentor15 from "../assets/feedback-images/mentor-feedback/mentor-15.png";
+import mentor16 from "../assets/feedback-images/mentor-feedback/mentor-16.png";
 
 export const mentorFeedback = [
   {
@@ -89,5 +90,10 @@ export const mentorFeedback = [
     imageCategory: "mentor-feedback",
     src: mentor15,
     alt: "mentor positive feedback 15",
+  },
+  {
+    imageCategory: "mentor-feedback",
+    src: mentor16,
+    alt: "mentor positive feedback 16",
   }
 ];

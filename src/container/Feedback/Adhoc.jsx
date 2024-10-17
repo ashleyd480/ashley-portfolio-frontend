@@ -14,7 +14,7 @@ const Adhoc = () => {
       <h2 className="blurb-title">Adhoc Feedback Images 🐾</h2>
       <div className="blurb-section">
         <p>
-          Here is a gallery that shows a preview of adhoc feedback that I have received from teammates
+          Here is a gallery that shows a preview of adhoc feedback that I have received from teammates in the BOOST program
           as well as peers outside of the Boost team. Since my time at Indeed, I
           have kept a running Google Doc of positive feedback received. I
           treasure these kind words as they have brought me innumerable smiles,

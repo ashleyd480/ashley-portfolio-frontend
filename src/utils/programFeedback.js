@@ -22,6 +22,8 @@ import teacher1 from "../assets/feedback-images/program-feedback/teacher-feedbac
 import teacher2 from "../assets/feedback-images/program-feedback/teacher-feedback/teacher-2.png";
 import teacher3 from "../assets/feedback-images/program-feedback/teacher-feedback/teacher-3.png";
 import teacher4 from "../assets/feedback-images/program-feedback/teacher-feedback/teacher-4.png";
+import teacher5 from "../assets/feedback-images/program-feedback/teacher-feedback/teacher-5.png";
+
 
 export const programFeedback = [
   {
@@ -135,5 +137,10 @@ export const programFeedback = [
     imageCategory: 'teacher-feedback',
     src: teacher4,
     alt: 'teacher positive feedback 4'
+  },
+  {
+    imageCategory: 'teacher-feedback',
+    src: teacher5,
+    alt: 'teacher positive feedback 5'
   }
 ];
