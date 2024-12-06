@@ -1,5 +1,5 @@
 import "./Videos.css"
-const Videos = ({ videos }) => {
+const Videos = ({ videos, playlistId }) => {
 
   return (
     <>

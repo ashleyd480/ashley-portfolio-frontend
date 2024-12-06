@@ -58,7 +58,7 @@ const Whiteboards = () => {
   
       <div className="blurb-section">
 
-        < Videos videos={videos} />
+        < Videos videos={videos} playlistId={playlistId}/>
       </div>
     </>
   );
