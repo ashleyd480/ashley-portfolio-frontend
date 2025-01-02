@@ -1,4 +1,5 @@
 import welcomeCat from "../../assets/welcome-cat.png";
+import LastUpdated from "../../container/Home/LastUpdated";
 
 const Home = () => {
   // maxWidth: '100%': This ensures that the image will never exceed its original width (500 pixels in this case) but will scale down if the container (or viewport) is narrower than 500 pixels.
@@ -12,9 +13,12 @@ const Home = () => {
           height="300"
           alt="dev.to trusted member nomination"
         />
+       
       </div>
+      
       <div className="blurb-section">
         <p>Thank you for stopping by! Here's a quick tour of my page. </p>
+        <LastUpdated /> 
         <p>My portfolio is created as fullstack app with data hosted on Postgres and backend API endpoints on Springboot. The frontend renders the data and info about me:</p>
         <p>Through my time in the BOOST apprenticeship, I was able to use the technical knowledge we learned along with my passion for inclusion and helping others. My first project was a frontend where users could share job referral opportunities. My capstone was a full-stack project where users can crowdsource accessibility info on Google Maps and search for accessible places. I also wrote about my learnings from bootcamp, making a cheat sheet for Spring Boot beginners and sharing it on dev.to. Additionally, I created close-captioned teachbacks of bootcamp concepts and shared tips and tricks with my class, like how to connect frontend and backend during capstone. As you wander through each of my pages, you will be able to see more of my work, what lights a fire in my heart, my scores, and more. </p>
         <h5> About </h5>
