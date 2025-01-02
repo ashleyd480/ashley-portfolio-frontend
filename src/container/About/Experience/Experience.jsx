@@ -56,7 +56,7 @@ const Experience = () => {
           <li>
             Apply coding knowledge in bootcamp projects, including a job
             referral platform and a crowdsourced accessibility tool for{" "}
-            <a href="https://www.google.com/maps">Google Maps</a>.
+           Google Maps.
           </li>
           <li>
             Managed data flows through{" "}
