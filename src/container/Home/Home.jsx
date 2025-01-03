@@ -85,7 +85,7 @@ const Home = () => {
         <div style={{ textAlign: 'center', marginTop: '40px'}}>
           {/* countdown timer- credit to https://www.timeanddate.com/countdown/ */}
           <iframe 
-            src="https://free.timeanddate.com/countdown/i9pcz8e6/n197/cf12/cm0/cu4/ct0/cs0/ca0/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fn2/fs100/szw320/szh135/tatTime%20till%20BOOST%20Graduation/tac000/tptTime%20since%20BOOST%20Graduation/tpc000/iso2025-04-01T08:00:00" 
+            src="https://free.timeanddate.com/countdown/i9pcz8e6/n197/cf12/cm0/cu4/ct0/cs0/cac000/co1/cr0/ss0/cac000/cpc000/pct/tcfff/fn2/fs100/tatTime%20till%20Graduation/tac000/tptTime%20since%20Graduation/tpc000/iso2025-03-31T23:59:59"
             allowtransparency="true" 
             frameBorder="0" 
             width="200" 
