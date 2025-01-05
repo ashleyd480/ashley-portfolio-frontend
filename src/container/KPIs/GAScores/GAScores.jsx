@@ -3,28 +3,30 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import GAScoreTable from "../../../components/KPITable/GAScoreTable/GAScoreTable";
 import ExcelDownloadLink from "../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
+import { bootcampScores } from "../../../utils/Data/bootcampScoresCSV";
 
 const GAScores = () => {
-  const [gaScores, setGaScores] = useState([]);
+  // const [gaScores, setGaScores] = useState([]);
   const [error, setError] = useState("");
-  useEffect(() => {
-    const fetchGAScores = async () => {
-      try {
-        const responseData = await fetchData("scores/bootcamp");
-        if (!responseData.hasError) {
-          setGaScores(responseData.data);
-          console.log(responseData.data);
-        } else {
-          setError(
-            responseData.error || "An error occurred while fetching GA scores."
-          );
-        }
-      } catch (error) {
-        setError("A connection error occurred while fetching GA scores.");
-      }
-    };
-    fetchGAScores();
-  }, []);
+  const gaScoresToRender = bootcampScores;
+  // useEffect(() => {
+  //   const fetchGAScores = async () => {
+  //     try {
+  //       const responseData = await fetchData("scores/bootcamp");
+  //       if (!responseData.hasError) {
+  //         setGaScores(responseData.data);
+  //         console.log(responseData.data);
+  //       } else {
+  //         setError(
+  //           responseData.error || "An error occurred while fetching GA scores."
+  //         );
+  //       }
+  //     } catch (error) {
+  //       setError("A connection error occurred while fetching GA scores.");
+  //     }
+  //   };
+  //   fetchGAScores();
+  // }, []);
 
   return (
     <>
@@ -81,7 +83,7 @@ const GAScores = () => {
             <ExcelDownloadLink />
           </div>
         ) : (
-          gaScores && <GAScoreTable gaScores={gaScores} />
+        gaScoresToRender && <GAScoreTable gaScores={gaScoresToRender} />
         )}
       </div>
     </>
