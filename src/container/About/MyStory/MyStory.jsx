@@ -17,10 +17,11 @@ const MyStory = () => {
           acknowledgements.
     
         </p>
-        <p>
+        <div style={{ marginBottom: '20px' }}>
         You can also download a PDF version here:
         <PDFDownloadLink pdfPath='/docs/my-career-summary.pdf' pdfFileName='career-summary.pdf' />
-        </p>
+        </div>
+       
         <Accordion defaultActiveKey="0">
           <Accordion.Item eventKey="0">
             <Accordion.Header>My Prior Career Journey</Accordion.Header>
