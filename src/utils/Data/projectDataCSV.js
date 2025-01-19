@@ -44,6 +44,7 @@ export const projectData = [
     projectType: "formal project",
     projectSkills: "CSS, HTML, Javascript",
     projectVideo: "https://www.youtube.com/embed/denJU5Y4l-Q?si=Yb-6k4xrL4RPQIv-",
+    projectBlurb: "This project was created in my 4th week of coding bootcamp at General Assembly using JavavScript, HTML, and CSS.",
     projectUX: "Users can:\n\n- Use the like button and comment button to directly engage with referrals\n- Search for referral opportunities based on keyword to get ones that match your preference.\n- Sort referral opportunities based on date posted to get the freshest ones."
   },
   {
