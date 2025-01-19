@@ -1,33 +1,35 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
+import { leagueAppScore } from "../../../../utils/Data/individualProjectScoresCVS";
 import LeagueAppScoreTable from "../../../../components/KPITable/ProjectScoreTable/LeagueAppScoreTable/LeagueAppScoreTable";
 import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 
 const LeagueAppScore = () => {
-  const [leagueAppScore, setLeagueAppScore] = useState([]);
+  // const [leagueAppScore, setLeagueAppScore] = useState([]);
+  const leagueAppScoreToRender = leagueAppScore;
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    const fetchLeagueAppScore = async () => {
-      try {
-        const responseData = await fetchData("scores/league-app-score");
-        if (!responseData.hasError) {
-          setLeagueAppScore(responseData.data);
-          console.log(responseData.data);
-        } else {
-          setError(
-            responseData.error ||
-              "An error occurred while fetching League App pair project score."
-          );
-        }
-      } catch (error) {
-        setError(
-          "A connection error occurred while fetching League App pair project score."
-        );
-      }
-    };
-    fetchLeagueAppScore();
-  }, []);
+  // useEffect(() => {
+  //   const fetchLeagueAppScore = async () => {
+  //     try {
+  //       const responseData = await fetchData("scores/league-app-score");
+  //       if (!responseData.hasError) {
+  //         setLeagueAppScore(responseData.data);
+  //         console.log(responseData.data);
+  //       } else {
+  //         setError(
+  //           responseData.error ||
+  //             "An error occurred while fetching League App pair project score."
+  //         );
+  //       }
+  //     } catch (error) {
+  //       setError(
+  //         "A connection error occurred while fetching League App pair project score."
+  //       );
+  //     }
+  //   };
+  //   fetchLeagueAppScore();
+  // }, []);
 
   return (
     <>
@@ -49,8 +51,8 @@ const LeagueAppScore = () => {
               <ExcelDownloadLink />
             </div>
           ) : (
-            leagueAppScore && (
-              <LeagueAppScoreTable leagueAppScore={leagueAppScore} />
+            leagueAppScoreToRender && (
+              <LeagueAppScoreTable leagueAppScore={leagueAppScoreToRender} />
             )
           )}
         </div>

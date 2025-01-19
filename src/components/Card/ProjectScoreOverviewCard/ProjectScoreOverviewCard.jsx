@@ -11,7 +11,7 @@ const ProjectScoreOverviewCard = ({ project }) => {
   const showScoreDetails= () => {
     if (project.projectName === "access-map-app-capstone") {
         navigate("/kpis/project-scores/capstone-score");
-    } else if (project.projectName === "league-app-jpa-spring ") {
+    } else if (project.projectName === "league-app-jpa-spring") {
         navigate("/kpis/project-scores/league-app-score");
     } else if (project.projectName === "referral-site-api-backend") {
         navigate("/kpis/project-scores/spring-backend-score");

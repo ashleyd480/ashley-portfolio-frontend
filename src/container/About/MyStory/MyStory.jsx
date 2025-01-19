@@ -3,8 +3,6 @@ import PDFDownloadLink from "../../../components/DownloadFile/PDFDownloadLink/PD
 
 const MyStory = () => {
 
-  const googleDocUrl = 'https://docs.google.com/document/d/1IP82ziPF7-nVHBJmHO6dYTlXYNhS1CF97toDqSp6GYY/edit';
-
   return (
     <>
        <h2 className= "blurb-title">My Story🐾</h2>

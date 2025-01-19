@@ -1,32 +1,34 @@
 import { fetchData } from "../../../../api/api";
 import { useState, useEffect } from "react";
+import { capstoneScore } from "../../../../utils/Data/capstoneScoresCSV";
 import CapstoneScoreTable from "../../../../components/KPITable/ProjectScoreTable/CapstoneScoreTable/CapstoneScoreTable";
 import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 import "./CapstoneScore.css";
 
 const CapstoneScore = () => {
-  const [capstoneScore, setCapstoneScore] = useState([]);
+  // const [capstoneScore, setCapstoneScore] = useState([]);
+  const capstoneScoreToRender = capstoneScore;
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    const fetchCapstoneScore = async () => {
-      try {
-        const responseData = await fetchData("scores/capstone-score");
-        if (!responseData.hasError) {
-          setCapstoneScore(responseData.data);
-          console.log(responseData.data);
-        } else {
-          setError(
-            responseData.error ||
-              "An error occurred while fetching capstone score."
-          );
-        }
-      } catch (error) {
-        setError("A connection error occurred while fetching capstone score.");
-      }
-    };
-    fetchCapstoneScore();
-  }, []);
+  // useEffect(() => {
+  //   const fetchCapstoneScore = async () => {
+  //     try {
+  //       const responseData = await fetchData("scores/capstone-score");
+  //       if (!responseData.hasError) {
+  //         setCapstoneScore(responseData.data);
+  //         console.log(responseData.data);
+  //       } else {
+  //         setError(
+  //           responseData.error ||
+  //             "An error occurred while fetching capstone score."
+  //         );
+  //       }
+  //     } catch (error) {
+  //       setError("A connection error occurred while fetching capstone score.");
+  //     }
+  //   };
+  //   fetchCapstoneScore();
+  // }, []);
 
   return (
     <>
@@ -45,8 +47,8 @@ const CapstoneScore = () => {
               <ExcelDownloadLink />
             </div>
           ) : (
-            capstoneScore && (
-              <CapstoneScoreTable capstoneScore={capstoneScore} />
+            capstoneScoreToRender && (
+              <CapstoneScoreTable capstoneScore={capstoneScoreToRender} />
             )
           )}
         </div>

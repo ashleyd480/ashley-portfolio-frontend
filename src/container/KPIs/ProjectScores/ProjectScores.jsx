@@ -1,31 +1,34 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
 import ProjectScoreOverviewCard from "../../../components/Card/ProjectScoreOverviewCard/ProjectScoreOverviewCard";
+import { projectOverviewScores } from "../../../utils/Data/projectScoresOverviewCSV";
 import ExcelDownloadLink from "../../../components/DownloadFile/ExcelDownloadLink/ExcelDownloadLink";
 import "./ProjectScores.css";
 
 const ProjectScores = () => {
-  const [projectScoreOverview, setProjectScoreOverivew] = useState([]);
-  const [error, setError] = useState("");
+  // const [projectScoreOverview, setProjectScoreOverivew] = useState([]);
 
-  useEffect(() => {
-    const fetchProjectScoreOverview = async () => {
-      try {
-        const responseData = await fetchData("scores/project-score-overview");
-        if (!responseData.hasError) {
-          setProjectScoreOverivew(responseData.data);
-        } else {
-          setError(
-            responseData.error ||
-              "An error occurred while fetching project scores."
-          );
-        }
-      } catch (error) {
-        setError("A connection error occurred while fetching project scores.");
-      }
-    };
-    fetchProjectScoreOverview();
-  }, []);
+  const [error, setError] = useState("");
+  const projectScoreOverviewToRender = projectOverviewScores;
+
+  // useEffect(() => {
+  //   const fetchProjectScoreOverview = async () => {
+  //     try {
+  //       const responseData = await fetchData("scores/project-score-overview");
+  //       if (!responseData.hasError) {
+  //         setProjectScoreOverivew(responseData.data);
+  //       } else {
+  //         setError(
+  //           responseData.error ||
+  //             "An error occurred while fetching project scores."
+  //         );
+  //       }
+  //     } catch (error) {
+  //       setError("A connection error occurred while fetching project scores.");
+  //     }
+  //   };
+  //   fetchProjectScoreOverview();
+  // }, []);
 
   return (
     <>
@@ -45,8 +48,8 @@ const ProjectScores = () => {
             <ExcelDownloadLink />
           </div>
         ) : (
-          projectScoreOverview &&
-          projectScoreOverview.map((project) => (
+          projectScoreOverviewToRender &&
+          projectScoreOverviewToRender.map((project) => (
             <ProjectScoreOverviewCard
               key={project.projectId}
               project={project}
