@@ -163,18 +163,18 @@ export const projectData = [
     projectSkills: "Java, Spring Boot",
     projectBlurb: "This mini-project was created in my 6th month of coding, using Java and Spring Boot. It allowed me to delve into working with an existing API—in this case, the Slack API. The project provides a template with MVP functionality that can be further built upon for an onboarding tool.",
     projectUX: "The Spring Boot 'get' mapping methods talk to the conversations endpoint in the Slack API. This fetches a list of channels that a user is part of in Slack along with the descriptions and type, which can be pasted into Google Sheets. It also creates a Slack command that new hires can use to quickly join public channels.",
-    projectVideo: "https://www.youtube.com/embed/X6Q-PM4r7Uo?si=Kv_2Zjz5Kov7OV0W"
+    projectVideo: ""
   },
   {
     projectId: 15,
     projectName: "local-guide-points-calculator",
     projectURL: "https://github.com/ashleyd480/local-guide-points-calculator",
     dateCompleted: "09/10/2024",
-    projectHeaderImage: "https://github.com/ashleyd480/local-guide-points-calculator/raw/master/src/assets/lg-calculator-ui.png",
+    projectHeaderImage: "https://raw.githubusercontent.com/ashleyd480/local-guide-points-calculator/master/src/assets/readme/smart-calculate.png",
     projectType: "personal",
     projectSkills: "React, CSS, Java, Spring Boot",
     projectBlurb: "This tool was created in my 6th month of coding bootcamp, and is designed to help Local Guides track their contributions across various Google Maps categories, calculate their contribution percentages, and plan how they can achieve their next goal points. The tool integrates React, CSS, Java, and Spring Boot to provide an intuitive user experience.",
     projectUX: "Users can select categories, input data, and calculate their Local Guide points based on their contributions. The app performs calculations, displays stats, and allows users to manage their goals with a simple, interactive UI.",
-    projectVideo: "https://www.youtube.com/embed/nQk02A57F5A?si=-AjbZKY39k_hZodx"
+    projectVideo: "https://www.youtube.com/embed/xe-2WzMZpZ8?si=ysgB3ADuCPOj7F2n"
   }
 ];

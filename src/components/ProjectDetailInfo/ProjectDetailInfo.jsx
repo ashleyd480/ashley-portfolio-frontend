@@ -45,10 +45,9 @@ const ProjectDetailInfo = ({ project }) => {
           <p>{renderTextWithLineBreaks(project.projectBlurb)}</p>
           <strong> User Experience: </strong>
           <p>{renderTextWithLineBreaks(project.projectUX)}</p>
-          <strong> Github Repo: </strong>
           <strong> Github Repo: </strong> <a href={project.projectURL} target="_blank">{project.projectURL}</a>{" "}
         </div>
-        {project.projectVideo !== null && (
+        {project.projectVideo !== "" && (
           <div className="p-2">
             <p>
               {" "}
