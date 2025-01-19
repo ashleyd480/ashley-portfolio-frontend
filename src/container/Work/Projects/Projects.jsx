@@ -1,31 +1,32 @@
 import { fetchData } from "../../../api/api";
 import { useState, useEffect } from "react";
+import { projectData } from "../../../utils/Data/projectDataCSV";
 import ProjectCard from "../../../components/Card/ProjectCard/ProjectCard";
 
 
 const Projects = () => {
-  const [projectData, setProjectData] = useState([]);
+  // const [projectData, setProjectData] = useState([]);
   const [error, setError] = useState("");
 
-  useEffect(() => {
-    const fetchProjectData = async () => {
-      try {
-        const responseData = await fetchData("projects");
-        if (!responseData.hasError) {
-          const sortedData = responseData.data.sort((a, b) => a.projectId - b.projectId);
-          setProjectData(sortedData);
-        } else {
-          setError(
-            responseData.error ||
-              "An error occurred while fetching project data."
-          );
-        }
-      } catch (error) {
-        setError("A connection error occurred while fetching project data.");
-      }
-    };
-    fetchProjectData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchProjectData = async () => {
+  //     try {
+  //       const responseData = await fetchData("projects");
+  //       if (!responseData.hasError) {
+  //         const sortedData = responseData.data.sort((a, b) => a.projectId - b.projectId);
+  //         setProjectData(sortedData);
+  //       } else {
+  //         setError(
+  //           responseData.error ||
+  //             "An error occurred while fetching project data."
+  //         );
+  //       }
+  //     } catch (error) {
+  //       setError("A connection error occurred while fetching project data.");
+  //     }
+  //   };
+  //   fetchProjectData();
+  // }, []);
 
   // we map the array of project data - responsedata.data (key value pair)
   // we map it to each to a ProjectCard and the unique key is provided by project id

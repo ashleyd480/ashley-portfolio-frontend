@@ -7,7 +7,6 @@ import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownload
 const SpringBackendScore = () => {
   // const [springBackendScore, setSpringBackendScore] = useState([]);
   const [error, setError] = useState("");
-  const springBackendScoreToRender = springBackendScore;
 
   // useEffect(() => {
   //   const fetchSpringBackendScore = async () => {
@@ -51,9 +50,9 @@ const SpringBackendScore = () => {
               <ExcelDownloadLink />
             </div>
           ) : (
-            springBackendScoreToRender && (
+            springBackendScore && (
               <SpringBackendScoreTable
-                springBackendScore={springBackendScoreToRender}
+                springBackendScore={springBackendScore}
               />
             )
           )}

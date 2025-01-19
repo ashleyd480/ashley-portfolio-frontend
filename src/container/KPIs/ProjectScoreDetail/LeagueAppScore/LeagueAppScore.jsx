@@ -6,7 +6,6 @@ import ExcelDownloadLink from "../../../../components/DownloadFile/ExcelDownload
 
 const LeagueAppScore = () => {
   // const [leagueAppScore, setLeagueAppScore] = useState([]);
-  const leagueAppScoreToRender = leagueAppScore;
   const [error, setError] = useState("");
 
   // useEffect(() => {
@@ -51,8 +50,8 @@ const LeagueAppScore = () => {
               <ExcelDownloadLink />
             </div>
           ) : (
-            leagueAppScoreToRender && (
-              <LeagueAppScoreTable leagueAppScore={leagueAppScoreToRender} />
+            leagueAppScore && (
+              <LeagueAppScoreTable leagueAppScore={leagueAppScore} />
             )
           )}
         </div>

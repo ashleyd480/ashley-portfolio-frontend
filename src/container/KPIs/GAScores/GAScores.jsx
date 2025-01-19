@@ -8,7 +8,7 @@ import { bootcampScores } from "../../../utils/Data/bootcampScoresCSV";
 const GAScores = () => {
   // const [gaScores, setGaScores] = useState([]);
   const [error, setError] = useState("");
-  const gaScoresToRender = bootcampScores;
+
   // useEffect(() => {
   //   const fetchGAScores = async () => {
   //     try {
@@ -41,7 +41,7 @@ const GAScores = () => {
           Note, the 16th week was capstone week, so scores are shown in the Capstone Project
           Score sub-section  {" "}
           <a href="/kpis/project-scores/capstone-score" target="_blank">
-          here
+            here
           </a>
           , under KPIs Project Score section in the navbar.
         </p>
@@ -83,7 +83,7 @@ const GAScores = () => {
             <ExcelDownloadLink />
           </div>
         ) : (
-        gaScoresToRender && <GAScoreTable gaScores={gaScoresToRender} />
+          bootcampScores && <GAScoreTable gaScores={bootcampScores} />
         )}
       </div>
     </>

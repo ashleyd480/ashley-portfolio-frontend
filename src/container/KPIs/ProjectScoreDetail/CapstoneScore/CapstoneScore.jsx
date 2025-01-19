@@ -7,7 +7,6 @@ import "./CapstoneScore.css";
 
 const CapstoneScore = () => {
   // const [capstoneScore, setCapstoneScore] = useState([]);
-  const capstoneScoreToRender = capstoneScore;
   const [error, setError] = useState("");
 
   // useEffect(() => {
@@ -47,8 +46,8 @@ const CapstoneScore = () => {
               <ExcelDownloadLink />
             </div>
           ) : (
-            capstoneScoreToRender && (
-              <CapstoneScoreTable capstoneScore={capstoneScoreToRender} />
+            capstoneScore && (
+              <CapstoneScoreTable capstoneScore={capstoneScore} />
             )
           )}
         </div>

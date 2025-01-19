@@ -26,7 +26,8 @@ const ProjectCard = ({ project }) => {
           </Card.Text>
           <Card.Text className="project-card-text-custom">
             <strong> Skills: </strong>{" "}
-            {project.skills.map((skill) => skill.skillName).join(", ")}
+            {/* {project.skills.map((skill) => skill.skillName).join(", ")} */}
+            <strong>Skills: </strong> {project.projectSkills}
           </Card.Text>
         </Card.Body>
         <ListGroup className="list-group-flush"></ListGroup>

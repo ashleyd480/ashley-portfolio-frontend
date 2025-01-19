@@ -9,7 +9,7 @@ const ProjectScores = () => {
   // const [projectScoreOverview, setProjectScoreOverivew] = useState([]);
 
   const [error, setError] = useState("");
-  const projectScoreOverviewToRender = projectOverviewScores;
+  const projectScoreOverview = projectOverviewScores;
 
   // useEffect(() => {
   //   const fetchProjectScoreOverview = async () => {
@@ -48,8 +48,8 @@ const ProjectScores = () => {
             <ExcelDownloadLink />
           </div>
         ) : (
-          projectScoreOverviewToRender &&
-          projectScoreOverviewToRender.map((project) => (
+          projectScoreOverview &&
+          projectScoreOverview.map((project) => (
             <ProjectScoreOverviewCard
               key={project.projectId}
               project={project}
