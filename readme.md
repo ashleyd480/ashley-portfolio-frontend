@@ -14,6 +14,8 @@ The frontend renders fetch API calls from the backend to display my project deta
 
 ![Frontend UI Screenshot](src/assets/readme-images/frontend-ui.png)
 
+Please note that as of 2025, I have migrated away from hosting my backend and have moved my data to frontend arrays for cost efficiency purposes.
+
 ## Installation
 When cloning the project for use- make sure to run `npm i` to install required React dependencies on your local machine. Also, you will want to run the following two lines, as my portfolio app uses react-router and react bootstrap:
 
