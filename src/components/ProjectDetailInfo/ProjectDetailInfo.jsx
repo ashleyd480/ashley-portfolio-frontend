@@ -2,7 +2,21 @@ import Stack from "react-bootstrap/Stack";
 import "./ProjectDetailInfo.css";
 
 const ProjectDetailInfo = ({ project }) => {
-  console.log(project);
+  // Function to convert newline characters to <br /> elements
+  /*
+  Learning:
+  - Use .split() to split a string into an array of substrings aka `line`
+  - Use .map() to iterate over the array of `line` and create <span> elements for each line.
+  */
+  const renderTextWithLineBreaks = (text) => {
+    return text.split('\n').map((line, index) => (
+      <span key={index}>
+        {line}
+        <br />
+      </span>
+    ));
+  };
+
   // stack ensures items are stacked vertically and gap of 3
   return (
     <>
@@ -22,17 +36,18 @@ const ProjectDetailInfo = ({ project }) => {
           </p>
           <p>
             {" "}
-            <strong>Skills: </strong>{" "}
-            {project.skills &&
-              project.skills.map((skill) => skill.skillName).join(", ")}
+            <strong> Skills: </strong> {project.projectSkills}{" "}
           </p>
         </div>
         <hr className="seperate-line" />
         <div className="p-2">
-          <strong> Overview: </strong> <p>{project.projectBlurb}</p>{" "}
-          <strong> User Experience: </strong> <p>{project.projectUX}</p>{" "}
+          <strong> Overview: </strong>
+          <p>{renderTextWithLineBreaks(project.projectBlurb)}</p>
+          <strong> User Experience: </strong>
+          <p>{renderTextWithLineBreaks(project.projectUX)}</p>
+          <strong> Github Repo: </strong>
           <strong> Github Repo: </strong> <a href={project.projectURL} target="_blank">{project.projectURL}</a>{" "}
-          </div>
+        </div>
         {project.projectVideo !== null && (
           <div className="p-2">
             <p>
