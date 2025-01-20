@@ -26,6 +26,7 @@ const ProjectDetailInfo = ({ project }) => {
             <img
               src={project.projectHeaderImage}
               alt={project.projectName}
+              style={{ maxHeight: '400px', width: 'auto' }} 
               className="project-image"
             />
           </div>

@@ -55,6 +55,7 @@ export const projectData = [
     projectHeaderImage: "https://github.com/ashleyd480/sassy-dictionary-cli-app/raw/main/assets/find-a-word.png",
     projectType: "formal project",
     projectSkills: "Java",
+    projectVideo: "",
     projectBlurb: "This project was completed late Mar 2024 as part of General Assembly's Bootcamp, during Week 7 in our course. The application utilizes the concepts learned in Java, such as data types, variables, control flow, loops, methods, scopes, arrays, ArrayLists, Object-Oriented Programming (OOP), interfaces, exception handling, file I/O, and the Java Stream API.",
     projectUX: "Sassy AI Dictionary is a command line app written with Java that has an attitude and talks back to users.. The user is able to interact with a simple dictionary by typing commands and receiving text-based outputClasses."
   },
