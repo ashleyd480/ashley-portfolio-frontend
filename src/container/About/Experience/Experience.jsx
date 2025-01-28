@@ -45,13 +45,14 @@ const Experience = () => {
       <h2 className="secondary-blurb-title"> Indeed Highlights</h2>
 
       <div className="blurb-section">
+    
         <h3> BOOST </h3>
         <p>
           {" "}
           💙 Below are some highlights of my work at Indeed since the start of
-          my BOOST technical internalship.
+          my BOOST bootcamp and prior to the internalship (updated: Oct 2024): 
         </p>
-
+    
         <ul>
           <li>
             Apply coding knowledge in bootcamp projects, including a job
@@ -88,7 +89,7 @@ const Experience = () => {
         <p>
           {" "}
           💙 Below are some highlights of my work at Indeed since I started in
-          end of June 2018 and prior to my BOOST technical internalship, along
+          end of June 2018 and prior to my BOOST technical program, along
           with the respective skillset.
         </p>
         <p>

@@ -9,7 +9,7 @@ const Whiteboards = () => {
   const apiKey = import.meta.env.VITE_YOUTUBE_KEY;
 
   useEffect(() => {
-    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=100`)
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${playlistId}&key=${apiKey}&maxResults=50`)
       .then(response => response.json())
       .then(data => {
         console.log('Fetched data:', data); // Log the fetched data
