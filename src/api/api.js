@@ -2,8 +2,8 @@
 // const apiUrl = "http://localhost:8080";
 // const apiUrl = "https://ashley-portfolio-29f132612fe3.herokuapp.com";
 
-const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
-console.log(apiUrl);
+// const apiUrl = import.meta.env.VITE_BACKEND_API_URL;
+// console.log(apiUrl);
 
 // this variable undefined on netlify because system did the git ignore of the env.local
 
