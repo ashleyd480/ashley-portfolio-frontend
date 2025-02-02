@@ -16,7 +16,7 @@ const DevBlog = () => {
   const getBlogs = async () => {
     try {
       const responseData = await fetch(
-        "https://dev.to/api/articles?username=ashleyd480"
+        "https://dev.to/api/articles?username=ashleyd480&t=${Date.now()}"
       );
       const json = await responseData.json();
 
