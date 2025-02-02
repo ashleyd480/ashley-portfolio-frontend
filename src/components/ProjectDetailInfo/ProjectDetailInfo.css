@@ -11,3 +11,9 @@
     height: auto; /* Maintain aspect ratio */
     border: 2px solid gray;
   }
+
+  .p-2 {
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    word-wrap: break-word; /* Allows long words to break and wrap to the next line */
+    overflow-wrap: break-word; /* For better compatibility across browsers */
+  }
